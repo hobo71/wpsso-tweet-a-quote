@@ -16,7 +16,7 @@
 
 <p>Easily add Twitter-style quoted text to your content that can be Tweeted by your readers.</p>
 
-<p>Use the shortcode to delineate your quote text, or use an easy "Tweet a Quote" button in the Visual Editor toolbar.</p>
+<p>Use the shortcode to delineate your quote text, or use an easy Tweet a Quote toolbar button in the Visual Editor.</p>
 
 <p>Includes customizable Tweet button HTML, default Twitter-style CSS, and a jQuery script for the popup share window.</p>
 
