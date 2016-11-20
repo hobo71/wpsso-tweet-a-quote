@@ -15,7 +15,7 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:3
 msgctxt "lib file description"
-msgid "Tweet A Quote"
+msgid "Tweet a Quote"
 msgstr ""
 
 #: lib/config-gettext-extract.php:4
@@ -55,31 +55,31 @@ msgstr ""
 
 #: lib/filters.php:169
 msgid ""
-"Add the Tweet A Quote CSS to front-end webpages to style the Tweet text and "
+"Add the Tweet a Quote CSS to front-end webpages to style the Tweet text and "
 "button."
 msgstr ""
 
 #: lib/filters.php:172
 msgid ""
-"Add the Tweet A Quote jQuery to front-end webpages to provide a popup share "
+"Add the Tweet a Quote jQuery to front-end webpages to provide a popup share "
 "window."
 msgstr ""
 
 #: lib/filters.php:175
-msgid "The Tweet A Quote button HTML added to the Tweet text."
+msgid "The Tweet a Quote button HTML added to the Tweet text."
 msgstr ""
 
 #: lib/filters.php:178
-msgid "The Tweet A Quote CSS to style the Tweet text and button."
+msgid "The Tweet a Quote CSS to style the Tweet text and button."
 msgstr ""
 
 #: lib/filters.php:181
-msgid "The Tweet A Quote jQuery to provide a popup share window."
+msgid "The Tweet a Quote jQuery to provide a popup share window."
 msgstr ""
 
 #: lib/submenu/taq-general.php:29
 msgctxt "metabox title"
-msgid "Tweet A Quote Settings"
+msgid "Tweet a Quote Settings"
 msgstr ""
 
 #: lib/submenu/taq-general.php:48
@@ -89,27 +89,27 @@ msgstr ""
 
 #: lib/submenu/taq-general.php:52
 msgctxt "option label"
-msgid "Include Tweet A Quote CSS"
+msgid "Include Tweet a Quote CSS"
 msgstr ""
 
 #: lib/submenu/taq-general.php:56
 msgctxt "option label"
-msgid "Use Tweet A Quote jQuery"
+msgid "Use Tweet a Quote jQuery"
 msgstr ""
 
 #: lib/submenu/taq-general.php:61
 msgctxt "option label"
-msgid "Tweet A Quote Button HTML"
+msgid "Tweet a Quote Button HTML"
 msgstr ""
 
 #: lib/submenu/taq-general.php:65
 msgctxt "option label"
-msgid "Tweet A Quote CSS"
+msgid "Tweet a Quote CSS"
 msgstr ""
 
 #: lib/submenu/taq-general.php:70
 msgctxt "option label"
-msgid "Tweet A Quote jQuery"
+msgid "Tweet a Quote jQuery"
 msgstr ""
 
 #: wpsso-tweet-a-quote.php:81
