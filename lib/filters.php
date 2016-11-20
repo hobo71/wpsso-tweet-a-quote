@@ -172,10 +172,10 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 					$text = __( 'Add the Tweet a Quote jQuery to front-end webpages to provide a popup share window.', 'wpsso-tweet-a-quote' );
 					break;
 				case 'tooltip-taq_button_html':
-					$text = __( 'The Tweet a Quote link / button HTML added to the Tweet text.', 'wpsso-tweet-a-quote' );
+					$text = __( 'The Tweet a Quote share link / button HTML added to the Tweet text.', 'wpsso-tweet-a-quote' );
 					break;
 				case 'tooltip-taq_button_css':
-					$text = __( 'The Tweet a Quote CSS to style the Tweet text and link.', 'wpsso-tweet-a-quote' );
+					$text = __( 'The Tweet a Quote CSS to style the Tweet text and share link / button.', 'wpsso-tweet-a-quote' );
 					break;
 				case 'tooltip-taq_button_js':
 					$text = __( 'The Tweet a Quote jQuery to provide a popup share window.', 'wpsso-tweet-a-quote' );

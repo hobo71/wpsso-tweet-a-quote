@@ -66,11 +66,11 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:175
-msgid "The Tweet a Quote link / button HTML added to the Tweet text."
+msgid "The Tweet a Quote share link / button HTML added to the Tweet text."
 msgstr ""
 
 #: lib/filters.php:178
-msgid "The Tweet a Quote CSS to style the Tweet text and link."
+msgid "The Tweet a Quote CSS to style the Tweet text and share link / button."
 msgstr ""
 
 #: lib/filters.php:181
