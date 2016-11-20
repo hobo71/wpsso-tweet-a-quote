@@ -1,5 +1,5 @@
 === WPSSO Tweet a Quote - Easily Add a Twitter-style Quote with a Tweet Share Link ===
-Plugin Name: WPSSO Social Sharing Buttons (WPSSO SSB)
+Plugin Name: WPSSO Tweet a Quote (WPSSO TAQ)
 Plugin Slug: wpsso-tweet-a-quote
 Text Domain: wpsso-tweet-a-quote
 Domain Path: /languages
@@ -7,7 +7,7 @@ License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Donate Link: https://wpsso.com/?utm_source=wpssossb-readme-donate
 Assets URI: https://surniaulula.github.io/wpsso-tweet-a-quote/assets/
-Tags: wpsso, twitter, tweet, social, share, sharing, button, quote, text, highlight, shortcode, widget
+Tags: wpsso, twitter, tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.6.1
@@ -21,7 +21,7 @@ WPSSO extension to easily add Twitter-style quoted text with a Tweet share link 
 
 <p>Use the shortcode to delineate your quote text, or use an easy Tweet a Quote toolbar button in the Visual Editor.</p>
 
-<p>Includes customizable Tweet button HTML, default Twitter-style CSS, and a jQuery script for the popup share window.</p>
+<p>Includes customizable Tweet link HTML, default Twitter-style CSS, and a jQuery script for the popup share window.</p>
 
 <p>Uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username.</p>
 
