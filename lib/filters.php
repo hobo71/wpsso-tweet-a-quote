@@ -166,16 +166,16 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 					$text = sprintf( __( 'Recommend following the author\'s Twitter @username after sharing a webpage. If the %1$s option (above) is also checked, the %2$s is suggested first.', 'wpsso-tweet-a-quote' ), _x( 'Add via Business @username', 'option label', 'wpsso-tweet-a-quote' ), _x( 'Twitter Business @username', 'option label', 'wpsso-tweet-a-quote' ) );
 					break;
 				case 'tooltip-taq_use_style':
-					$text = __( 'Add the Tweet a Quote CSS to front-end webpages to style the Tweet text and button.', 'wpsso-tweet-a-quote' );
+					$text = __( 'Add the Tweet a Quote CSS to front-end webpages to style the Tweet text and link.', 'wpsso-tweet-a-quote' );
 					break;
 				case 'tooltip-taq_use_script':
 					$text = __( 'Add the Tweet a Quote jQuery to front-end webpages to provide a popup share window.', 'wpsso-tweet-a-quote' );
 					break;
 				case 'tooltip-taq_button_html':
-					$text = __( 'The Tweet a Quote button HTML added to the Tweet text.', 'wpsso-tweet-a-quote' );
+					$text = __( 'The Tweet a Quote link HTML added to the Tweet text.', 'wpsso-tweet-a-quote' );
 					break;
 				case 'tooltip-taq_button_css':
-					$text = __( 'The Tweet a Quote CSS to style the Tweet text and button.', 'wpsso-tweet-a-quote' );
+					$text = __( 'The Tweet a Quote CSS to style the Tweet text and link.', 'wpsso-tweet-a-quote' );
 					break;
 				case 'tooltip-taq_button_js':
 					$text = __( 'The Tweet a Quote jQuery to provide a popup share window.', 'wpsso-tweet-a-quote' );

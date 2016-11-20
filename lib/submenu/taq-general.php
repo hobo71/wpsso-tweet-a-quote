@@ -58,7 +58,7 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 					'<td>'.$this->form->get_checkbox( 'taq_use_script' ).'</td>';
 
 					$table_rows['taq_button_html'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Tweet a Quote Button HTML',
+					$this->form->get_th_html( _x( 'Tweet a Quote Link HTML',
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_button_html' ).
 					'<td>'.$this->form->get_textarea( 'taq_button_html', 'average code' ).'</td>';
 
