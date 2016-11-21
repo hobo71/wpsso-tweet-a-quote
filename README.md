@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tweet a Quote (WPSSO TAQ)</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to easily add Twitter-style quoted text with a Tweet share link in your post and page content.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet share link &mdash; in your post and page content.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.0.0-1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.7</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.6.1</td></tr>
