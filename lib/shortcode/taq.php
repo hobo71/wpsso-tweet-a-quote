@@ -91,8 +91,8 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				$atts['text'] = $content = $this->p->util->limit_text_length( $content, 
 					WpssoTaqTweet::get_max_len( $atts ), '...' );
 
-			$taq_text_html = '<div class="taq_row"><div class="taq_open"></div><div class="taq_text">'.
-				$atts['text'].'</div><div class="taq_close"></div></div>';
+			$taq_text_html = '<span class="taq_row"><span class="taq_open"></span><span class="taq_text">'.
+				$atts['text'].'</span><span class="taq_close"></span></span>';
 
 			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() )
 				return '<div class="'.$class.' is_amp">'.$taq_text_html.'</div>';
