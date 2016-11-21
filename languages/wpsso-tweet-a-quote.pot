@@ -21,8 +21,8 @@ msgstr ""
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid ""
-"WPSSO extension to easily add Twitter-style quoted text with a Tweet share "
-"link in your post and page content."
+"WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet "
+"share link &mdash; in your post and page content."
 msgstr ""
 
 #: lib/filters.php:163
@@ -140,8 +140,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO extension to easily add Twitter-style quoted text with a Tweet share "
-"link in your post and page content."
+"WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet "
+"share link &mdash; in your post and page content."
 msgstr ""
 
 #. Author of the plugin/theme
