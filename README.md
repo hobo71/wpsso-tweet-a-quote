@@ -18,7 +18,7 @@
 
 <p>Features an easy to use "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a quick shortcode for the Text Editor &mdash; to delineate Tweetable quotes.</p>
 
-<p>Theme developers will appreciate the customizable Tweet link / button HTML, optional Twitter-style CSS, and jQuery script for the popup share window.</p>
+<p>Theme developers will appreciate the customizable Tweet link / button HTML, example Twitter-style CSS, and jQuery script for the popup share window.</p>
 
 <p>WPSSO TAQ uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username after sharing.</p>
 
