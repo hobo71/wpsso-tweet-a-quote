@@ -19,7 +19,7 @@ WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet sha
 
 <p><img src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Add Twitter-style quoted text to your content that's easily Tweeted by readers.</strong></p>
 
-<p>Use the shortcode to delineate your quote text, or use an easy Tweet a Quote toolbar button in the Visual Editor.</p>
+<p>Features an easy to use "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a quick shortcode for the Text Editor &mdash; to delineate Tweetable quotes.</p>
 
 <p>Includes customizable Tweet share link / button HTML, default Twitter-style CSS, and a jQuery script for the popup share window.</p>
 
