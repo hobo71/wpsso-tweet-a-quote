@@ -18,9 +18,9 @@
 
 <p>Features an easy to use "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a quick shortcode for the Text Editor &mdash; to delineate Tweetable quotes.</p>
 
-<p>Includes customizable Tweet share link / button HTML, default Twitter-style CSS, and a jQuery script for the popup share window.</p>
+<p>Theme developers will appreciate the customizable Tweet link / button HTML, optional Twitter-style CSS, and jQuery script for the popup share window.</p>
 
-<p>Uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username after sharing.</p>
+<p>WPSSO TAQ uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username after sharing.</p>
 
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO Tweet a Quote (WPSSO TAQ) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
