@@ -21,7 +21,7 @@ WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet sha
 
 <p>Features an easy to use "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a quick shortcode for the Text Editor &mdash; to delineate Tweetable quotes.</p>
 
-<p>Theme developers will appreciate the customizable Tweet link / button HTML, example Twitter-style CSS, and jQuery script for the popup share window.</p>
+<p>Developers and advanced users will appreciate the customizable Tweet link / button HTML, Twitter-style CSS, and jQuery script for the popup share window.</p>
 
 <p>WPSSO TAQ uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username after sharing.</p>
 
@@ -55,6 +55,10 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 = Additional Documentation =
 
 == Screenshots ==
+
+01. WPSSO Tweet a Quote example quote using the default CSS.
+02. WPSSO Tweet a Quote features an easy to use toolbar button in the Visual Editor.
+03. WPSSO Tweet a Quote settings page.
 
 == Changelog ==
 
