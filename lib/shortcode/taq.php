@@ -61,10 +61,10 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			$lca = $this->p->cf['lca'];
 			$atts = (array) apply_filters( $lca.'_taq_shortcode_'.WPSSOTAQ_TWEET_SHORTCODE_NAME, $atts, $content );
 			$class = empty( $atts['class'] ) ? WPSSOTAQ_TWEET_SHORTCODE_CLASS : $atts['class'];
-			$atts['use_post'] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
+			$content = trim( $content );	// just in case
 			if ( isset( $atts['text'] ) )
 				$atts['text'] = trim( $atts['text'] );	// just in case
-			$content = trim( $content );	// just in case
+			$atts['use_post'] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
 			$mod = $this->p->util->get_page_mod( $atts['use_post'] );
 
 			if ( empty( $atts['text'] ) && empty( $content ) )
@@ -87,23 +87,17 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				}
 			}
 
-			if ( empty( $atts['text'] ) ) {
+			if ( empty( $atts['text'] ) )
 				$atts['text'] = $content = $this->p->util->limit_text_length( $content, 
 					WpssoTaqTweet::get_max_len( $atts ), '...' );
-			}
 
 			$taq_text_html = '<div class="taq_row"><div class="taq_open"></div><div class="taq_text">'.
 				$atts['text'].'</div><div class="taq_close"></div></div>';
 
-			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() ) {
-				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'exiting early: buttons not allowed in amp endpoint'  );
-				return '<div class="'.$class.' is_amp_endpoint">'.$taq_text_html.'</div>';
-			} elseif ( is_feed() ) {
-				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'exiting early: buttons not allowed in rss feeds'  );
+			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() )
+				return '<div class="'.$class.' is_amp">'.$taq_text_html.'</div>';
+			elseif ( is_feed() )
 				return '<div class="'.$class.' is_feed">'.$taq_text_html.'</div>';
-			}
 
 			if ( empty( $atts['url'] ) )
 				$atts['url'] = $this->p->util->get_sharing_url( $mod );
@@ -111,8 +105,6 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			$extra_inline_vars = array();
 			$taq_button_html = $this->p->options['taq_button_html'];
 
-			// remove empty query arguments from the twitter button html
-			// prevents twitter from appending an empty 'via' word to the tweet
 			foreach ( array( 
 				'text' => 'text',
 				'hashtags' => 'hashtags',
@@ -125,7 +117,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			}
 
 			return $this->p->util->replace_inline_vars( '<!-- Twitter Button -->'.
-				'<div class="'.$class.' has_taq_button">'.$taq_text_html.$taq_button_html.'</div>',
+				'<div class="'.$class.' is_tweet">'.$taq_text_html.$taq_button_html.'</div>',
 					$mod, $atts, $extra_inline_vars );
 		}
 	}
