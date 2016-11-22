@@ -80,7 +80,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.0.0-dev2 (2016/11/21)**
+**Version 1.0.0-rc1 (2016/11/22)**
 
 Official announcement: N/A
 
@@ -95,7 +95,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.0.0-dev2 =
+= 1.0.0-rc1 =
 
-(2016/11/21) Initial Release.
+(2016/11/22) Initial Release.
 
