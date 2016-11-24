@@ -116,9 +116,13 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				else $taq_button_html = preg_replace( '/&(amp;)?'.$query_key.'=%%twitter_'.$query_key.'%%/', '', $taq_button_html );
 			}
 
-			return $this->p->util->replace_inline_vars( '<!-- Twitter Button -->'.
+			$taq_button_html = $this->p->util->replace_inline_vars( '<!-- Twitter Button -->'.
 				'<div class="'.$class.' is_tweet">'.$taq_text_html.$taq_button_html.'</div>',
 					$mod, $atts, $extra_inline_vars );
+
+			if ( $this->p->options['taq_shorten_href'] )
+				return $this->p->util->shorten_html_href( $taq_button_html );
+			else return $taq_button_html;
 		}
 	}
 }

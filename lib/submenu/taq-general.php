@@ -49,22 +49,30 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_rec_author' ).
 					'<td>'.$this->form->get_checkbox( 'taq_rec_author' ).'</td>';
 
-					$table_rows['taq_use_style'] = $this->form->get_th_html( _x( 'Include Tweet a Quote CSS',
-						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_use_style' ).
-					'<td>'.$this->form->get_checkbox( 'taq_use_style' ).'</td>';
-
-					$table_rows['taq_use_script'] = $this->form->get_th_html( _x( 'Use Tweet a Quote jQuery',
-						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_use_script' ).
-					'<td>'.$this->form->get_checkbox( 'taq_use_script' ).'</td>';
+					$table_rows['taq_shorten_href'] = '<tr class="hide_in_basic">'.
+					$this->form->get_th_html( _x( 'Shorten HTML A HREF URLs',
+						'option label', 'wpsso-tweet-a-quote' ) ).
+					'<td>'.$this->form->get_checkbox( 'taq_shorten_href' ).' <em>'.
+						_x( 'prevents <em>double-popup</em> conflict with Twitter JavaScript button.', 
+							'option comment', 'wpsso-tweet-a-quote' ).'</em></td>';
 
 					$table_rows['taq_button_html'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Tweet a Quote Link HTML',
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_button_html' ).
 					'<td>'.$this->form->get_textarea( 'taq_button_html', 'average code' ).'</td>';
 
+					$table_rows['taq_use_style'] = $this->form->get_th_html( _x( 'Include Tweet a Quote CSS',
+						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_use_style' ).
+					'<td>'.$this->form->get_checkbox( 'taq_use_style' ).'</td>';
+
 					$table_rows['taq_button_css'] = $this->form->get_th_html( _x( 'Tweet a Quote CSS',
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_button_css' ).
 					'<td>'.$this->form->get_textarea( 'taq_button_css', 'tall code' ).'</td>';
+
+					$table_rows['taq_use_script'] = '<tr class="hide_in_basic">'.
+					$this->form->get_th_html( _x( 'Use Tweet a Quote jQuery',
+						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_use_script' ).
+					'<td>'.$this->form->get_checkbox( 'taq_use_script' ).'</td>';
 
 					$table_rows['taq_button_js'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Tweet a Quote jQuery',
