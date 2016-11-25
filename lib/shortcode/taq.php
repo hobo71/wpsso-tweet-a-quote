@@ -103,8 +103,11 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				$atts['url'] = $this->p->util->get_sharing_url( $mod );
 
 			$extra_inline_vars = array();
-			$taq_button_html = preg_replace( '/(\/intent)\/(tweet\?)/', '$1/+/$2',
-				$this->p->options['taq_button_html'] );
+
+			if ( strpos( $this->p->options['taq_button_js'], '/+/' ) !== false )	// just in case
+				$taq_button_html = preg_replace( '/(\/intent)\/(tweet\?)/', '$1/+/$2',
+					$this->p->options['taq_button_html'] );
+			else $taq_button_html = $this->p->options['taq_button_html'];
 
 			foreach ( array( 
 				'text' => 'text',
