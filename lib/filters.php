@@ -19,7 +19,6 @@ if ( ! class_exists( 'WpssoTaqFilters' ) ) {
 				'defaults' => array(
 					'taq_add_via' => 1,
 					'taq_rec_author' => 1,
-					'taq_shorten_href' => 0,
 					'taq_button_html' => '<div class="taq_button">
 	<a href="https://twitter.com/intent/tweet?original_referer=%%sharing_url%%&amp;url=%%short_url%%&amp;text=%%twitter_text%%&amp;hashtags=%%twitter_hashtags%%&amp;via=%%twitter_via%%&amp;related=%%twitter_related%%" class="taq_popup">
 		<span class="taq_icon">
@@ -114,7 +113,8 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 		try {
 			$(document).on("click", ".taq_button a.taq_popup", {}, function taq_popup_click(e) {
 				var self = $(this);
-				taq_popup_center_window(self.attr("href"), self.find(".taq_icon:after").html(), 580, 255);
+				var url = self.attr(\'href\').replace(/([^:]\/)\/(.*\?)/g, \'$1$2\');
+				taq_popup_center_window(url, self.find(".taq_icon:after").html(), 580, 255);
 				e.preventDefault();
 			});
 		}
@@ -135,7 +135,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 				'get_defaults' => 1,			// option defaults
 			) );
 
-			//if ( ! SucomUtil::get_const( 'DOING_AJAX' ) ) {
+			if ( ! SucomUtil::get_const( 'DOING_AJAX' ) ) {
 				if ( is_admin() ) {
 					$this->p->util->add_plugin_filters( $this, array( 
 						'messages_tooltip' => 2,		// tooltip messages filter
@@ -147,7 +147,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 				add_action( 'wp_enqueue_scripts', array( &$this, 'wp_enqueue_scripts' ) );
 				add_action( 'wp_head', array( &$this, 'add_button_style' ), 1000 );
 				add_action( 'wp_footer', array( &$this, 'add_button_script' ), 1000 );
-			//}
+			}
 		}
 
 		public function filter_get_defaults( $def_opts ) {

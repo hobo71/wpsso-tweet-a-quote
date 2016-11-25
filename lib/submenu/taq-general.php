@@ -49,13 +49,6 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_rec_author' ).
 					'<td>'.$this->form->get_checkbox( 'taq_rec_author' ).'</td>';
 
-					$table_rows['taq_shorten_href'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Shorten HTML A HREF URLs',
-						'option label', 'wpsso-tweet-a-quote' ) ).
-					'<td>'.$this->form->get_checkbox( 'taq_shorten_href' ).' <em>'.
-						_x( 'prevents <em>double-popup</em> conflict with Twitter JavaScript button.', 
-							'option comment', 'wpsso-tweet-a-quote' ).'</em></td>';
-
 					$table_rows['taq_button_html'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Tweet a Quote Link HTML',
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_button_html' ).

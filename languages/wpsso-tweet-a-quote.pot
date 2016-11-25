@@ -89,35 +89,25 @@ msgstr ""
 
 #: lib/submenu/taq-general.php:53
 msgctxt "option label"
-msgid "Shorten HTML A HREF URLs"
-msgstr ""
-
-#: lib/submenu/taq-general.php:56
-msgctxt "option comment"
-msgid "prevents <em>double-popup</em> conflict with Twitter JavaScript button."
-msgstr ""
-
-#: lib/submenu/taq-general.php:60
-msgctxt "option label"
 msgid "Tweet a Quote Link HTML"
 msgstr ""
 
-#: lib/submenu/taq-general.php:64
+#: lib/submenu/taq-general.php:57
 msgctxt "option label"
 msgid "Include Tweet a Quote CSS"
 msgstr ""
 
-#: lib/submenu/taq-general.php:68
+#: lib/submenu/taq-general.php:61
 msgctxt "option label"
 msgid "Tweet a Quote CSS"
 msgstr ""
 
-#: lib/submenu/taq-general.php:73
+#: lib/submenu/taq-general.php:66
 msgctxt "option label"
 msgid "Use Tweet a Quote jQuery"
 msgstr ""
 
-#: lib/submenu/taq-general.php:78
+#: lib/submenu/taq-general.php:71
 msgctxt "option label"
 msgid "Tweet a Quote jQuery"
 msgstr ""
