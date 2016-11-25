@@ -113,7 +113,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 		try {
 			$(document).on("click", ".taq_button a.taq_popup", {}, function taq_popup_click(e) {
 				var self = $(this);
-				var url = self.attr(\'href\').replace(\'/--/\', \'/\');
+				var url = self.attr(\'href\').replace(\'/+/\', \'/\');
 				taq_popup_center_window(url, self.find(".taq_icon:after").html(), 580, 255);
 				e.preventDefault();
 			});
