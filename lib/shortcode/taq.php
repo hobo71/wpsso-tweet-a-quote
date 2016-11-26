@@ -104,9 +104,10 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 
 			$extra_inline_vars = array();
 
-			if ( strpos( $this->p->options['taq_button_js'], '/+/' ) !== false )	// just in case
-				$taq_button_html = preg_replace( '/(\/intent)\/(tweet\?)/', '$1/+/$2',
-					$this->p->options['taq_button_html'] );
+			if ( ! empty( $this->p->options['taq_use_script'] ) &&
+				strpos( $this->p->options['taq_button_js'], '/+/' ) !== false )	// just in case
+					$taq_button_html = preg_replace( '/(\/intent)\/(tweet\?)/', '$1/+/$2',
+						$this->p->options['taq_button_html'] );
 			else $taq_button_html = $this->p->options['taq_button_html'];
 
 			foreach ( array( 
