@@ -10,7 +10,7 @@ Assets URI: https://surniaulula.github.io/wpsso-tweet-a-quote/assets/
 Tags: wpsso, twitter, tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget
 Contributors: jsmoriss
 Requires At Least: 3.7
-Tested Up To: 4.6.1
+Tested Up To: 4.7
 Stable Tag: 1.0.0-1
 
 WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet share link &mdash; in your post and page content.
