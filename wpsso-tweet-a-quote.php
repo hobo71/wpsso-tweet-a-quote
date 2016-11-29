@@ -131,7 +131,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 
 		private function min_version_notice() {
 			$info = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
-			$wpsso_version = WpssoConfig::get_version();
+			$wpsso_version = $this->p->cf['plugin']['wpsso']['version'];
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( $info['name'].' requires '.$info['req']['short'].' v'.
