@@ -18,7 +18,7 @@
 
 <p>Features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
 
-<p>Developers and advanced users will appreciate the ability to completely re-style the quote text and Tweet links.</p>
+<p>Developers and advanced users will appreciate the ability to completely re-style the quote text and Tweet link.</p>
 
 <p>WPSSO TAQ uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username after sharing.</p>
 
