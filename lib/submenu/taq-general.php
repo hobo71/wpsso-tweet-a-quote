@@ -49,28 +49,26 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_rec_author' ).
 					'<td>'.$this->form->get_checkbox( 'taq_rec_author' ).'</td>';
 
-					$table_rows['taq_button_html'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Tweet a Quote Link HTML',
-						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_button_html' ).
-					'<td>'.$this->form->get_textarea( 'taq_button_html', 'average code' ).'</td>';
+					$table_rows['taq_link_text'] = $this->form->get_th_html( _x( 'Link the Quote Text',
+						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_link_text' ).
+					'<td>'.$this->form->get_checkbox( 'taq_link_text' ).'</td>';
 
-					$table_rows['taq_use_style'] = $this->form->get_th_html( _x( 'Include Tweet a Quote CSS',
+					$table_rows['taq_add_button'] = $this->form->get_th_html( _x( 'Append a Tweet Icon',
+						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_add_button' ).
+					'<td>'.$this->form->get_checkbox( 'taq_add_button' ).'</td>';
+
+					$table_rows['taq_use_style'] = $this->form->get_th_html( _x( 'Use TAQ Stylesheet',
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_use_style' ).
 					'<td>'.$this->form->get_checkbox( 'taq_use_style' ).'</td>';
 
-					$table_rows['taq_button_css'] = $this->form->get_th_html( _x( 'Tweet a Quote CSS',
-						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_button_css' ).
-					'<td>'.$this->form->get_textarea( 'taq_button_css', 'tall code' ).'</td>';
-
-					$table_rows['taq_use_script'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Use Tweet a Quote jQuery',
+					$table_rows['taq_use_script'] = $this->form->get_th_html( _x( 'Use TAQ Javascript',
 						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_use_script' ).
 					'<td>'.$this->form->get_checkbox( 'taq_use_script' ).'</td>';
 
-					$table_rows['taq_button_js'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Tweet a Quote jQuery',
-						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_button_js' ).
-					'<td>'.$this->form->get_textarea( 'taq_button_js', 'average code' ).'</td>';
+					$table_rows['taq_popup_size'] = $this->form->get_th_html( _x( 'Tweet Window Size',
+						'option label', 'wpsso-tweet-a-quote' ), '', 'taq_popup_size' ).
+					'<td>'.$this->form->get_input( 'taq_popup_width', 'short' ).' x '.
+						$this->form->get_input( 'taq_popup_height', 'short' ).'</td>';
 
 					break;
 			}

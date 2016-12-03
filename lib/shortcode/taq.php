@@ -13,6 +13,14 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 	class WpssoTaqShortcodeTaq {
 
 		private $p;
+		private $taq_tweet_url = 'https://twitter.com/intent/tweet?original_referer=%%sharing_url%%&amp;url=%%short_url%%&amp;text=%%twitter_text%%&amp;hashtags=%%twitter_hashtags%%&amp;via=%%twitter_via%%&amp;related=%%twitter_related%%';
+		private $taq_row_open_html = '<span class="taq_row"><span class="taq_open"></span><span class="taq_text">';
+		private $taq_row_close_html = '</span><span class="taq_close"></span></span>';
+		private $taq_icon_html = '<span class="taq_icon">
+	<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+		<path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z" />
+	</svg>
+</span>';
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
@@ -91,24 +99,21 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				$atts['text'] = $content = $this->p->util->limit_text_length( $content, 
 					WpssoTaqTweet::get_max_len( $atts ), '...' );
 
-			$taq_text_html = '<span class="taq_row"><span class="taq_open"></span><span class="taq_text">'.
-				$atts['text'].'</span><span class="taq_close"></span></span>';
-
 			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() )
-				return '<div class="'.$class.' is_amp">'.$taq_text_html.'</div>';
+				return '<div class="'.$class.' is_amp">'.$this->taq_row_open_html.
+					$atts['text'].$this->taq_row_close_html.'</div>';
 			elseif ( is_feed() )
-				return '<div class="'.$class.' is_feed">'.$taq_text_html.'</div>';
+				return '<div class="'.$class.' is_feed">'.$this->taq_row_open_html.
+					$atts['text'].$this->taq_row_close_html.'</div>';
 
 			if ( empty( $atts['url'] ) )
 				$atts['url'] = $this->p->util->get_sharing_url( $mod );
 
 			$extra_inline_vars = array();
 
-			if ( ! empty( $this->p->options['taq_use_script'] ) &&
-				strpos( $this->p->options['taq_button_js'], '/+/' ) !== false )	// just in case
-					$taq_button_html = preg_replace( '/(\/intent)\/(tweet\?)/', '$1/+/$2',
-						$this->p->options['taq_button_html'] );
-			else $taq_button_html = $this->p->options['taq_button_html'];
+			if ( ! empty( $this->p->options['taq_use_script'] ) )
+				$tweet_url = preg_replace( '/(\/intent)\/(tweet\?)/', '$1/+/$2', $this->taq_tweet_url );
+			else $tweet_url = $this->taq_tweet_url;
 
 			foreach ( array( 
 				'text' => 'text',
@@ -118,12 +123,21 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			) as $query_key => $atts_key  ) {
 				if ( ! empty( $atts[$atts_key] ) )
 					$extra_inline_vars['twitter_'.$query_key] = rawurlencode( $atts[$atts_key] );
-				else $taq_button_html = preg_replace( '/&(amp;)?'.$query_key.'=%%twitter_'.$query_key.'%%/', '', $taq_button_html );
+				else $tweet_url = preg_replace( '/&(amp;)?'.$query_key.'=%%twitter_'.$query_key.'%%/', '', $tweet_url );
 			}
 
+			if ( ! empty( $this->p->options['taq_link_text'] ) )
+				$quote_html = $this->taq_row_open_html.
+					'<div class="taq_link"><a href="'.$tweet_url.'" class="taq_popup">'.
+						$atts['text'].'</a></div>'.$this->taq_row_close_html;
+			else $quote_html = $this->taq_row_open_html.$atts['text'].$this->taq_row_close_html;
+
+			if ( ! empty( $this->p->options['taq_add_button'] ) )
+				$quote_html .= '<div class="taq_link taq_button"><a href="'.$tweet_url.'" class="taq_popup">'.
+					$this->taq_icon_html.'</a></div>';
+
 			return $this->p->util->replace_inline_vars( '<!-- Twitter Button -->'.
-				'<div class="'.$class.' is_tweet">'.$taq_text_html.$taq_button_html.'</div>',
-					$mod, $atts, $extra_inline_vars );
+				'<div class="'.$class.' is_tweet">'.$quote_html.'</div>', $mod, $atts, $extra_inline_vars );
 		}
 	}
 }

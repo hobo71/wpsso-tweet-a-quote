@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tweet a Quote (WPSSO TAQ) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.0.0-1\n"
+"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.0-dev4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-"
 "quote\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -54,27 +54,23 @@ msgid "Add via Business @username"
 msgstr ""
 
 #: lib/filters.php:170
-msgid "The Tweet a Quote share link / button HTML added to the Tweet text."
+msgid "Link the quoted text to click anywhere on the text to Tweet."
 msgstr ""
 
 #: lib/filters.php:173
-msgid ""
-"Add the Tweet a Quote CSS to front-end webpages to style the Tweet text and "
-"link."
+msgid "Append a Tweet icon after the quoted text."
 msgstr ""
 
 #: lib/filters.php:176
-msgid "The Tweet a Quote CSS to style the Tweet text and share link / button."
+msgid "Add the Tweet a Quote stylesheet to front-end webpages."
 msgstr ""
 
 #: lib/filters.php:179
-msgid ""
-"Add the Tweet a Quote jQuery to front-end webpages to provide a popup share "
-"window."
+msgid "Add the Tweet a Quote javascript to front-end webpages."
 msgstr ""
 
 #: lib/filters.php:182
-msgid "The Tweet a Quote jQuery to provide a popup share window."
+msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr ""
 
 #: lib/submenu/taq-general.php:29
@@ -87,29 +83,29 @@ msgctxt "option label"
 msgid "Recommend Author @username"
 msgstr ""
 
-#: lib/submenu/taq-general.php:53
+#: lib/submenu/taq-general.php:52
 msgctxt "option label"
-msgid "Tweet a Quote Link HTML"
+msgid "Link the Quote Text"
 msgstr ""
 
-#: lib/submenu/taq-general.php:57
+#: lib/submenu/taq-general.php:56
 msgctxt "option label"
-msgid "Include Tweet a Quote CSS"
+msgid "Append a Tweet Icon"
 msgstr ""
 
-#: lib/submenu/taq-general.php:61
+#: lib/submenu/taq-general.php:60
 msgctxt "option label"
-msgid "Tweet a Quote CSS"
+msgid "Use TAQ Stylesheet"
 msgstr ""
 
-#: lib/submenu/taq-general.php:66
+#: lib/submenu/taq-general.php:64
 msgctxt "option label"
-msgid "Use Tweet a Quote jQuery"
+msgid "Use TAQ Javascript"
 msgstr ""
 
-#: lib/submenu/taq-general.php:71
+#: lib/submenu/taq-general.php:68
 msgctxt "option label"
-msgid "Tweet a Quote jQuery"
+msgid "Tweet Window Size"
 msgstr ""
 
 #: wpsso-tweet-a-quote.php:81
