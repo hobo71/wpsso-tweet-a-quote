@@ -88,9 +88,9 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Added three new options to the TAQ settings page:
-		* Link the Quote Text
-		* Append a Tweet Icon
-		* Tweet Window Size
+		* Link the Quote Text (default is disabled).
+		* Append a Tweet Icon (default is enabled).
+		* Tweet Window Size (default is 580x255).
 	* Removed the HTML, CSS, and JS customization options.
 * *Bugfixes*
 	* None
