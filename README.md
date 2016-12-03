@@ -9,16 +9,16 @@
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://wpsso.com/?utm_source=wpssossb-readme-donate">https://wpsso.com/?utm_source=wpssossb-readme-donate</a></td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, twitter, tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, twitter, tweet, re-tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget</td></tr>
 </table>
 
 <h2>Description</h2>
 
 <p align="center"><img src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Add Twitter-style quoted text to your content that's easily Tweeted by readers.</strong></p>
 
-<p>Features an easy to use "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a quick shortcode for the Text Editor &mdash; to delineate Tweetable quotes.</p>
+<p>Features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
 
-<p>Developers and advanced users will appreciate the customizable Tweet link / button HTML, Twitter-style CSS, and jQuery script for the popup share window.</p>
+<p>Developers and advanced users will appreciate the ability to completely re-style the quote text and Tweet links.</p>
 
 <p>WPSSO TAQ uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username after sharing.</p>
 

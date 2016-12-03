@@ -7,7 +7,7 @@ License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Donate Link: https://wpsso.com/?utm_source=wpssossb-readme-donate
 Assets URI: https://surniaulula.github.io/wpsso-tweet-a-quote/assets/
-Tags: wpsso, twitter, tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget
+Tags: wpsso, twitter, tweet, re-tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7
@@ -19,9 +19,9 @@ WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet sha
 
 <p><img src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Add Twitter-style quoted text to your content that's easily Tweeted by readers.</strong></p>
 
-<p>Features an easy to use "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a quick shortcode for the Text Editor &mdash; to delineate Tweetable quotes.</p>
+<p>Features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
 
-<p>Developers and advanced users will appreciate the customizable Tweet link / button HTML, Twitter-style CSS, and jQuery script for the popup share window.</p>
+<p>Developers and advanced users will appreciate the ability to completely re-style the quote text and Tweet links.</p>
 
 <p>WPSSO TAQ uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username after sharing.</p>
 
@@ -80,6 +80,23 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.1.0-dev4 (2016/12/03)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added three new options to the TAQ settings page:
+		* Link the Quote Text
+		* Append a Tweet Icon
+		* Tweet Window Size
+	* Removed the HTML, CSS, and JS customization options.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.0.0-1 (2016/11/25)**
 
 Official announcement: N/A
@@ -94,6 +111,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.0-dev4 =
+
+(2016/12/03) Added three new options to the TAQ settings page. Removed the HTML, CSS, and JS customization options.
 
 = 1.0.0-1 =
 
