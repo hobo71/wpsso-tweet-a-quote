@@ -11,7 +11,7 @@ Tags: wpsso, twitter, tweet, re-tweet, social, share, sharing, button, link, quo
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7
-Stable Tag: 1.1.0-1
+Stable Tag: 1.1.0-3
 
 WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet share link &mdash; in your post and page content.
 
@@ -80,7 +80,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.0-1 (2016/12/04)**
+**Version 1.1.0-3 (2016/12/04)**
 
 Official announcement: N/A
 
@@ -112,11 +112,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.1.0-1 =
+= 1.1.0-3 =
 
 (2016/12/04) Added three new options to the TAQ settings page. Removed the HTML, CSS, and JS customization options.
-
-= 1.0.0-1 =
-
-(2016/11/25) Initial Release.
 
