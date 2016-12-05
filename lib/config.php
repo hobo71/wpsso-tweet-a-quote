@@ -22,7 +22,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					'desc' => 'WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet share link &mdash; in your post and page content.',
 					'slug' => 'wpsso-tweet-a-quote',
 					'base' => 'wpsso-tweet-a-quote/wpsso-tweet-a-quote.php',
-					'update_auth' => 'tid',
+					'update_auth' => '',
 					'text_domain' => 'wpsso-tweet-a-quote',
 					'domain_path' => '/languages',
 					'req' => array(
