@@ -80,7 +80,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.0-3 (2016/12/04)**
+**Version 1.1.0-3 (2016/12/05)**
 
 Official announcement: N/A
 
@@ -114,5 +114,5 @@ Official announcement: N/A
 
 = 1.1.0-3 =
 
-(2016/12/04) Added three new options to the TAQ settings page. Removed the HTML, CSS, and JS customization options.
+(2016/12/05) Added three new options to the TAQ settings page. Removed the HTML, CSS, and JS customization options.
 
