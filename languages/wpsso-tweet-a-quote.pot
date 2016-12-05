@@ -25,51 +25,51 @@ msgid ""
 "share link &mdash; in your post and page content."
 msgstr ""
 
-#: lib/filters.php:164
+#: lib/filters.php:165
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
 "a> in the %3$s settings page). The %1$s will be displayed and recommended "
 "after the webpage is shared."
 msgstr ""
 
-#: lib/filters.php:164 lib/filters.php:167
+#: lib/filters.php:165 lib/filters.php:168
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/filters.php:164
+#: lib/filters.php:165
 msgctxt "lib file description"
 msgid "General"
 msgstr ""
 
-#: lib/filters.php:167
+#: lib/filters.php:168
 msgid ""
 "Recommend following the author's Twitter @username after sharing a webpage. "
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/filters.php:167 lib/submenu/taq-general.php:44
+#: lib/filters.php:168 lib/submenu/taq-general.php:44
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr ""
 
-#: lib/filters.php:170
+#: lib/filters.php:171
 msgid "Link the quoted text to click anywhere on the text to Tweet."
 msgstr ""
 
-#: lib/filters.php:173
+#: lib/filters.php:174
 msgid "Append a Tweet icon after the quoted text."
 msgstr ""
 
-#: lib/filters.php:176
+#: lib/filters.php:177
 msgid "Add the Tweet a Quote stylesheet to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:179
+#: lib/filters.php:180
 msgid "Add the Tweet a Quote javascript to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:182
+#: lib/filters.php:183
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr ""
 

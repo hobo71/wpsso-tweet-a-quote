@@ -25,6 +25,7 @@ if ( ! class_exists( 'WpssoTaqFilters' ) ) {
 	border-radius:5px;
 	box-shadow:0 1px 3px rgba(0,0,0,0.15);
 	background-color:#fff;
+	overflow:hidden;
 }
 div.wpsso_taq .taq_row {
 	display:table;
