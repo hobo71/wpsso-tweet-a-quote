@@ -96,7 +96,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			}
 
 			if ( empty( $atts['text'] ) )
-				$atts['text'] = $content = $this->p->util->limit_text_length( $content, 
+				$atts['text'] = $this->p->util->limit_text_length( $content, 
 					WpssoTaqTweet::get_max_len( $atts ), '...' );
 
 			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() )
@@ -122,7 +122,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				'related' => 'related',
 			) as $query_key => $atts_key  ) {
 				if ( ! empty( $atts[$atts_key] ) )
-					$extra_inline_vars['twitter_'.$query_key] = rawurlencode( $atts[$atts_key] );
+					$extra_inline_vars['twitter_'.$query_key] = rawurlencode( html_entity_decode( $atts[$atts_key] ) );
 				else $tweet_url = preg_replace( '/&(amp;)?'.$query_key.'=%%twitter_'.$query_key.'%%/', '', $tweet_url );
 			}
 
