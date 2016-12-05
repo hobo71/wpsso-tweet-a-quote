@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotaq' => array(
-					'version' => '1.1.0-1',		// plugin version
+					'version' => '1.1.0-3',		// plugin version
 					'opt_version' => '10',		// increment when changing default options
 					'short' => 'WPSSO TAQ',		// short plugin name
 					'name' => 'WPSSO Tweet a Quote (WPSSO TAQ)',
