@@ -19,11 +19,11 @@ WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet sha
 
 <p><img src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Add Twitter-style quoted text to your content that's easily Tweeted by readers.</strong></p>
 
-<p>Features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
-
-<p>Developers and advanced users will appreciate the ability to completely re-style the quote text and Tweet link.</p>
+<p>WPSSO TAQ features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
 
 <p>WPSSO TAQ uses your existing WPSSO settings to shorten URLs, add the Twitter Business @username, and recommend the author's @username after sharing.</p>
+
+<p>Developers and advanced users will appreciate the ability to completely re-style the quote text and Tweet link.</p>
 
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO Tweet a Quote (WPSSO TAQ) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
@@ -54,6 +54,8 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 = Additional Documentation =
 
+* [TAQ Shortcode](https://wpsso.com/codex/plugins/wpsso-tweet-a-quote/notes/taq-shortcode/)
+
 == Screenshots ==
 
 01. WPSSO Tweet a Quote example quote using the default CSS.
@@ -80,9 +82,22 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.0-3 (2016/12/05)**
+**Version 1.1.1-1 (2016/12/09)**
 
 Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a [TAQ Shortcode](http://wpsso.com/codex/plugins/wpsso-tweet-a-quote/notes/taq-shortcode/) documentation page.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed the "text" shortcode argument to "tweet".
+
+**Version 1.1.0-3 (2016/12/05)**
+
+Official announcement: [New Plugin – WPSSO Tweet a Quote](http://surniaulula.com/2016/12/05/new-plugin-wpsso-tweet-a-quote/)
 
 * *New Features*
 	* None
@@ -111,6 +126,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.1-1 =
+
+(2016/12/09) Renamed the "text" shortcode argument to "tweet". Added a TAQ Shortcode documentation page.
 
 = 1.1.0-3 =
 
