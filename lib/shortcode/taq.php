@@ -66,12 +66,12 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			$atts = (array) apply_filters( $lca.'_taq_shortcode_'.WPSSOTAQ_TWEET_SHORTCODE_NAME, $atts, $content );
 			$class = empty( $atts['class'] ) ? WPSSOTAQ_TWEET_SHORTCODE_CLASS : $atts['class'];
 			$content = trim( $content );	// just in case
-			if ( isset( $atts['text'] ) )
-				$atts['text'] = trim( $atts['text'] );	// just in case
+			if ( isset( $atts['tweet'] ) )
+				$atts['tweet'] = trim( $atts['tweet'] );	// just in case
 			$atts['use_post'] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
 			$mod = $this->p->util->get_page_mod( $atts['use_post'] );
 
-			if ( empty( $atts['text'] ) && empty( $content ) )
+			if ( empty( $atts['tweet'] ) && empty( $content ) )
 				return $content;
 
 			if ( ! isset( $atts['via'] ) ) {
@@ -91,16 +91,16 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				}
 			}
 
-			if ( empty( $atts['text'] ) )
-				$atts['text'] = $this->p->util->limit_text_length( $content, 
+			if ( empty( $atts['tweet'] ) )
+				$atts['tweet'] = $this->p->util->limit_text_length( $content, 
 					WpssoTaqTweet::get_max_len( $atts ), '...' );
 
 			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() )
 				return '<div class="'.$class.' is_amp">'.$this->taq_row_open_html.
-					$atts['text'].$this->taq_row_close_html.'</div>';
+					$content.$this->taq_row_close_html.'</div>';
 			elseif ( is_feed() )
 				return '<div class="'.$class.' is_feed">'.$this->taq_row_open_html.
-					$atts['text'].$this->taq_row_close_html.'</div>';
+					$content.$this->taq_row_close_html.'</div>';
 
 			if ( empty( $atts['url'] ) )
 				$atts['url'] = $this->p->util->get_sharing_url( $mod );
@@ -112,7 +112,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			else $tweet_url = $this->taq_tweet_url;
 
 			foreach ( array( 
-				'text' => 'text',
+				'text' => 'tweet',	// tweet text
 				'hashtags' => 'hashtags',
 				'via' => 'via',
 				'related' => 'related',
@@ -125,8 +125,8 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			if ( ! empty( $this->p->options['taq_link_text'] ) )
 				$quote_html = $this->taq_row_open_html.
 					'<div class="taq_link"><a href="'.$tweet_url.'" class="taq_popup">'.
-						$atts['text'].'</a></div>'.$this->taq_row_close_html;
-			else $quote_html = $this->taq_row_open_html.$atts['text'].$this->taq_row_close_html;
+						$content.'</a></div>'.$this->taq_row_close_html;
+			else $quote_html = $this->taq_row_open_html.$content.$this->taq_row_close_html;
 
 			if ( ! empty( $this->p->options['taq_add_button'] ) )
 				$quote_html .= '<div class="taq_link taq_button"><a href="'.$tweet_url.'" class="taq_popup">'.
