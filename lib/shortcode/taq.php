@@ -107,7 +107,9 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 
 			$extra_inline_vars = array();
 
-			if ( ! empty( $this->p->options['taq_use_script'] ) )
+			if ( SucomUtil::is_mobile() )
+				$tweet_url = $this->taq_tweet_url;
+			elseif ( ! empty( $this->p->options['taq_use_script'] ) )
 				$tweet_url = preg_replace( '/(\/intent)\/(tweet\?)/', '$1/+/$2', $this->taq_tweet_url );
 			else $tweet_url = $this->taq_tweet_url;
 
