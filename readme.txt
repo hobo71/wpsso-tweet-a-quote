@@ -84,8 +84,6 @@ Note that the production stage level can be incremented on occasion for simple t
 
 **Version 1.1.2-1 (2016/12/12)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -96,8 +94,6 @@ Official announcement: N/A
 	* Excluded the Twitter URL from the JavaScript popup protection for mobile devices.
 
 **Version 1.1.1-1 (2016/12/09)**
-
-Official announcement: N/A
 
 * *New Features*
 	* None
@@ -126,8 +122,6 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](http://surniaulula.c
 	* None
 
 **Version 1.0.0-1 (2016/11/25)**
-
-Official announcement: N/A
 
 * *New Features*
 	* Initial Release.
