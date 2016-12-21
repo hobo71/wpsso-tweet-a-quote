@@ -106,7 +106,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 **Version 1.1.0-3 (2016/12/05)**
 
-Official announcement: [New Plugin – WPSSO Tweet a Quote](http://surniaulula.com/2016/12/05/new-plugin-wpsso-tweet-a-quote/)
+Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.com/2016/12/05/new-plugin-wpsso-tweet-a-quote/)
 
 * *New Features*
 	* None
