@@ -39,11 +39,11 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 		public $filters;		// WpssoTaqFilters
 		public $tweet;			// WpssoTaqTweet
 
-		private static $instance = null;
+		private static $instance;
 		private static $have_min = true;
 
 		public static function &get_instance() {
-			if ( self::$instance === null )
+			if ( ! isset( self::$instance ) )
 				self::$instance = new self;
 			return self::$instance;
 		}
