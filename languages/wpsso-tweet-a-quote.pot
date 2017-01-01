@@ -1,15 +1,15 @@
-# Copyright (C) 2016 WPSSO Tweet a Quote (WPSSO TAQ)
+# Copyright (C) 2017 WPSSO Tweet a Quote (WPSSO TAQ)
 # This file is distributed under the same license as the WPSSO Tweet a Quote (WPSSO TAQ) package.
 msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.2-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-"
 "quote\n"
-"POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -25,51 +25,51 @@ msgid ""
 "share link &mdash; in your post and page content."
 msgstr ""
 
-#: lib/filters.php:165
+#: lib/filters.php:164
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
 "a> in the %3$s settings page). The %1$s will be displayed and recommended "
 "after the webpage is shared."
 msgstr ""
 
-#: lib/filters.php:165 lib/filters.php:168
+#: lib/filters.php:164 lib/filters.php:167
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/filters.php:165
+#: lib/filters.php:164
 msgctxt "lib file description"
 msgid "General"
 msgstr ""
 
-#: lib/filters.php:168
+#: lib/filters.php:167
 msgid ""
 "Recommend following the author's Twitter @username after sharing a webpage. "
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/filters.php:168 lib/submenu/taq-general.php:44
+#: lib/filters.php:167 lib/submenu/taq-general.php:44
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr ""
 
-#: lib/filters.php:171
+#: lib/filters.php:170
 msgid "Link the quoted text to click anywhere on the text to Tweet."
 msgstr ""
 
-#: lib/filters.php:174
+#: lib/filters.php:173
 msgid "Append a Tweet icon after the quoted text."
 msgstr ""
 
-#: lib/filters.php:177
+#: lib/filters.php:176
 msgid "Add the Tweet a Quote stylesheet to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:180
+#: lib/filters.php:179
 msgid "Add the Tweet a Quote javascript to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:183
+#: lib/filters.php:182
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr ""
 

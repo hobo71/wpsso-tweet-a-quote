@@ -13,7 +13,6 @@ if ( ! class_exists( 'WpssoTaqFilters' ) ) {
 	class WpssoTaqFilters {
 
 		private $p;
-
 		private $taq_css = 'div.wpsso_taq {
 	margin:1.5em auto;
 	padding:1.3em;
@@ -84,7 +83,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 	content:"Tweet This Quote";
 	margin-bottom:0.1em;
 }';
-
+		private $taq_css_min;
 		private $taq_js = '+(function(window, $, undefined) {
 	var taq_popup_center_window = function(url, title, w, h) {
 		var dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left;
@@ -229,9 +228,16 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 		public function add_taq_style() {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
-			if ( ! empty( $this->p->options['taq_use_style'] ) )
-				echo '<style type="text/css">'.$this->taq_css.'</style>'."\n";
-			elseif ( $this->p->debug->enabled )
+			if ( ! empty( $this->p->options['taq_use_style'] ) ) {
+				if ( ! isset( $this->taq_css_min ) ) {
+					$classname = apply_filters( $this->p->cf['lca'].'_load_lib',
+						false, 'ext/compressor', 'SuextMinifyCssCompressor' );
+					if ( $classname !== false && class_exists( $classname ) )
+						$this->taq_css_min = call_user_func( array( $classname, 'process' ), $this->taq_css );
+					else $this->taq_css_min = $this->taq_css;
+				}
+				echo '<style type="text/css">'.$this->taq_css_min.'</style>'."\n";
+			} elseif ( $this->p->debug->enabled )
 				$this->p->debug->log( 'taq_use_style option is disabled' );
 		}
 
