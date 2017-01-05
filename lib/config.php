@@ -59,6 +59,8 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						),
 						'gpl' => array(
 						),
+						'pro' => array(
+						),
 					),
 				),
 			),

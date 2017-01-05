@@ -13,7 +13,6 @@ if ( ! class_exists( 'WpssoTaqRegister' ) ) {
 	class WpssoTaqRegister {
 
 		public function __construct() {
-
 			register_activation_hook( WPSSOTAQ_FILEPATH, array( &$this, 'network_activate' ) );
 			//register_deactivation_hook( WPSSOTAQ_FILEPATH, array( &$this, 'network_deactivate' ) );	// nothing to do
 
