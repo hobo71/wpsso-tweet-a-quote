@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tweet a Quote (WPSSO TAQ) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.2-1\n"
+"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.3-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-"
 "quote\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -108,29 +108,29 @@ msgctxt "option label"
 msgid "Tweet Window Size"
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:81
+#: wpsso-tweet-a-quote.php:85
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating the %4$s extension."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:84
+#: wpsso-tweet-a-quote.php:88
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:144
+#: wpsso-tweet-a-quote.php:148
 msgid ""
 "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
 "installed)."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:156
+#: wpsso-tweet-a-quote.php:160
 msgid "The %1$s extension requires the %2$s option to be enabled."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:158
+#: wpsso-tweet-a-quote.php:162
 msgctxt "option label"
 msgid "Enable Plugin Shortcode(s)"
 msgstr ""
