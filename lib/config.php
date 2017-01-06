@@ -48,6 +48,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-tweet-a-quote/',
 						'faq' => '',
 						'notes' => '',
+						'support' => '',
 					),
 					'lib' => array(
 						// submenu items must have unique keys
