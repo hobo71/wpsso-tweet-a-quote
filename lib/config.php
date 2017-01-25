@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						// wordpress
 						'download' => 'https://wordpress.org/plugins/wpsso-tweet-a-quote/',
 						'forum' => 'https://wordpress.org/support/plugin/wpsso-tweet-a-quote',
-						'review' => 'https://wordpress.org/support/view/plugin-reviews/wpsso-tweet-a-quote?filter=5&rate=5#postform',
+						'review' => 'https://wordpress.org/support/plugin/wpsso-tweet-a-quote/reviews/?rate=5#new-post',
 						// github
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-tweet-a-quote/master/readme.txt',
 						// wpsso
