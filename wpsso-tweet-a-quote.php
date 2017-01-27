@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to easily add Twitter-style quoted text - with a Tweet share link - in your post and page content.
  * Requires At Least: 3.7
- * Tested Up To: 4.7.1
+ * Tested Up To: 4.7.2
  * Version: 1.1.3-1
  * 
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
