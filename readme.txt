@@ -9,7 +9,7 @@ Donate Link: https://www.paypal.me/surniaulula
 Assets URI: https://surniaulula.github.io/wpsso-tweet-a-quote/assets/
 Tags: twitter, tweet, re-tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget
 Contributors: jsmoriss
-Requires At Least: 3.7
+Requires At Least: 3.8
 Tested Up To: 4.7.2
 Stable Tag: 1.1.3-1
 
