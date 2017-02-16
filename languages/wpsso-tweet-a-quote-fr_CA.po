@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.3-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-quote\n"
 "POT-Creation-Date: 2017-02-06 09:32+0800\n"
-"PO-Revision-Date: 2017-02-06 09:34+0800\n"
+"PO-Revision-Date: 2017-02-16 16:10+0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -22,7 +22,7 @@ msgstr "Tweet a Quote"
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid "WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet share link &mdash; in your post and page content."
-msgstr "Extension WPSSO pour ajouter facilement des citations de style Twitter avec un lien Tweet de partage dans votre contenu."
+msgstr "Extension WPSSO pour ajouter facilement des citations de style Twitter &mdash;  avec un lien Tweet de partage &mdash;  dans votre contenu."
 
 #: lib/filters.php:164
 msgid "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</a> in the %3$s settings page). The %1$s will be displayed and recommended after the webpage is shared."
@@ -133,7 +133,7 @@ msgstr "https://surniaulula.com/extend/plugins/wpsso-tweet-a-quote/"
 
 #. Description of the plugin/theme
 msgid "WPSSO extension to easily add Twitter-style quoted text - with a Tweet share link - in your post and page content."
-msgstr "Extension WPSSO pour ajouter facilement des citations de style Twitter avec un lien Tweet de partage dans votre contenu."
+msgstr "Extension WPSSO pour ajouter facilement des citations de style Twitter - avec un lien Tweet de partage - dans votre contenu."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
