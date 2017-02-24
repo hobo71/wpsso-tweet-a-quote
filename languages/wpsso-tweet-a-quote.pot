@@ -108,13 +108,13 @@ msgctxt "option label"
 msgid "Tweet Window Size"
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:82
+#: wpsso-tweet-a-quote.php:78
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:84
+#: wpsso-tweet-a-quote.php:80
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
