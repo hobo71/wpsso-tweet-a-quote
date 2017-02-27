@@ -69,6 +69,8 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			if ( isset( $atts['tweet'] ) )
 				$atts['tweet'] = trim( $atts['tweet'] );	// just in case
 			$atts['use_post'] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
+			if ( $this->p->debug->enabled )
+				$this->p->debug->log( 'calling get_page_mod()' );
 			$mod = $this->p->util->get_page_mod( $atts['use_post'] );
 
 			if ( empty( $atts['tweet'] ) && empty( $content ) )
