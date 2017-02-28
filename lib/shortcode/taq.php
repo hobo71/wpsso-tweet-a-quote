@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				$atts['tweet'] = $this->p->util->limit_text_length( $content, 
 					WpssoTaqTweet::get_max_len( $atts ), '...' );	// $cleanup_html = true
 
-			if ( $this->p->is_avail['amp_endpoint'] && is_amp_endpoint() )
+			if ( SucomUtil::is_amp() )
 				return '<div class="'.$class.' is_amp">'.$this->taq_row_open_html.
 					$content.$this->taq_row_close_html.'</div>';
 			elseif ( is_feed() )
