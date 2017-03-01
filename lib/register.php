@@ -66,17 +66,18 @@ if ( ! class_exists( 'WpssoTaqRegister' ) ) {
 		}
 
 		private function activate_plugin() {
-			$lca = 'wpssotaq';
-			$version = WpssoTaqConfig::$cf['plugin'][$lca]['version'];	// only our config
+			$version = WpssoTaqConfig::$cf['plugin']['wpssotaq']['version'];	// only our config
 			if ( class_exists( 'WpssoUtil' ) )
-				WpssoUtil::save_all_times( $lca, $version );
+				WpssoUtil::save_all_times( 'wpssotaq', $version );
 			else WpssoTaq::required_notice( true );			// $deactivate = true
 		}
 
 		private function deactivate_plugin() {
+			// nothing to do
 		}
 
 		private static function uninstall_plugin() {
+			// nothing to do
 		}
 	}
 }
