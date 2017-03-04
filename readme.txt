@@ -76,7 +76,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.4-rc3 (2017/03/04)**
+**Version 1.1.4-rc4 (2017/03/04)**
 
 * *New Features*
 	* None
@@ -150,7 +150,7 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.4-rc3 =
+= 1.1.4-rc4 =
 
 (2017/03/04) Added support for SucomUtil::is_amp() in WPSSO v3.40.2-1.
 
