@@ -14,7 +14,9 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Add Twitter-style quoted text to your content that's easily Tweeted by readers.</strong></p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png" /></p><p></p>
+
+<p><strong>Add Twitter-style quoted text to your content that's easily Tweeted by readers.</strong></p>
 
 <p>WPSSO TAQ features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
 
