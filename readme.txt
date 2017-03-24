@@ -5,7 +5,6 @@ Text Domain: wpsso-tweet-a-quote
 Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
-Donate Link: https://www.paypal.me/surniaulula
 Assets URI: https://surniaulula.github.io/wpsso-tweet-a-quote/assets/
 Tags: twitter, tweet, re-tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget
 Contributors: jsmoriss
