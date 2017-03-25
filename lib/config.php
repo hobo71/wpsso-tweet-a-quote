@@ -98,9 +98,9 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		}
 
 		public static function require_libs( $plugin_filepath ) {
-			require_once( WPSSOTAQ_PLUGINDIR.'lib/register.php' );
-			require_once( WPSSOTAQ_PLUGINDIR.'lib/filters.php' );
-			require_once( WPSSOTAQ_PLUGINDIR.'lib/tweet.php' );	// static methods
+			require_once WPSSOTAQ_PLUGINDIR.'lib/register.php';
+			require_once WPSSOTAQ_PLUGINDIR.'lib/filters.php';
+			require_once WPSSOTAQ_PLUGINDIR.'lib/tweet.php';	// static methods
 
 			add_filter( 'wpssotaq_load_lib', array( 'WpssoTaqConfig', 'load_lib' ), 10, 3 );
 		}
@@ -109,7 +109,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 			if ( $ret === false && ! empty( $filespec ) ) {
 				$filepath = WPSSOTAQ_PLUGINDIR.'lib/'.$filespec.'.php';
 				if ( file_exists( $filepath ) ) {
-					require_once( $filepath );
+					require_once $filepath;
 					if ( empty( $classname ) )
 						return SucomUtil::sanitize_classname( 'wpssotaq'.$filespec, false );	// $underscore = false
 					else return $classname;
