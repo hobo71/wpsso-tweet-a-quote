@@ -49,9 +49,9 @@ WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet sha
 
 == Screenshots ==
 
-01. WPSSO Tweet a Quote example quote using the default CSS.
-02. WPSSO Tweet a Quote features an easy to use toolbar button in the Visual Editor.
-03. WPSSO Tweet a Quote settings page.
+01. WPSSO TAQ example quote to tweet using the default stylesheet CSS.
+02. WPSSO TAQ features an easy to use toolbar button in the Visual Editor for adding tweets to your content.
+03. WPSSO TAQ settings page.
 
 == Changelog ==
 
