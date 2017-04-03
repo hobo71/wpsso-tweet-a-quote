@@ -46,7 +46,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/update/',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/changelog/',
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-tweet-a-quote/',
-						'faq' => '',
+						'faqs' => '',
 						'notes' => '',
 						'support' => '',
 					),
