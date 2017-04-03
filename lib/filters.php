@@ -54,6 +54,9 @@ div.wpsso_taq .taq_text {
 }
 div.wpsso_taq .taq_link a {
 	outline:0 none;
+	border:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
 }
 div.wpsso_taq .taq_button {
 	font:normal 12px/18px Helvetica, Arial, sans-serif;
@@ -67,13 +70,16 @@ div.wpsso_taq .taq_button a {
 	color:#1e9cc0;
 	text-decoration:none;
 	outline:0 none;
+	border:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
 }
 div.wpsso_taq .taq_button a .taq_icon svg {
 	vertical-align:bottom;
 	width:1.4em;
 	height:auto;
 	padding:0;
-	margin:0;
+	margin:0 2px 0 0;
 }
 div.wpsso_taq .taq_button a .taq_icon svg path {
 	fill:#26c4f1;
