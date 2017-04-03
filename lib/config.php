@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotaq' => array(
-					'version' => '1.1.4-1',		// plugin version
+					'version' => '1.1.5-dev1',		// plugin version
 					'opt_version' => '10',		// increment when changing default options
 					'short' => 'WPSSO TAQ',		// short plugin name
 					'name' => 'WPSSO Tweet a Quote (WPSSO TAQ)',
@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						'latest' => 'https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/latest/',
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/update/',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/changelog/',
-						'codex' => 'https://wpsso.com/codex/plugins/wpsso-tweet-a-quote/',
+						'docs' => 'https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/',
 						'faqs' => '',
 						'notes' => '',
 						'support' => '',
