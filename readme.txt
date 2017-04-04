@@ -73,7 +73,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.5-dev2 (2017/04/04)**
+**Version 1.1.5-dev3 (2017/04/05)**
 
 * *New Features*
 	* None
@@ -158,9 +158,9 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.5-dev2 =
+= 1.1.5-dev3 =
 
-(2017/04/04) Updated the plugin icon images and the documentation URLs.
+(2017/04/05) Updated the plugin icon images and the documentation URLs.
 
 = 1.1.4-1 =
 
