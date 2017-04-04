@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tweet a Quote (WPSSO TAQ) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.5-dev1\n"
+"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.5-dev2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-"
 "quote\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -48,7 +48,7 @@ msgid ""
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/filters.php:173 lib/submenu/taq-general.php:44
+#: lib/filters.php:173 lib/submenu/taq-general.php:46
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr ""
@@ -73,37 +73,37 @@ msgstr ""
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr ""
 
-#: lib/submenu/taq-general.php:29
+#: lib/submenu/taq-general.php:31
 msgctxt "metabox title"
 msgid "Tweet a Quote Settings"
 msgstr ""
 
-#: lib/submenu/taq-general.php:48
+#: lib/submenu/taq-general.php:50
 msgctxt "option label"
 msgid "Recommend Author @username"
 msgstr ""
 
-#: lib/submenu/taq-general.php:52
+#: lib/submenu/taq-general.php:54
 msgctxt "option label"
 msgid "Link the Quote Text"
 msgstr ""
 
-#: lib/submenu/taq-general.php:56
+#: lib/submenu/taq-general.php:58
 msgctxt "option label"
 msgid "Append a Tweet Icon"
 msgstr ""
 
-#: lib/submenu/taq-general.php:60
+#: lib/submenu/taq-general.php:62
 msgctxt "option label"
 msgid "Use TAQ Stylesheet"
 msgstr ""
 
-#: lib/submenu/taq-general.php:64
+#: lib/submenu/taq-general.php:66
 msgctxt "option label"
 msgid "Use TAQ Javascript"
 msgstr ""
 
-#: lib/submenu/taq-general.php:68
+#: lib/submenu/taq-general.php:70
 msgctxt "option label"
 msgid "Tweet Window Size"
 msgstr ""
