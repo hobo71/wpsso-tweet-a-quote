@@ -232,19 +232,23 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 		}
 
 		public function add_taq_style() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			if ( ! empty( $this->p->options['taq_use_style'] ) ) {
 				if ( ! isset( $this->taq_css_min ) ) {
 					$classname = apply_filters( $this->p->cf['lca'].'_load_lib',
 						false, 'ext/compressor', 'SuextMinifyCssCompressor' );
-					if ( $classname !== false && class_exists( $classname ) )
+					if ( $classname !== false && class_exists( $classname ) ) {
 						$this->taq_css_min = call_user_func( array( $classname, 'process' ), $this->taq_css );
-					else $this->taq_css_min = $this->taq_css;
+					} else {
+						$this->taq_css_min = $this->taq_css;
+					}
 				}
 				echo '<style type="text/css">'.$this->taq_css_min.'</style>'."\n";
-			} elseif ( $this->p->debug->enabled )
+			} elseif ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'taq_use_style option is disabled' );
+			}
 		}
 
 		public function add_taq_script() {
@@ -254,8 +258,9 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 					array( $this->p->options['taq_popup_width'], $this->p->options['taq_popup_height'] ),
 					$this->taq_js
 				).'</script>'."\n";
-			} elseif ( $this->p->debug->enabled )
+			} elseif ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'taq_use_script option is disabled' );
+			}
 		}
 	}
 }
