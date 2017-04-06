@@ -157,14 +157,16 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 		}
 
 		public function filter_get_defaults( $def_opts ) {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 			return array_merge( $def_opts, self::$cf['opt']['defaults'] );
 		}
 
 		public function filter_messages_tooltip( $text, $idx ) {
-			if ( strpos( $idx, 'tooltip-taq_' ) !== 0 )
+			if ( strpos( $idx, 'tooltip-taq_' ) !== 0 ) {
 				return $text;
+			}
 			switch ( $idx ) {
 				case 'tooltip-taq_add_via':
 					$text = sprintf( __( 'Append the %1$s to the tweet (see <a href="%2$s">the Twitter options tab</a> in the %3$s settings page). The %1$s will be displayed and recommended after the webpage is shared.', 'wpsso-tweet-a-quote' ), _x( 'Twitter Business @username', 'option label', 'wpsso-tweet-a-quote' ), $this->p->util->get_admin_url( 'general#sucom-tabset_pub-tab_twitter' ), _x( 'General', 'lib file description', 'wpsso-tweet-a-quote' ) );
