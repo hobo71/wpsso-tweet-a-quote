@@ -60,7 +60,7 @@ WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet sha
 * [GitHub](https://surniaulula.github.io/wpsso-tweet-a-quote/)
 * [WordPress.org](https://wordpress.org/plugins/wpsso-tweet-a-quote/developers/)
 
-= Version Numbering Scheme =
+= Version Numbering =
 
 Version components: `{major}.{minor}.{bugfix}-{stage}{level}`
 
