@@ -34,22 +34,6 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						'icon_small' => 'images/icon-128x128.png',
 						'icon_medium' => 'images/icon-256x256.png',
 					),
-					'url' => array(
-						// wordpress
-						'download' => 'https://wordpress.org/plugins/wpsso-tweet-a-quote/',
-						'forum' => 'https://wordpress.org/support/plugin/wpsso-tweet-a-quote',
-						'review' => 'https://wordpress.org/support/plugin/wpsso-tweet-a-quote/reviews/?rate=5#new-post',
-						// github
-						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-tweet-a-quote/master/readme.txt',
-						// wpsso
-						'latest' => 'https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/latest/',
-						'update' => 'https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/update/',
-						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/changelog/',
-						'docs' => 'https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/',
-						'faqs' => '',
-						'notes' => '',
-						'support' => '',
-					),
 					'lib' => array(
 						// submenu items must have unique keys
 						'submenu' => array (
