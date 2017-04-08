@@ -71,6 +71,18 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.6 (2017/04/08)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Minor revision to move URLs in the extension config to the main WPSSO plugin config.
+	* Dropped the package number from the production version string.
+
 **Version 1.1.5-1 (2017/04/05)**
 
 * *New Features*
@@ -143,18 +155,11 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 * *Developer Notes*
 	* None
 
-**Version 1.0.0-1 (2016/11/25)**
-
-* *New Features*
-	* Initial Release.
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
+
+= 1.1.6 =
+
+(2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO plugin config.
 
 = 1.1.5-1 =
 
