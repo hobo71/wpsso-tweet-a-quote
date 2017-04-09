@@ -1,4 +1,4 @@
-=== WPSSO Tweet a Quote - Add Twitter-style Quoted Text with a Tweet Share Link ===
+=== WPSSO Tweet a Quote - Add Twitter-style Quoted Text with a Tweet Share Link (Easy to Re-style) ===
 Plugin Name: WPSSO Tweet a Quote (WPSSO TAQ)
 Plugin Slug: wpsso-tweet-a-quote
 Text Domain: wpsso-tweet-a-quote

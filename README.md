@@ -1,4 +1,4 @@
-<h1>WPSSO Tweet a Quote</h1><h3>Add Twitter-style Quoted Text with a Tweet Share Link</h3>
+<h1>WPSSO Tweet a Quote</h1><h3>Add Twitter-style Quoted Text with a Tweet Share Link (Easy to Re-style)</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tweet a Quote (WPSSO TAQ)</td></tr>
