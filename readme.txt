@@ -18,11 +18,11 @@ WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to 
 
 <img src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png" width="128" height="128" class="plugin_icon">
 
-<p><strong>Add Twitter-style quoted text to your content that's easily Tweeted by readers.</strong></p>
+<p><strong>Add Twitter-style quoted text to your content that's easily Tweeted by your readers.</strong></p>
 
-<p>WPSSO TAQ features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
+<p><strong>Features an easy "Tweet a Quote" toolbar button in the Visual Editor</strong> &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
 
-<p>WPSSO TAQ uses your existing WPSSO settings to shorten URLs, add a Twitter business @username, and recommend the author's @username after sharing.</p>
+<p><strong>Uses your existing WPSSO settings to shorten URLs</strong>, add a Twitter business @username, and recommend the author's @username after sharing.</p>
 
 <p>Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO TAQ uses for the quote and Tweet link.</p>
 
