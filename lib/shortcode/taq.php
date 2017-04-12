@@ -20,10 +20,13 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
+
 			if ( ! is_admin() ) {
-				if ( $this->p->is_avail['taq'] ) {
+				if ( $this->p->is_avail['p_ext']['taq'] ) {
 					$this->wpautop();
 					$this->add();
 				}

@@ -13,7 +13,7 @@
  * Description: WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS).
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 1.1.6
+ * Version: 1.1.7-a.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 		public $tweet;			// WpssoTaqTweet
 
 		private static $instance;
-		private static $have_req_min = true;	// have at least minimum wpsso version
+		private static $have_req_min = true;	// have minimum wpsso version
 
 		public function __construct() {
 
@@ -106,65 +106,76 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 		}
 
 		public function wpsso_init_options() {
-			if ( method_exists( 'Wpsso', 'get_instance' ) )
+			if ( method_exists( 'Wpsso', 'get_instance' ) ) {
 				$this->p =& Wpsso::get_instance();
-			else $this->p =& $GLOBALS['wpsso'];
+			} else {
+				$this->p =& $GLOBALS['wpsso'];
+			}
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
-				return;		// stop here
-
-			$this->p->is_avail['taq'] = true;
+			if ( self::$have_req_min ) {
+				$this->p->is_avail['p_ext']['taq'] = true;
+			} else {
+				$this->p->is_avail['p_ext']['taq'] = false;	// just in case
+			}
 		}
 
 		public function wpsso_init_objects() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
-				return;		// stop here
-
-			$this->filters = new WpssoTaqFilters( $this->p );
-			$this->tweet = new WpssoTaqTweet( $this->p );
+			if ( self::$have_req_min ) {
+				$this->filters = new WpssoTaqFilters( $this->p );
+				$this->tweet = new WpssoTaqTweet( $this->p );
+			}
 		}
 
 		public function wpsso_init_plugin() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
-				return $this->min_version_notice();
+			if ( self::$have_req_min ) {
+				return $this->min_version_notice();	// stop here
+			}
 
-			if ( empty( $this->p->options['plugin_shortcodes'] ) )
-				return $this->sc_disabled_notice();
+			if ( empty( $this->p->options['plugin_shortcodes'] ) ) {
+				return $this->sc_disabled_notice();	// stop here
+			}
 		}
 
 		private function min_version_notice() {
 			$info = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
 			$wpsso_version = $this->p->cf['plugin']['wpsso']['version'];
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( $info['name'].' requires '.$info['req']['short'].' v'.
 					$info['req']['min_version'].' or newer ('.$wpsso_version.' installed)' );
+			}
 
-			if ( is_admin() )
+			if ( is_admin() ) {
 				$this->p->notice->err( sprintf( __( 'The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently installed).',
 					'wpsso-tweet-a-quote' ), $info['name'], $info['version'], $info['req']['short'],
 						$info['req']['min_version'], $wpsso_version ) );
+			}
 		}
 
 		private function sc_disabled_notice() {
 			$info = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( $info['name'].' requires the shortcodes option to be enabled' );
+			}
 
-			if ( is_admin() )
+			if ( is_admin() ) {
 				$this->p->notice->err( sprintf( __( 'The %1$s extension requires the %2$s option to be enabled.',
 					'wpsso-tweet-a-quote' ), $info['name'], $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_integration', 
 						_x( 'Enable Plugin Shortcode(s)', 'option label', 'wpsso-tweet-a-quote' ) ) ) );
+			}
 		}
 	}
 
