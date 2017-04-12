@@ -139,7 +139,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( ! self::$have_req_min ) {
 				return $this->min_version_notice();	// stop here
 			}
 
