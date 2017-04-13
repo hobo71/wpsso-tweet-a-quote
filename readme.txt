@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.7-a.2 (2017/04/12)**
+**Version 1.1.7-b.1 (2017/04/13)**
 
 * *New Features*
 	* None
@@ -168,9 +168,9 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.7-a.2 =
+= 1.1.7-b.1 =
 
-(2017/04/12) Refactored the plugin init filters and moved/renamed the registration boolean.
+(2017/04/13) Refactored the plugin init filters and moved/renamed the registration boolean.
 
 = 1.1.6 =
 
