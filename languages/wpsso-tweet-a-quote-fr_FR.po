@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.6\n"
+"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-quote\n"
-"POT-Creation-Date: 2017-03-31 18:03+0200\n"
-"PO-Revision-Date: 2017-04-08 19:44+0200\n"
+"POT-Creation-Date: 2017-04-13 08:59+0200\n"
+"PO-Revision-Date: 2017-04-13 09:00+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -21,104 +21,104 @@ msgstr "Tweet a Quote"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
-msgid "WPSSO extension to easily add Twitter-style quoted text &mdash; with a Tweet share link &mdash; in your post and page content."
-msgstr "Extension WPSSO pour ajouter facilement des citations de style Twitter &mdash;  avec un lien Tweet de partage &mdash;  dans votre contenu."
+msgid "WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
+msgstr "Extension WPSSO pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
 
-#: lib/filters.php:164
+#: lib/filters.php:172
 msgid "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</a> in the %3$s settings page). The %1$s will be displayed and recommended after the webpage is shared."
 msgstr "Ajouter le %1$s au Tweet (voir <a href=\"%2$s\">l'onglet d'options Twitter</a> sur la page de réglages %3$s). Le %1$s sera affichés et recommandé après que la page Web est été partagée."
 
-#: lib/filters.php:164 lib/filters.php:167
+#: lib/filters.php:172 lib/filters.php:175
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr "Le @nom d'affaires Twitter"
 
-#: lib/filters.php:164
+#: lib/filters.php:172
 msgctxt "lib file description"
 msgid "General"
 msgstr "Général"
 
-#: lib/filters.php:167
+#: lib/filters.php:175
 msgid "Recommend following the author's Twitter @username after sharing a webpage. If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr "Conseiller de suivre le @nom Twitter de l'auteur après avoir partagé une page Web. Si l'option %1$s (ci-dessus) est également cochée, le %2$s sera recommandé en premier."
 
-#: lib/filters.php:167 lib/submenu/taq-general.php:44
+#: lib/filters.php:175 lib/submenu/taq-general.php:46
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr "Ajouter via @nom d'affaires"
 
-#: lib/filters.php:170
+#: lib/filters.php:178
 msgid "Link the quoted text to click anywhere on the text to Tweet."
 msgstr "Ajouter un lien au texte de citation pour Tweeter en cliquant n'importe où sur le texte."
 
-#: lib/filters.php:173
+#: lib/filters.php:181
 msgid "Append a Tweet icon after the quoted text."
 msgstr "Ajoutez une icône de Tweet après le texte cité."
 
-#: lib/filters.php:176
+#: lib/filters.php:184
 msgid "Add the Tweet a Quote stylesheet to front-end webpages."
 msgstr "Ajouter les styles de Tweet a Quote au pages Web d'avant."
 
-#: lib/filters.php:179
+#: lib/filters.php:187
 msgid "Add the Tweet a Quote javascript to front-end webpages."
 msgstr "Ajouter le JavaScript de Tweet a Quote au pages Web d'avant."
 
-#: lib/filters.php:182
+#: lib/filters.php:190
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr "La largeur et la hauteur (en pixels) de la fenêtre contextuelle de Tweet."
 
-#: lib/submenu/taq-general.php:29
+#: lib/submenu/taq-general.php:31
 msgctxt "metabox title"
 msgid "Tweet a Quote Settings"
 msgstr "Paramètres Tweet a Quote"
 
-#: lib/submenu/taq-general.php:48
+#: lib/submenu/taq-general.php:50
 msgctxt "option label"
 msgid "Recommend Author @username"
 msgstr "Recommander @nom d'auteur"
 
-#: lib/submenu/taq-general.php:52
+#: lib/submenu/taq-general.php:54
 msgctxt "option label"
 msgid "Link the Quote Text"
 msgstr "Ajouter lien au texte de citation"
 
-#: lib/submenu/taq-general.php:56
+#: lib/submenu/taq-general.php:58
 msgctxt "option label"
 msgid "Append a Tweet Icon"
 msgstr "Ajouter une icône de Tweet"
 
-#: lib/submenu/taq-general.php:60
+#: lib/submenu/taq-general.php:62
 msgctxt "option label"
 msgid "Use TAQ Stylesheet"
 msgstr "Utilisez la feuille de style TAQ"
 
-#: lib/submenu/taq-general.php:64
+#: lib/submenu/taq-general.php:66
 msgctxt "option label"
 msgid "Use TAQ Javascript"
 msgstr "Utilisez le Javascript TAQ"
 
-#: lib/submenu/taq-general.php:68
+#: lib/submenu/taq-general.php:70
 msgctxt "option label"
 msgid "Tweet Window Size"
 msgstr "Taille de la fenêtre de Tweet"
 
-#: wpsso-tweet-a-quote.php:79
+#: wpsso-tweet-a-quote.php:77
 msgid "%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est une extension pour %2$s &mdash; s'il vous plaît installer et activer %3$s avant d'activer l'extension %4$s."
 
-#: wpsso-tweet-a-quote.php:81
+#: wpsso-tweet-a-quote.php:79
 msgid "The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin."
 msgstr "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer l'extension %3$s."
 
-#: wpsso-tweet-a-quote.php:155
+#: wpsso-tweet-a-quote.php:161
 msgid "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently installed)."
 msgstr "L'extension %1$s v%2$s requiert l'utilisation de %3$s v%4$s ou plus récente (v%5$s est actuellement installée)."
 
-#: wpsso-tweet-a-quote.php:167
+#: wpsso-tweet-a-quote.php:175
 msgid "The %1$s extension requires the %2$s option to be enabled."
 msgstr "L’extension %1$s nécessite que l'option %2$s soit activé."
 
-#: wpsso-tweet-a-quote.php:169
+#: wpsso-tweet-a-quote.php:177
 msgctxt "option label"
 msgid "Enable Plugin Shortcode(s)"
 msgstr "Activer le/les Shortcode(s)"
@@ -132,8 +132,8 @@ msgid "https://surniaulula.com/extend/plugins/wpsso-tweet-a-quote/"
 msgstr "https://surniaulula.com/extend/plugins/wpsso-tweet-a-quote/"
 
 #. Description of the plugin/theme
-msgid "WPSSO extension to easily add Twitter-style quoted text - with a Tweet share link - in your post and page content."
-msgstr "Extension WPSSO pour ajouter facilement des citations de style Twitter - avec un lien Tweet de partage - dans votre contenu."
+msgid "WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
+msgstr "Extension WPSSO pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
