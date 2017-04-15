@@ -239,13 +239,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 			}
 			if ( ! empty( $this->p->options['taq_use_style'] ) ) {
 				if ( ! isset( $this->taq_css_min ) ) {
-					$classname = apply_filters( $this->p->cf['lca'].'_load_lib',
-						false, 'ext/compressor', 'SuextMinifyCssCompressor' );
-					if ( $classname !== false && class_exists( $classname ) ) {
-						$this->taq_css_min = call_user_func( array( $classname, 'process' ), $this->taq_css );
-					} else {
-						$this->taq_css_min = $this->taq_css;
-					}
+					$this->taq_css_min = SucomUtil::minify_css( $this->taq_css, 'wpsso' );
 				}
 				echo '<style type="text/css">'.$this->taq_css_min.'</style>'."\n";
 			} elseif ( $this->p->debug->enabled ) {
