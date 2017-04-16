@@ -10,7 +10,7 @@ Tags: twitter, tweet, re-tweet, social, share, sharing, button, link, quote, tex
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
-Stable Tag: 1.1.6
+Stable Tag: 1.1.7
 
 WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS).
 
@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.7 (2017/04/15)**
+**Version 1.1.7 (2017/04/16)**
 
 * *New Features*
 	* None
@@ -170,7 +170,7 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 = 1.1.7 =
 
-(2017/04/15) Refactored the plugin init filters and moved/renamed the registration boolean.
+(2017/04/16) Refactored the plugin init filters and moved/renamed the registration boolean.
 
 = 1.1.6 =
 
