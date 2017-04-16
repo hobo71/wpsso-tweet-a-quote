@@ -140,7 +140,7 @@ msgid "WPSSO Tweet a Quote (WPSSO TAQ)"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://surniaulula.com/extend/plugins/wpsso-tweet-a-quote/"
+msgid "https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/"
 msgstr ""
 
 #. Description of the plugin/theme

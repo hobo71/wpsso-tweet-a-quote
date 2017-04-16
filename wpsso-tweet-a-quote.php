@@ -4,7 +4,7 @@
  * Plugin Slug: wpsso-tweet-a-quote
  * Text Domain: wpsso-tweet-a-quote
  * Domain Path: /languages
- * Plugin URI: https://surniaulula.com/extend/plugins/wpsso-tweet-a-quote/
+ * Plugin URI: https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/
  * Assets URI: https://surniaulula.github.io/wpsso-tweet-a-quote/assets/
  * Author: JS Morisset
  * Author URI: https://surniaulula.com/
@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 		public $tweet;			// WpssoTaqTweet
 
 		private static $instance;
-		private static $have_req_min = true;	// have minimum wpsso version
+		private static $have_min = true;	// have minimum wpsso version
 
 		public function __construct() {
 
@@ -98,7 +98,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 			$info = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
 
 			if ( version_compare( $plugin_version, $info['req']['min_version'], '<' ) ) {
-				self::$have_req_min = false;
+				self::$have_min = false;
 				return $cf;
 			}
 
@@ -116,7 +116,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( self::$have_min ) {
 				$this->p->is_avail['p_ext']['taq'] = true;
 			} else {
 				$this->p->is_avail['p_ext']['taq'] = false;	// just in case
@@ -128,7 +128,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( self::$have_min ) {
 				$this->filters = new WpssoTaqFilters( $this->p );
 				$this->tweet = new WpssoTaqTweet( $this->p );
 			}
@@ -139,7 +139,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! self::$have_req_min ) {
+			if ( ! self::$have_min ) {
 				return $this->min_version_notice();	// stop here
 			}
 
