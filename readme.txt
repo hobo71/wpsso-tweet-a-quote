@@ -71,6 +71,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.8-dev.5 (2017/04/19)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added support for the new WPSSO_VARY_USER_AGENT_DISABLE constant in WPSSO v3.41.0.
+
 **Version 1.1.7 (2017/04/16)**
 
 * *New Features*
@@ -167,6 +178,10 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.8-dev.5 =
+
+(2017/04/19) Added support for a new constant in WPSSO v3.41.0.
 
 = 1.1.7 =
 
