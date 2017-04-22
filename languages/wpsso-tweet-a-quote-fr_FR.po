@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.7\n"
+"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-quote\n"
-"POT-Creation-Date: 2017-04-15 11:23+0200\n"
-"PO-Revision-Date: 2017-04-15 11:23+0200\n"
+"POT-Creation-Date: 2017-04-22 09:12+0200\n"
+"PO-Revision-Date: 2017-04-22 09:12+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -128,8 +128,8 @@ msgid "WPSSO Tweet a Quote (WPSSO TAQ)"
 msgstr "WPSSO Tweet a Quote (WPSSO TAQ)"
 
 #. Plugin URI of the plugin/theme
-msgid "https://surniaulula.com/extend/plugins/wpsso-tweet-a-quote/"
-msgstr "https://surniaulula.com/extend/plugins/wpsso-tweet-a-quote/"
+msgid "https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/"
+msgstr "https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/"
 
 #. Description of the plugin/theme
 msgid "WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
