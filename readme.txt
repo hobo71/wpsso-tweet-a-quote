@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.8-rc.2 (2017/04/21)**
+**Version 1.1.8 (2017/04/22)**
 
 * *New Features*
 	* None
@@ -179,9 +179,9 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.8-rc.2 =
+= 1.1.8 =
 
-(2017/04/21) Added support for a new constant in WPSSO v3.41.0.
+(2017/04/22) Added support for a new constant in WPSSO v3.41.0.
 
 = 1.1.7 =
 
