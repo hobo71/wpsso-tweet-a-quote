@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotaq' => array(
-					'version' => '1.1.8',		// plugin version
+					'version' => '1.1.9-dev.1',		// plugin version
 					'opt_version' => '10',		// increment when changing default options
 					'short' => 'WPSSO TAQ',		// short plugin name
 					'name' => 'WPSSO Tweet a Quote (WPSSO TAQ)',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.41.0',
+						'min_version' => '3.42.0-dev.1',
 					),
 					'img' => array(
 						'icons' => array(
