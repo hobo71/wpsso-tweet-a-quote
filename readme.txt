@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.9-dev.4 (2017/04/28)**
+**Version 1.1.9-b.1 (2017/04/29)**
 
 * *New Features*
 	* None
@@ -191,9 +191,9 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.9-dev.4 =
+= 1.1.9-b.1 =
 
-(2017/04/28) Code refactoring to rename the $is_avail array to $avail, and replace the WPSSO_VARY_USER_AGENT_DISABLE constant checks by $avail array checks for WPSSO v3.42.0.
+(2017/04/29) Code refactoring to rename the $is_avail array to $avail, and replace the WPSSO_VARY_USER_AGENT_DISABLE constant checks by $avail array checks for WPSSO v3.42.0.
 
 = 1.1.8 =
 
