@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WPSSO Tweet a Quote (WPSSO TAQ)
+ * Plugin Name: WPSSO Tweet a Quote
  * Plugin Slug: wpsso-tweet-a-quote
  * Text Domain: wpsso-tweet-a-quote
  * Domain Path: /languages

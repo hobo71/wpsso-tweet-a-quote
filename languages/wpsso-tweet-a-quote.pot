@@ -1,8 +1,8 @@
-# Copyright (C) 2017 WPSSO Tweet a Quote (WPSSO TAQ)
-# This file is distributed under the same license as the WPSSO Tweet a Quote (WPSSO TAQ) package.
+# Copyright (C) 2017 WPSSO Tweet a Quote
+# This file is distributed under the same license as the WPSSO Tweet a Quote package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.9\n"
+"Project-Id-Version: WPSSO Tweet a Quote 1.1.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-"
 "quote\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -136,7 +136,7 @@ msgid "Enable Plugin Shortcode(s)"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Tweet a Quote (WPSSO TAQ)"
+msgid "WPSSO Tweet a Quote"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
