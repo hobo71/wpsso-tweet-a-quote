@@ -1,5 +1,5 @@
 === WPSSO Tweet a Quote - Add Twitter-style Quoted Text with a Tweet Share Link (Easy to Re-style) ===
-Plugin Name: WPSSO Tweet a Quote (WPSSO TAQ)
+Plugin Name: WPSSO Tweet a Quote
 Plugin Slug: wpsso-tweet-a-quote
 Text Domain: wpsso-tweet-a-quote
 Domain Path: /languages
@@ -27,7 +27,7 @@ WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to 
 <p>Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO TAQ uses for the quote and Tweet link.</p>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Tweet a Quote (WPSSO TAQ) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Tweet a Quote is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
 </blockquote>
 
 == Installation ==
