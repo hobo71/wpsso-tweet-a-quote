@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote (WPSSO TAQ) 1.1.9\n"
+"Project-Id-Version: WPSSO Tweet a Quote 1.1.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-quote\n"
 "POT-Creation-Date: 2017-05-23 07:52-0400\n"
-"PO-Revision-Date: 2017-05-23 07:52-0400\n"
+"PO-Revision-Date: 2017-05-24 22:47-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -142,6 +142,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
-
-#~ msgid "WPSSO Tweet a Quote (WPSSO TAQ)"
-#~ msgstr "WPSSO Tweet a Quote (WPSSO TAQ)"
