@@ -1,4 +1,4 @@
-=== WPSSO Tweet a Quote - Add Twitter-style Quoted Text with a Tweet Share Link (Easy to Re-style) ===
+=== WPSSO Tweet a Quote - Twitter-style Quoted Text with Tweet Share Icon / Link and Customizable CSS ===
 Plugin Name: WPSSO Tweet a Quote
 Plugin Slug: wpsso-tweet-a-quote
 Text Domain: wpsso-tweet-a-quote
@@ -12,7 +12,7 @@ Requires At Least: 3.7
 Tested Up To: 4.8.1
 Stable Tag: 1.1.9
 
-WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS).
+WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customizable CSS).
 
 == Description ==
 
