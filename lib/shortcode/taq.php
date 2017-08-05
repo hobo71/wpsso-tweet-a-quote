@@ -70,16 +70,18 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			$atts = (array) apply_filters( $lca.'_taq_shortcode_'.WPSSOTAQ_TWEET_SHORTCODE_NAME, $atts, $content );
 			$class = empty( $atts['class'] ) ? WPSSOTAQ_TWEET_SHORTCODE_CLASS : $atts['class'];
 			$content = trim( $content );	// just in case
-			if ( isset( $atts['tweet'] ) )
+			if ( isset( $atts['tweet'] ) ) {
 				$atts['tweet'] = trim( $atts['tweet'] );	// just in case
+			}
 			$atts['use_post'] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'required call to get_page_mod()' );
 			}
 			$mod = $this->p->util->get_page_mod( $atts['use_post'] );
 
-			if ( empty( $atts['tweet'] ) && empty( $content ) )
+			if ( empty( $atts['tweet'] ) && empty( $content ) ) {
 				return $content;
+			}
 
 			if ( ! isset( $atts['via'] ) ) {
 				if ( ! empty( $this->p->options['taq_add_via'] ) ) {
@@ -98,19 +100,22 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				}
 			}
 
-			if ( empty( $atts['tweet'] ) )
+			if ( empty( $atts['tweet'] ) ) {
 				$atts['tweet'] = $this->p->util->limit_text_length( $content, 
 					WpssoTaqTweet::get_max_len( $atts ), '...' );	// $cleanup_html = true
+			}
 
-			if ( SucomUtil::is_amp() )
+			if ( SucomUtil::is_amp() ) {
 				return '<div class="'.$class.' is_amp">'.$this->taq_row_open_html.
 					$content.$this->taq_row_close_html.'</div>';
-			elseif ( is_feed() )
+			} elseif ( is_feed() ) {
 				return '<div class="'.$class.' is_feed">'.$this->taq_row_open_html.
 					$content.$this->taq_row_close_html.'</div>';
+			}
 
-			if ( empty( $atts['url'] ) )
+			if ( empty( $atts['url'] ) ) {
 				$atts['url'] = $this->p->util->get_sharing_url( $mod );
+			}
 
 			$extra_inline_vars = array();
 
@@ -128,20 +133,25 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				'via' => 'via',
 				'related' => 'related',
 			) as $query_key => $atts_key  ) {
-				if ( ! empty( $atts[$atts_key] ) )
+				if ( ! empty( $atts[$atts_key] ) ) {
 					$extra_inline_vars['twitter_'.$query_key] = rawurlencode( html_entity_decode( $atts[$atts_key] ) );
-				else $tweet_url = preg_replace( '/&(amp;)?'.$query_key.'=%%twitter_'.$query_key.'%%/', '', $tweet_url );
+				} else {
+					$tweet_url = preg_replace( '/&(amp;)?'.$query_key.'=%%twitter_'.$query_key.'%%/', '', $tweet_url );
+				}
 			}
 
-			if ( ! empty( $this->p->options['taq_link_text'] ) )
+			if ( ! empty( $this->p->options['taq_link_text'] ) ) {
 				$quote_html = $this->taq_row_open_html.
 					'<div class="taq_link"><a href="'.$tweet_url.'" class="taq_popup">'.
 						$content.'</a></div>'.$this->taq_row_close_html;
-			else $quote_html = $this->taq_row_open_html.$content.$this->taq_row_close_html;
+			} else {
+				$quote_html = $this->taq_row_open_html.$content.$this->taq_row_close_html;
+			}
 
-			if ( ! empty( $this->p->options['taq_add_button'] ) )
+			if ( ! empty( $this->p->options['taq_add_button'] ) ) {
 				$quote_html .= '<div class="taq_link taq_button"><a href="'.$tweet_url.'" class="taq_popup">'.
 					$this->taq_icon_html.'</a></div>';
+			}
 
 			return $this->p->util->replace_inline_vars( '<div class="'.$class.' is_tweet">'.$quote_html.'</div>',
 				$mod, $atts, $extra_inline_vars );
