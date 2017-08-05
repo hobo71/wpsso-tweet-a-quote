@@ -174,7 +174,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 
 			if ( is_admin() ) {
 				$this->p->notice->err( sprintf( __( 'The %1$s extension requires the %2$s option to be enabled.',
-					'wpsso-tweet-a-quote' ), $info['name'], $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_integration', 
+					'wpsso-tweet-a-quote' ), $info['name'], $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_settings', 
 						_x( 'Enable Plugin Shortcode(s)', 'option label', 'wpsso-tweet-a-quote' ) ) ) );
 			}
 		}
