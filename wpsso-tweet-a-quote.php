@@ -13,6 +13,7 @@
  * Description: WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS).
  * Requires At Least: 3.7
  * Tested Up To: 4.8.1
+ * Requires PHP: 5.3
  * Version: 1.1.9
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
