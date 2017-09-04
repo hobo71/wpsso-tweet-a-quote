@@ -35,8 +35,8 @@ WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to 
 
 = Install and Uninstall =
 
-* [Install the Plugin](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/install-the-plugin/)
-* [Uninstall the Plugin](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/uninstall-the-plugin/)
+* [Install the WPSSO TAQ Plugin](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/install-the-plugin/)
+* [Uninstall the WPSSO TAQ Plugin](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
