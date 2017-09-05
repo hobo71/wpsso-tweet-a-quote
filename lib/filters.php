@@ -170,7 +170,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 			}
 			switch ( $idx ) {
 				case 'tooltip-taq_add_via':
-					$text = sprintf( __( 'Append the %1$s to the tweet (see <a href="%2$s">the Twitter options tab</a> in the %3$s settings page). The %1$s will be displayed and recommended after the webpage is shared.', 'wpsso-tweet-a-quote' ), _x( 'Twitter Business @username', 'option label', 'wpsso-tweet-a-quote' ), $this->p->util->get_admin_url( 'general#sucom-tabset_pub-tab_twitter' ), _x( 'General', 'lib file description', 'wpsso-tweet-a-quote' ) );
+					$text = sprintf( __( 'Append the %1$s to the tweet (see <a href="%2$s">the Twitter options tab</a> in the %3$s page). The %1$s will be displayed and recommended after the webpage is shared.', 'wpsso-tweet-a-quote' ), _x( 'Twitter Business @username', 'option label', 'wpsso-tweet-a-quote' ), $this->p->util->get_admin_url( 'general#sucom-tabset_pub-tab_twitter' ), _x( 'General Settings', 'lib file description', 'wpsso-tweet-a-quote' ) );
 					break;
 				case 'tooltip-taq_rec_author':
 					$text = sprintf( __( 'Recommend following the author\'s Twitter @username after sharing a webpage. If the %1$s option (above) is also checked, the %2$s is suggested first.', 'wpsso-tweet-a-quote' ), _x( 'Add via Business @username', 'option label', 'wpsso-tweet-a-quote' ), _x( 'Twitter Business @username', 'option label', 'wpsso-tweet-a-quote' ) );
