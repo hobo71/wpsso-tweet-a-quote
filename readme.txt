@@ -72,7 +72,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.10-dev.3 (2017/09/08)**
+**Version 1.1.10-b.1 (2017/09/08)**
 
 * *New Features*
 	* None
@@ -203,7 +203,7 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.10-dev.3 =
+= 1.1.10-b.1 =
 
 (2017/09/08) Minor code refactoring for WPSSO v3.45.10.
 
