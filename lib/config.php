@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotaq' => array(
-					'version' => '1.1.10-dev.3',		// plugin version
+					'version' => '1.1.10-b.1',		// plugin version
 					'opt_version' => '10',		// increment when changing default options
 					'short' => 'WPSSO TAQ',		// short plugin name
 					'name' => 'WPSSO Tweet a Quote',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO',
-						'min_version' => '3.45.10-dev.3',
+						'min_version' => '3.45.10-b.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -59,11 +59,16 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+			if ( defined( 'WPSSOTAQ_VERSION' ) ) {			// execute and define constants only once
+				return;
+			}
+			define( 'WPSSOTAQ_VERSION', self::$cf['plugin']['wpssotaq']['version'] );						
 			define( 'WPSSOTAQ_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOTAQ_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'WPSSOTAQ_PLUGINSLUG', self::$cf['plugin']['wpssotaq']['slug'] );	// wpsso-tweet-a-quote
 			define( 'WPSSOTAQ_PLUGINBASE', self::$cf['plugin']['wpssotaq']['base'] );	// wpsso-tweet-a-quote/wpsso-tweet-a-quote.php
 			define( 'WPSSOTAQ_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+
 			self::set_variable_constants();
 		}
 
