@@ -33,9 +33,9 @@ WPSSO and its extensions make full use of all available caching techniques (pers
 
 WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
-<blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Tweet a Quote is an extension for the WPSSO (Core Plugin), which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).</p>
-</blockquote>
+= WPSSO (Core Plugin) Prerequisite =
+
+WPSSO Tweet a Quote is an extension for the WPSSO (Core Plugin), which automatically generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).
 
 == Installation ==
 
