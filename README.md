@@ -23,7 +23,7 @@
 
 <p>Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO TAQ uses for the quote and Tweet link.</p>
 
-<p><strong>WPSSO TAQ is <em>fast</em> and coded for performance:</strong></p>
+<p><strong>WPSSO TAQ is <em>super fast</em> and coded for performance:</strong></p>
 
 <p>WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.</p>
 
