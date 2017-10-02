@@ -17,8 +17,10 @@ if ( ! class_exists( 'WpssoTaqTweet' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 		}
 
 		public static function get_max_len( $atts = array() ) { 
