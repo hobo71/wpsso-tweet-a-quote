@@ -78,7 +78,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.11-dev.2 (2017/10/04)**
+**Version 1.1.11-b.1 (2017/10/04)**
 
 * *New Features*
 	* None
@@ -88,7 +88,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Added a shortcode_exists() call to the WpssoTaqShortcodeTaq add_shortcode() and remove_shortcode() methods for more complete debug info.
-	* Added 'wpsso_text_filter_begin' and 'wpsso_text_filter_end' hooks in the WpssoTaqShortcodeTaq class to remove / add the shortcode as required.
+	* Added 'wpsso_text_filter_before' and 'wpsso_text_filter_after' action hooks WpssoTaqShortcodeTaq to dynamically remove / add the TAQ shortcode as required.
 
 **Version 1.1.10 (2017/09/10)**
 
@@ -221,7 +221,7 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.11-dev.2 =
+= 1.1.11-b.1 =
 
 (2017/10/04) Refactored the WpssoTaqShortcodeTaq add / remove shortcode methods.
 
