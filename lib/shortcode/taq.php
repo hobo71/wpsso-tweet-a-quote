@@ -28,13 +28,13 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 
 			if ( ! is_admin() ) {
 				if ( $this->p->avail['p_ext']['taq'] ) {
-					$this->wpautop();
-					$this->add();
+					$this->check_wpautop();
+					$this->add_shortcode();
 				}
 			}
 		}
 
-		public function wpautop() {
+		public function check_wpautop() {
 			// make sure wpautop() does not have a higher priority than 10, otherwise it will 
 			// format the shortcode output (shortcode filters are run at priority 11).
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
@@ -44,27 +44,35 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 					if ( $filter_priority !== false && $filter_priority > $default_priority ) {
 						remove_filter( $filter_name, 'wpautop' );
 						add_filter( $filter_name, 'wpautop' , $default_priority );
-						$this->p->debug->log( 'wpautop() priority changed from '.$filter_priority.' to '.$default_priority );
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( 'wpautop() priority changed from '.$filter_priority.' to '.$default_priority );
+						}
 					}
 				}
 			}
 		}
 
-		public function add() {
+		public function add_shortcode() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-        			add_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME, array( &$this, 'shortcode' ) );
-				$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode added' );
+        			add_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME, array( &$this, 'do_shortcode' ) );
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode added' );
+				}
+				return true;
 			}
 		}
 
-		public function remove() {
+		public function remove_shortcode() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
 				remove_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME );
-				$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode removed' );
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode removed' );
+				}
+				return true;
 			}
 		}
 
-		public function shortcode( $atts, $content = null ) { 
+		public function do_shortcode( $atts, $content = null ) { 
 
 			$lca = $this->p->cf['lca'];
 			$atts = (array) apply_filters( $lca.'_taq_shortcode_'.WPSSOTAQ_TWEET_SHORTCODE_NAME, $atts, $content );
