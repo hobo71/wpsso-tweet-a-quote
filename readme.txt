@@ -78,6 +78,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.11-dev.1 (2017/10/04)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added 'wpsso_text_filter_begin' and 'wpsso_text_filter_end' hooks in the WpssoTaqShortcodeTaq class to remove / add the shortcode as required.
+
 **Version 1.1.10 (2017/09/10)**
 
 * *New Features*
@@ -208,6 +219,10 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.11-dev.1 =
+
+(2017/09/11-dev.1) Added 'wpsso_text_filter_begin' and 'wpsso_text_filter_end' hooks in the WpssoTaqShortcodeTaq class to remove / add the shortcode as required.
 
 = 1.1.10 =
 
