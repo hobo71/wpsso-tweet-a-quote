@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote 1.1.10\n"
+"Project-Id-Version: WPSSO Tweet a Quote 1.1.11\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-quote\n"
-"POT-Creation-Date: 2017-09-08 20:39-0400\n"
-"PO-Revision-Date: 2017-09-08 20:39-0400\n"
+"POT-Creation-Date: 2017-10-07 07:50-0600\n"
+"PO-Revision-Date: 2017-10-07 07:50-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -24,46 +24,46 @@ msgctxt "plugin description"
 msgid "WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
 msgstr "Extension WPSSO pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
 
-#: lib/filters.php:173
+#: lib/filters.php:175
 msgid "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</a> in the %3$s page). The %1$s will be displayed and recommended after the webpage is shared."
 msgstr "Ajouter le %1$s au Tweet (voir <a href=\"%2$s\">l'onglet d'options Twitter</a> sur la page de %3$s). Le %1$s sera affichés et recommandé après que la page Web est été partagée."
 
-#: lib/filters.php:173 lib/filters.php:176
+#: lib/filters.php:175 lib/filters.php:178
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr "Le @nom d'affaires Twitter"
 
-#: lib/filters.php:173
+#: lib/filters.php:175
 msgctxt "lib file description"
 msgid "General Settings"
 msgstr "Réglages généraux"
 
-#: lib/filters.php:176
+#: lib/filters.php:178
 msgid "Recommend following the author's Twitter @username after sharing a webpage. If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr "Conseiller de suivre le @nom Twitter de l'auteur après avoir partagé une page Web. Si l'option %1$s (ci-dessus) est également cochée, le %2$s sera recommandé en premier."
 
-#: lib/filters.php:176 lib/submenu/taq-general.php:47
+#: lib/filters.php:178 lib/submenu/taq-general.php:47
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr "Ajouter via @nom d'affaires"
 
-#: lib/filters.php:179
+#: lib/filters.php:181
 msgid "Link the quoted text to click anywhere on the text to Tweet."
 msgstr "Ajouter un lien au texte de citation pour Tweeter en cliquant n'importe où sur le texte."
 
-#: lib/filters.php:182
+#: lib/filters.php:184
 msgid "Append a Tweet icon after the quoted text."
 msgstr "Ajoutez une icône de Tweet après le texte cité."
 
-#: lib/filters.php:185
+#: lib/filters.php:187
 msgid "Add the Tweet a Quote stylesheet to front-end webpages."
 msgstr "Ajouter les styles de Tweet a Quote au pages Web d'avant."
 
-#: lib/filters.php:188
+#: lib/filters.php:190
 msgid "Add the Tweet a Quote javascript to front-end webpages."
 msgstr "Ajouter le JavaScript de Tweet a Quote au pages Web d'avant."
 
-#: lib/filters.php:191
+#: lib/filters.php:193
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr "La largeur et la hauteur (en pixels) de la fenêtre contextuelle de Tweet."
 
