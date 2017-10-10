@@ -33,24 +33,24 @@ WPSSO and its extensions make full use of all available caching techniques (pers
 
 WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
-= WPSSO (Core Plugin) Prerequisite =
+<h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Tweet a Quote is an extension for the WPSSO (Core Plugin) &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.
+WPSSO Tweet a Quote is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.
 
 == Installation ==
 
-= Install and Uninstall =
+<h3>Install and Uninstall</h3>
 
 * [Install the WPSSO TAQ Plugin](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/install-the-plugin/)
 * [Uninstall the WPSSO TAQ Plugin](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
-= Frequently Asked Questions =
+<h3>Frequently Asked Questions</h3>
 
 == Other Notes ==
 
-= Additional Documentation =
+<h3>Additional Documentation</h3>
 
 * [TAQ Shortcode](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/notes/taq-shortcode/)
 
@@ -62,12 +62,12 @@ WPSSO Tweet a Quote is an extension for the WPSSO (Core Plugin) &mdash; which cr
 
 == Changelog ==
 
-= Free / Basic Version Repository =
+<h3>Free / Basic Version Repositories</h3>
 
 * [GitHub](https://surniaulula.github.io/wpsso-tweet-a-quote/)
 * [WordPress.org](https://wordpress.org/plugins/wpsso-tweet-a-quote/developers/)
 
-= Version Numbering =
+<h3>Version Numbering</h3>
 
 Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
@@ -76,9 +76,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * {bugfix} = Backwards-compatible bug fixes or small improvements.
 * {stage}.{level} = Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
 
-= Changelog / Release Notes =
+<h3>Changelog / Release Notes</h3>
 
-**Version 1.1.11-rc.5 (2017/10/08)**
+**Version 1.1.11-rc.6 (2017/10/10)**
 
 * *New Features*
 	* None
@@ -221,9 +221,9 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.11-rc.5 =
+= 1.1.11-rc.6 =
 
-(2017/10/08) Refactored the WpssoTaqShortcodeTaq add / remove shortcode methods.
+(2017/10/10) Refactored the WpssoTaqShortcodeTaq add / remove shortcode methods.
 
 = 1.1.10 =
 
