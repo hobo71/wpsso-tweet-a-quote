@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTaqTweet' ) ) {
 			if ( ! isset( $atts['via'] ) ) {
 				if ( ! empty( $wpsso->options['taq_add_via'] ) ) {
 					$atts['via'] = preg_replace( '/^@/', '', 
-						SucomUtil::get_locale_opt( 'tc_site', $wpsso->options ) );
+						SucomUtil::get_key_value( 'tc_site', $wpsso->options ) );
 				}
 			}
 

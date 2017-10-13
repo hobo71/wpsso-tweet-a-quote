@@ -127,8 +127,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 
 			if ( ! isset( $atts['via'] ) ) {
 				if ( ! empty( $this->p->options['taq_add_via'] ) ) {
-					$atts['via'] = preg_replace( '/^@/', '', 
-						SucomUtil::get_locale_opt( 'tc_site', $this->p->options ) );
+					$atts['via'] = preg_replace( '/^@/', '', SucomUtil::get_key_value( 'tc_site', $this->p->options ) );
 				}
 			}
 
