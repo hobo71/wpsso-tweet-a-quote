@@ -78,7 +78,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.11-rc.9 (2017/10/13)**
+**Version 1.1.11-rc.10 (2017/10/14)**
 
 * *New Features*
 	* None
@@ -221,9 +221,9 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 
 == Upgrade Notice ==
 
-= 1.1.11-rc.9 =
+= 1.1.11-rc.10 =
 
-(2017/10/13) Refactored the WpssoTaqShortcodeTaq add / remove shortcode methods.
+(2017/10/14) Refactored the WpssoTaqShortcodeTaq add / remove shortcode methods.
 
 = 1.1.10 =
 
