@@ -21,8 +21,8 @@ msgstr ""
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid ""
-"WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link "
-"to post and page content (uses easily customized CSS)."
+"WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share "
+"link to post and page content (uses easily customized CSS)."
 msgstr ""
 
 #: lib/filters.php:175
@@ -145,8 +145,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link "
-"to post and page content (uses easily customized CSS)."
+"WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share "
+"link to post and page content (uses easily customized CSS)."
 msgstr ""
 
 #. Author of the plugin/theme
