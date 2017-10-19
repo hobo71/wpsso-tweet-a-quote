@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Tweet a Quote 1.1.11\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-quote\n"
-"POT-Creation-Date: 2017-10-08 08:08-0600\n"
-"PO-Revision-Date: 2017-10-08 08:09-0600\n"
+"POT-Creation-Date: 2017-10-19 16:18-0600\n"
+"PO-Revision-Date: 2017-10-19 16:18-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -21,8 +21,8 @@ msgstr "Tweet a Quote"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
-msgid "WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
-msgstr "Extension WPSSO pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
+msgid "WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
+msgstr "Extension WPSSO Core pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
 
 #: lib/filters.php:175
 msgid "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</a> in the %3$s page). The %1$s will be displayed and recommended after the webpage is shared."
@@ -132,8 +132,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/"
 
 #. Description of the plugin/theme
-msgid "WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
-msgstr "Extension WPSSO pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
+msgid "WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
+msgstr "Extension WPSSO Core pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
