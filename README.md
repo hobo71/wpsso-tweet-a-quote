@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tweet a Quote</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customizable CSS).</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customizable CSS).</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.1.11</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.7</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.8.2</td></tr>
@@ -23,11 +23,11 @@
 
 <p>Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO TAQ uses for the quote and Tweet link.</p>
 
-<p><strong>WPSSO TAQ is <em>super fast</em> and coded for performance:</strong></p>
+<p><strong>WPSSO TAQ is <em>incredibly fast</em> and coded for performance:</strong></p>
 
-<p>WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.</p>
+<p>WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.</p>
 
-<p>WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).</p>
+<p>WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).</p>
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 

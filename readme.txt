@@ -13,7 +13,7 @@ Tested Up To: 4.8.2
 Requires PHP: 5.3
 Stable Tag: 1.1.11
 
-WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customizable CSS).
+WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customizable CSS).
 
 == Description ==
 
@@ -27,11 +27,11 @@ WPSSO extension to add CSS Twitter-style quoted text with a Tweet share link to 
 
 <p>Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO TAQ uses for the quote and Tweet link.</p>
 
-**WPSSO TAQ is *super fast* and coded for performance:**
+**WPSSO TAQ is *incredibly fast* and coded for performance:**
 
-WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
+WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
 
-WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
+WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
