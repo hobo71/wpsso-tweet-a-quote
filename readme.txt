@@ -78,6 +78,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.1.12-rc.2 (2017/11/02)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed shortcode add/remove text filter action hooks for WPSSO v3.48.0.
+
 **Version 1.1.11 (2017/10/15)**
 
 * *New Features*
@@ -88,7 +99,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Added a shortcode_exists() call to the WpssoTaqShortcodeTaq add_shortcode() and remove_shortcode() methods for more complete debug info.
-	* Added 'wpsso_text_filter_before' and 'wpsso_text_filter_after' action hooks WpssoTaqShortcodeTaq to dynamically remove / add the TAQ shortcode as required.
+	* Added 'wpsso_pre_apply_filters_text' and 'wpsso_after_apply_filters_text' action hooks WpssoTaqShortcodeTaq to dynamically remove / add the TAQ shortcode as required.
 
 **Version 1.1.10 (2017/09/10)**
 
@@ -220,6 +231,10 @@ Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.12-rc.2 =
+
+(2017/11/02) Renamed shortcode add/remove text filter action hooks for WPSSO v3.48.0.
 
 = 1.1.11 =
 
