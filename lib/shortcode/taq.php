@@ -108,17 +108,29 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 
 		public function do_shortcode( $atts, $content = null ) { 
 
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			if ( ! is_array( $atts ) ) {	// empty string if no shortcode attributes
+				$atts = array();
+			}
+
 			$lca = $this->p->cf['lca'];
 			$atts = (array) apply_filters( $lca.'_taq_shortcode_'.WPSSOTAQ_TWEET_SHORTCODE_NAME, $atts, $content );
 			$class = empty( $atts['class'] ) ? WPSSOTAQ_TWEET_SHORTCODE_CLASS : $atts['class'];
 			$content = trim( $content );	// just in case
+
 			if ( isset( $atts['tweet'] ) ) {
 				$atts['tweet'] = trim( $atts['tweet'] );	// just in case
 			}
+
 			$atts['use_post'] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
+
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'required call to get_page_mod()' );
 			}
+
 			$mod = $this->p->util->get_page_mod( $atts['use_post'] );
 
 			if ( empty( $atts['tweet'] ) && empty( $content ) ) {
