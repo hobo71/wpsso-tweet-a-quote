@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoTaqTweet' ) ) {
 			$site_len = empty( $atts['via'] ) ? 
 				0 : strlen( $atts['via'] ) + 6;	// "via" word, 2 spaces, and the "@", makes 6 characters
 
-			return ( 140 - $short_len - $site_len );
+			return ( 280 - $short_len - $site_len );	// changed from 140 to 280 on 2017/11/17
 		}
 	}
 }
