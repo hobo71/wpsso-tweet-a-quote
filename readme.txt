@@ -78,6 +78,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.1.13-dev.4 (2017/11/17)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Changed the maximum tweet text length from 140 to 280 characters.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.1.12 (2017/11/02)**
 
 * *New Features*
@@ -89,198 +100,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Renamed shortcode add/remove text filter action hooks for WPSSO v3.48.0.
 
-**Version 1.1.11 (2017/10/15)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a shortcode_exists() call to the WpssoTaqShortcodeTaq add_shortcode() and remove_shortcode() methods for more complete debug info.
-	* Added 'wpsso_pre_apply_filters_text' and 'wpsso_after_apply_filters_text' action hooks WpssoTaqShortcodeTaq to dynamically remove / add the TAQ shortcode as required.
-
-**Version 1.1.10 (2017/09/10)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Minor code refactoring for WPSSO v3.46.0.
-
-**Version 1.1.9 (2017/04/30)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Code refactoring to rename the $is_avail array to $avail for WPSSO v3.42.0.
-	* Replaced WPSSO_VARY_USER_AGENT_DISABLE constant checks by $avail array checks.
-
-**Version 1.1.8 (2017/04/22)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added support for the new WPSSO_VARY_USER_AGENT_DISABLE constant in WPSSO v3.41.0.
-
-**Version 1.1.7 (2017/04/16)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the plugin init filters and moved/renamed the registration boolean from `is_avail[$name]` to `is_avail['p_ext'][$name]`.
-
-**Version 1.1.6 (2017/04/08)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Minor revision to move URLs in the extension config to the main WPSSO Core plugin config.
-	* Dropped the package number from the production version string.
-
-**Version 1.1.5-1 (2017/04/05)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Updated the plugin icon images and the documentation URLs.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.1.4-1 (2017/03/06)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added support for SucomUtil::is_amp() in WPSSO v3.40.2-1.
-
-**Version 1.1.3-1 (2017/01/08)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a 'plugins_loaded' action hook to load the plugin text domain.
-
-**Version 1.1.2-1 (2016/12/12)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Excluded the Twitter URL from the JavaScript popup protection for mobile devices.
-
-**Version 1.1.1-1 (2016/12/09)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a [TAQ Shortcode](http://wpsso.com/docs/plugins/wpsso-tweet-a-quote/notes/taq-shortcode/) documentation page.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed the "text" shortcode argument to "tweet".
-
-**Version 1.1.0-3 (2016/12/05)**
-
-Official announcement: [New Plugin – WPSSO Tweet a Quote](https://surniaulula.com/2016/12/05/new-plugin-wpsso-tweet-a-quote/)
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added three new options to the TAQ settings page:
-		* Link the Quote Text (default is disabled).
-		* Append a Tweet Icon (default is enabled).
-		* Tweet Window Size (default is 580x255).
-	* Removed the HTML, CSS, and JS customization options.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
+
+= 1.1.13-dev.4 =
+
+(2017/11/17) Changed the maximum tweet text length from 140 to 280 characters.
 
 = 1.1.12 =
 
 (2017/11/02) Renamed shortcode add/remove text filter action hooks for WPSSO v3.48.0.
-
-= 1.1.11 =
-
-(2017/10/15) Refactored the WpssoTaqShortcodeTaq add / remove shortcode methods.
-
-= 1.1.10 =
-
-(2017/09/10) Minor code refactoring for WPSSO v3.46.0.
-
-= 1.1.9 =
-
-(2017/04/30) Code refactoring to rename the $is_avail array to $avail, and replace the WPSSO_VARY_USER_AGENT_DISABLE constant checks by $avail array checks for WPSSO v3.42.0.
-
-= 1.1.8 =
-
-(2017/04/22) Added support for a new constant in WPSSO v3.41.0.
-
-= 1.1.7 =
-
-(2017/04/16) Refactored the plugin init filters and moved/renamed the registration boolean.
-
-= 1.1.6 =
-
-(2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO Core plugin config.
-
-= 1.1.5-1 =
-
-(2017/04/05) Updated the plugin icon images and the documentation URLs.
-
-= 1.1.4-1 =
-
-(2017/03/06) Added support for SucomUtil::is_amp() in WPSSO v3.40.2-1.
-
-= 1.1.3-1 =
-
-(2017/01/08) Added a 'plugins_loaded' action hook to load the plugin text domain.
-
-= 1.1.2-1 =
-
-(2016/12/12) Excluded the Twitter URL from the JavaScript popup protection for mobile devices.
-
-= 1.1.1-1 =
-
-(2016/12/09) Renamed the "text" shortcode argument to "tweet". Added a TAQ Shortcode documentation page.
-
-= 1.1.0-3 =
-
-(2016/12/05) Added three new options to the TAQ settings page. Removed the HTML, CSS, and JS customization options.
 
