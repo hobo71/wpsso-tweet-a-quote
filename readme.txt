@@ -78,7 +78,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.13-rc.6 (2017/11/19)**
+**Version 1.1.13-rc.7 (2017/11/20)**
 
 * *New Features*
 	* None
@@ -102,9 +102,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.13-rc.6 =
+= 1.1.13-rc.7 =
 
-(2017/11/19) Changed the maximum tweet text length from 140 to 280 characters.
+(2017/11/20) Changed the maximum tweet text length from 140 to 280 characters.
 
 = 1.1.12 =
 
