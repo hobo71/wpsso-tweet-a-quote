@@ -264,4 +264,3 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 	}
 }
 
-?>

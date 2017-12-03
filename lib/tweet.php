@@ -42,4 +42,3 @@ if ( ! class_exists( 'WpssoTaqTweet' ) ) {
 	}
 }
 
-?>

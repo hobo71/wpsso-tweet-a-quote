@@ -188,4 +188,3 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 	$wpssotaq =& WpssoTaq::get_instance();
 }
 
-?>

@@ -80,4 +80,3 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 	}
 }
 
-?>
