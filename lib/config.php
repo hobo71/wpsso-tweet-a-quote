@@ -54,8 +54,10 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 			),
 		);
 
-		public static function get_version() { 
-			return self::$cf['plugin']['wpssotaq']['version'];
+		public static function get_version( $add_slug = false ) {
+			$ext = 'wpssotaq';
+			$info =& self::$cf['plugin'][$ext];
+			return $add_slug ? $info['slug'].'-'.$info['version'] : $info['version'];
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
