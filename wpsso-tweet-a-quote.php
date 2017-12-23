@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: WPSSO Tweet a Quote
  * Plugin Slug: wpsso-tweet-a-quote

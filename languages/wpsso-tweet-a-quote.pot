@@ -25,112 +25,112 @@ msgid ""
 "link to post and page content (uses easily customized CSS)."
 msgstr ""
 
-#: lib/filters.php:175
+#: lib/filters.php:176
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
 "a> in the %3$s page). The %1$s will be displayed and recommended after the "
 "webpage is shared."
 msgstr ""
 
-#: lib/filters.php:175 lib/filters.php:178
+#: lib/filters.php:176 lib/filters.php:179
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/filters.php:175
+#: lib/filters.php:176
 msgctxt "lib file description"
 msgid "General Settings"
 msgstr ""
 
-#: lib/filters.php:178
+#: lib/filters.php:179
 msgid ""
 "Recommend following the author's Twitter @username after sharing a webpage. "
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/filters.php:178 lib/submenu/taq-general.php:47
+#: lib/filters.php:179 lib/submenu/taq-general.php:48
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr ""
 
-#: lib/filters.php:181
+#: lib/filters.php:182
 msgid "Link the quoted text to click anywhere on the text to Tweet."
 msgstr ""
 
-#: lib/filters.php:184
+#: lib/filters.php:185
 msgid "Append a Tweet icon after the quoted text."
 msgstr ""
 
-#: lib/filters.php:187
+#: lib/filters.php:188
 msgid "Add the Tweet a Quote stylesheet to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:190
+#: lib/filters.php:191
 msgid "Add the Tweet a Quote javascript to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:193
+#: lib/filters.php:194
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr ""
 
-#: lib/submenu/taq-general.php:32
+#: lib/submenu/taq-general.php:33
 msgctxt "metabox title"
 msgid "Tweet a Quote Settings"
 msgstr ""
 
-#: lib/submenu/taq-general.php:51
+#: lib/submenu/taq-general.php:52
 msgctxt "option label"
 msgid "Recommend Author @username"
 msgstr ""
 
-#: lib/submenu/taq-general.php:55
+#: lib/submenu/taq-general.php:56
 msgctxt "option label"
 msgid "Link the Quote Text"
 msgstr ""
 
-#: lib/submenu/taq-general.php:59
+#: lib/submenu/taq-general.php:60
 msgctxt "option label"
 msgid "Append a Tweet Icon"
 msgstr ""
 
-#: lib/submenu/taq-general.php:63
+#: lib/submenu/taq-general.php:64
 msgctxt "option label"
 msgid "Use TAQ Stylesheet"
 msgstr ""
 
-#: lib/submenu/taq-general.php:67
+#: lib/submenu/taq-general.php:68
 msgctxt "option label"
 msgid "Use TAQ Javascript"
 msgstr ""
 
-#: lib/submenu/taq-general.php:71
+#: lib/submenu/taq-general.php:72
 msgctxt "option label"
 msgid "Tweet Window Size"
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:79
+#: wpsso-tweet-a-quote.php:80
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:80
+#: wpsso-tweet-a-quote.php:81
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s extension</a>."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:166
+#: wpsso-tweet-a-quote.php:167
 msgid ""
 "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
 "installed)."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:180
+#: wpsso-tweet-a-quote.php:181
 msgid "The %1$s extension requires the %2$s option to be enabled."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:182
+#: wpsso-tweet-a-quote.php:183
 msgctxt "option label"
 msgid "Enable Plugin Shortcode(s)"
 msgstr ""
