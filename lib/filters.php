@@ -245,7 +245,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 				if ( ! isset( $this->taq_css_min ) ) {
 					$this->taq_css_min = SucomUtil::minify_css( $this->taq_css, 'wpsso' );
 				}
-				echo '<style type="text/css">'.$this->taq_css_min.'</style>'."\n";
+				echo '<style type="text/css">'.$this->taq_css_min.'</style>' . "\n";
 			} elseif ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'taq_use_style option is disabled' );
 			}
@@ -257,7 +257,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 					array( '/%%popup_width%%/', '/%%popup_height%%/' ),
 					array( $this->p->options['taq_popup_width'], $this->p->options['taq_popup_height'] ),
 					$this->taq_js
-				).'</script>'."\n";
+				).'</script>' . "\n";
 			} elseif ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'taq_use_script option is disabled' );
 			}
