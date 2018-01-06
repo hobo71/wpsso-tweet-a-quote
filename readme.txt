@@ -78,6 +78,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.0.0-dev.1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.1.13 (2017/11/20)**
 
 * *New Features*
@@ -101,6 +112,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Renamed shortcode add/remove text filter action hooks for WPSSO v3.48.0.
 
 == Upgrade Notice ==
+
+= 2.0.0-dev.1 =
+
+(TBD) None.
 
 = 1.1.13 =
 
