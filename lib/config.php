@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.48.13-rc.1',
+						'min_version' => '3.49.0',
 					),
 					'img' => array(
 						'icons' => array(
