@@ -15,10 +15,10 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
-				'wpssotaq' => array(
-					'version' => '2.0.0-dev.1',		// plugin version
-					'opt_version' => '10',		// increment when changing default options
-					'short' => 'WPSSO TAQ',		// short plugin name
+				'wpssotaq' => array(			// Plugin acronym.
+					'version' => '2.0.0-dev.1',		// Plugin version.
+					'opt_version' => '10',		// Increment when changing default option values.
+					'short' => 'WPSSO TAQ',		// Short plugin name.
 					'name' => 'WPSSO Tweet a Quote',
 					'desc' => 'WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS).',
 					'slug' => 'wpsso-tweet-a-quote',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.49.1-rc.1',
+						'min_version' => '3.49.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -38,8 +38,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						// submenu items must have unique keys
-						'submenu' => array (
+						'submenu' => array(	// Note that submenu elements must have unique keys.
 							'taq-general' => 'Tweet a Quote',
 						),
 						'shortcode' => array(
