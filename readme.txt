@@ -35,14 +35,14 @@ WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Tweet a Quote is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.
+WPSSO Tweet a Quote is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 == Installation ==
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO TAQ Plugin](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/install-the-plugin/)
-* [Uninstall the WPSSO TAQ Plugin](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/uninstall-the-plugin/)
+* [Install the WPSSO TAQ Extension](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/install-the-plugin/)
+* [Uninstall the WPSSO TAQ Extension](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
