@@ -78,7 +78,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-dev.0 (TBD)**
+**Version 1.1.14 (2018/02/04)**
 
 * *New Features*
 	* None
@@ -87,41 +87,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
-
-**Version 1.1.13 (2017/11/20)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Changed the maximum tweet text length from 140 to 280 characters.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.1.12 (2017/11/02)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed shortcode add/remove text filter action hooks for WPSSO v3.48.0.
+	* Maintenance release.
 
 == Upgrade Notice ==
 
-= 2.0.0-dev.0 =
+= 1.1.14 =
 
-(TBD) None.
-
-= 1.1.13 =
-
-(2017/11/20) Changed the maximum tweet text length from 140 to 280 characters.
-
-= 1.1.12 =
-
-(2017/11/02) Renamed shortcode add/remove text filter action hooks for WPSSO v3.48.0.
+(2018/02/04) Maintenance release.
 
