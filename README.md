@@ -21,17 +21,17 @@
 
 <p><strong>Uses your existing WPSSO settings to shorten URLs</strong>, add a Twitter business @username, and recommend the author's @username after sharing.</p>
 
-<p>Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO TAQ uses for the quote and Tweet link.</p>
+<p>Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO Tweet a Quote (aka WPSSO TAQ) uses for the quote and Tweet link.</p>
 
-<p><strong>WPSSO TAQ is <em>incredibly fast</em> and coded for performance:</strong></p>
+<p><strong>WPSSO Tweet a Quote is <em>incredibly fast</em> and coded for performance:</strong></p>
 
 <p>WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.</p>
 
-<p>WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).</p>
+<p>WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Tweet a Quote is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.</p>
+<p>WPSSO Tweet a Quote (aka WPSSO TAQ) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.</p>
 
 
 <h2>Installation</h2>
