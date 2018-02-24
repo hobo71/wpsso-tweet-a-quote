@@ -78,7 +78,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.2.0-rc.3 (2018/02/24)**
+**Version 1.2.0 (2018/02/24)**
 
 * *New Features*
 	* None
@@ -89,24 +89,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Refactored the WpssoTaq `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
-**Version 1.1.14 (2018/02/04)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Maintenance release.
-
 == Upgrade Notice ==
 
-= l.2.0-rc.3 =
+= l.2.0 =
 
 (2018/02/24) Refactored the WpssoTaq min_version_notice() method to use PHP's trigger_error() and include a notice to refresh plugin update information.
-
-= 1.1.14 =
-
-(2018/02/04) Maintenance release.
 
