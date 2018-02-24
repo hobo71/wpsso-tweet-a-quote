@@ -196,7 +196,8 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 				}
 			}
 
-			trigger_error( sprintf( __( '%s warning:', 'wpsso-tweet-a-quote' ), $info['short'] ).' '.$error_msg, E_USER_WARNING );
+			// translators: %s is the short plugin name
+			trigger_error( sprintf( __( '%s warning:', 'wpsso-tweet-a-quote' ), $info['short'] ).' '.rtrim( $error_msg, '.' ), E_USER_WARNING );
 		}
 
 		private function sc_disabled_notice() {
