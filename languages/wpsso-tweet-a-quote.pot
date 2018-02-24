@@ -126,7 +126,7 @@ msgid ""
 "%5$s is currently installed)."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:190
+#: wpsso-tweet-a-quote.php:197
 msgid "%s warning:"
 msgstr ""
 
