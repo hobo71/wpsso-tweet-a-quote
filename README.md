@@ -1,4 +1,4 @@
-<h1>WPSSO Tweet a Quote</h1><h3>Twitter-style Quoted Text with Tweet Link and Customizable CSS</h3>
+<h1>WPSSO Tweet a Quote (Extension)</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tweet a Quote</td></tr>
@@ -12,6 +12,8 @@
 </table>
 
 <h2>Description</h2>
+
+<blockquote><h1>Twitter-style Quoted Text with Tweet Link and Customizable CSS</h1></blockquote>
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png"></p>
 
