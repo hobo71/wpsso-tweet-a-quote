@@ -19,9 +19,7 @@ WPSSO Core extension to add Twitter-style quoted text to your content, with a Tw
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png">
 
-<p><strong>WPSSO Core extension to add Twitter-style quoted text to your content, with a Tweet link and customizable CSS.</strong></p>
-
-- - -
+<blockquote><p><strong>WPSSO Core extension to add Twitter-style quoted text to your content, with a Tweet link and customizable CSS.</strong></p></blockquote>
 
 <p>Add Twitter-style quoted text to your content, which is easily Tweeted by your readers.</p>
 
