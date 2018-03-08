@@ -19,17 +19,15 @@ WPSSO Core extension to add Twitter-style quoted text to your content, with a Tw
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png">
 
-<blockquote><p><strong>WPSSO Core extension to add Twitter-style quoted text to your content, with a Tweet link and customizable CSS.</strong></p></blockquote>
+**WPSSO Core extension to add Twitter-style quoted text to your content, with a Tweet link and customizable CSS.**
 
-<p>Add Twitter-style quoted text to your content, which is easily Tweeted by your readers.</p>
+Features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.
 
-<p>Features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.</p>
+Uses your existing WPSSO Core settings to shorten URLs, add a Twitter business @username, and recommend the author's @username after tweeting the quote.
 
-<p>Uses your existing WPSSO Core settings to shorten URLs, add a Twitter business @username, and recommend the author's @username after tweeting the quote.</p>
+Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO Tweet a Quote (aka WPSSO TAQ) uses for the quote and Tweet link.
 
-<p>Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO Tweet a Quote (aka WPSSO TAQ) uses for the quote and Tweet link.</p>
-
-<p>WPSSO Tweet a Quote is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
+WPSSO Tweet a Quote is *incredibly fast* and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
