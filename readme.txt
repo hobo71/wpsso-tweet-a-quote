@@ -13,13 +13,15 @@ Requires At Least: 3.8
 Tested Up To: 4.9.4
 Stable Tag: 1.2.0
 
-WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customizable CSS).
+WPSSO Core extension to add Twitter-style quoted text to your content, with a Tweet link and customizable CSS.
 
 == Description ==
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png">
 
-<blockquote><p><strong><em>WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customizable CSS).</em></strong></p></blockquote>
+<p><strong>WPSSO Core extension to add Twitter-style quoted text to your content, with a Tweet link and customizable CSS.</strong></p>
+
+- - -
 
 <p>Add Twitter-style quoted text to your content, which is easily Tweeted by your readers.</p>
 
