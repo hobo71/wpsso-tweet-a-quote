@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Tweet a Quote 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-quote\n"
-"POT-Creation-Date: 2018-02-19 18:17-0600\n"
-"PO-Revision-Date: 2018-02-23 12:02-0600\n"
+"POT-Creation-Date: 2018-03-09 12:33-0600\n"
+"PO-Revision-Date: 2018-03-09 12:33-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -21,8 +21,8 @@ msgstr "Tweet a Quote"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
-msgid "WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
-msgstr "Extension WPSSO Core pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
+msgid "WPSSO Core extension to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS."
+msgstr "Extension WPSSO Core pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet et CSS personnalisable."
 
 #: lib/filters.php:175
 msgid "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</a> in the %3$s page). The %1$s will be displayed and recommended after the webpage is shared."
@@ -110,19 +110,20 @@ msgstr "%1$s est une extension pour %2$s &mdash; s'il vous plaît installer et a
 msgid "The %1$s extension requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s extension</a>."
 msgstr "L'extension %1$s requiert %2$s &mdash; installer et activer %3$s ou <a href=\"%4$s\">désactiver l'extension %5$s</a>."
 
-#: wpsso-tweet-a-quote.php:187
+#: wpsso-tweet-a-quote.php:186
 msgid "The %1$s version %2$s extension requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'extension %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
-#: wpsso-tweet-a-quote.php:190
+#. translators: %s is the short plugin name
+#: wpsso-tweet-a-quote.php:198
 msgid "%s warning:"
 msgstr "Alerte %s:"
 
-#: wpsso-tweet-a-quote.php:209
+#: wpsso-tweet-a-quote.php:212
 msgid "The %1$s extension requires the %2$s option to be enabled."
 msgstr "L’extension %1$s nécessite que l'option %2$s soit activé."
 
-#: wpsso-tweet-a-quote.php:211
+#: wpsso-tweet-a-quote.php:214
 msgctxt "option label"
 msgid "Enable Plugin Shortcode(s)"
 msgstr "Activer le/les shortcode(s)"
@@ -136,8 +137,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-tweet-a-quote/"
 
 #. Description of the plugin/theme
-msgid "WPSSO Core extension to add CSS Twitter-style quoted text with a Tweet share link to post and page content (uses easily customized CSS)."
-msgstr "Extension WPSSO Core pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet de partage (CSS facilement personnalisés)."
+msgid "WPSSO Core extension to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS."
+msgstr "Extension WPSSO Core pour ajouter des citations de style Twitter à votre contenu avec un lien Tweet et CSS personnalisable."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
