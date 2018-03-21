@@ -10,11 +10,11 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core extension to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS.
+ * Description: WPSSO Core add-on to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.4
- * Version: 1.2.0
+ * Version: 1.2.1-dev.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -86,9 +86,9 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 
 			$info = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
 
-			$die_msg = __( '%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.', 'wpsso-tweet-a-quote' );
+			$die_msg = __( '%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.', 'wpsso-tweet-a-quote' );
 
-			$error_msg = __( 'The %1$s extension requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href="%4$s">deactivate the %5$s extension</a>.', 'wpsso-tweet-a-quote' );
+			$error_msg = __( 'The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href="%4$s">deactivate the %5$s add-on</a>.', 'wpsso-tweet-a-quote' );
 
 			if ( true === $deactivate ) {
 
@@ -183,7 +183,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 
 			$info = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
 			$have_version = $this->p->cf['plugin']['wpsso']['version'];
-			$error_msg = sprintf( __( 'The %1$s version %2$s extension requires %3$s version %4$s or newer (version %5$s is currently installed).',
+			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
 				'wpsso-tweet-a-quote' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
 
 			if ( is_admin() ) {
@@ -209,7 +209,7 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 			}
 
 			if ( is_admin() ) {
-				$this->p->notice->err( sprintf( __( 'The %1$s extension requires the %2$s option to be enabled.',
+				$this->p->notice->err( sprintf( __( 'The %1$s add-on requires the %2$s option to be enabled.',
 					'wpsso-tweet-a-quote' ), $info['name'], $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_settings', 
 						_x( 'Enable Plugin Shortcode(s)', 'option label', 'wpsso-tweet-a-quote' ) ) ) );
 			}
@@ -219,4 +219,3 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
         global $wpssotaq;
 	$wpssotaq =& WpssoTaq::get_instance();
 }
-
