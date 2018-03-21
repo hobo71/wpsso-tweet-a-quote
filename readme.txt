@@ -13,13 +13,13 @@ Requires At Least: 3.8
 Tested Up To: 4.9.4
 Stable Tag: 1.2.0
 
-WPSSO Core extension to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS.
+WPSSO Core add-on to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS.
 
 == Description ==
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png">
 
-**WPSSO Core extension to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS.**
+**WPSSO Core add-on to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS.**
 
 Features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.
 
@@ -27,18 +27,18 @@ Uses your existing WPSSO Core settings to shorten URLs, add a Twitter business @
 
 Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO Tweet a Quote (aka WPSSO TAQ) uses for the quote and Tweet link.
 
-WPSSO Tweet a Quote is *incredibly fast* and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
+WPSSO Tweet a Quote is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Tweet a Quote (aka WPSSO TAQ) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
+WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 == Installation ==
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO TAQ Extension](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/install-the-plugin/)
-* [Uninstall the WPSSO TAQ Extension](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/uninstall-the-plugin/)
+* [Install the WPSSO TAQ Add-on](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/install-the-plugin/)
+* [Uninstall the WPSSO TAQ Add-on](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -74,6 +74,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.2.1-dev.2 (2018/03/21)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.2.0 (2018/02/24)**
 
 * *New Features*
@@ -86,6 +97,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoTaq `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
 == Upgrade Notice ==
+
+= 1.2.1-dev.2 =
+
+(2018/03/21) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 
 = l.2.0 =
 
