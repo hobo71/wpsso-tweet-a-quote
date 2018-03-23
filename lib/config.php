@@ -16,11 +16,11 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotaq' => array(			// Plugin acronym.
-					'version' => '1.2.1-b.1',		// Plugin version.
+					'version' => '1.2.1-rc.1',		// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short' => 'WPSSO TAQ',		// Short plugin name.
 					'name' => 'WPSSO Tweet a Quote',
-					'desc' => 'WPSSO Core add-on to add Twitter-style quoted text to your content with a Tweet share link and customizable CSS.',
+					'desc' => 'WPSSO Core add-on to provide Twitter-style quoted text to your content with a Tweet share link and customizable CSS.',
 					'slug' => 'wpsso-tweet-a-quote',
 					'base' => 'wpsso-tweet-a-quote/wpsso-tweet-a-quote.php',
 					'update_auth' => '',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.56.2-b.1',
+						'min_version' => '3.56.2-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
