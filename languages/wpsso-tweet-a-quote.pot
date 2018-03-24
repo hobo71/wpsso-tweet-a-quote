@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tweet a Quote package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote 1.2.1-rc.1\n"
+"Project-Id-Version: WPSSO Tweet a Quote 1.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-"
 "quote\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -21,8 +21,8 @@ msgstr ""
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on to provide Twitter-style quoted text to your content with "
-"a Tweet share link and customizable CSS."
+"WPSSO Core add-on to provide Twitter-style quoted text for your content, "
+"with a convenient Tweet share link and customizable CSS."
 msgstr ""
 
 #: lib/filters.php:175
@@ -150,8 +150,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on to provide Twitter-style quoted text to your content with "
-"a Tweet share link and customizable CSS."
+"WPSSO Core add-on to provide Twitter-style quoted text for your content, "
+"with a convenient Tweet share link and customizable CSS."
 msgstr ""
 
 #. Author of the plugin/theme
