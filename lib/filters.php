@@ -14,7 +14,9 @@ if ( ! class_exists( 'WpssoTaqFilters' ) ) {
 	class WpssoTaqFilters {
 
 		private $p;
-		private $taq_css = 'div.wpsso_taq {
+
+		private $taq_css = '
+div.wpsso_taq {
 	margin:1.5em auto;
 	padding:1.3em;
 	max-width:600px;
@@ -40,11 +42,11 @@ div.wpsso_taq .taq_close {
 	vertical-align:top;
 	quotes:"\201C""\201D""\2018""\2019";
 }
-div.wpsso_taq .taq_open:before {
+div.wpsso_taq .taq_open::before {
 	content:open-quote;
 	margin:0 15px 0 -5px;
 }
-div.wpsso_taq .taq_close:after {
+div.wpsso_taq .taq_close::after {
 	content:close-quote;
 	margin:0 5px 0 15px;
 }
@@ -85,12 +87,18 @@ div.wpsso_taq .taq_button a .taq_icon svg {
 div.wpsso_taq .taq_button a .taq_icon svg path {
 	fill:#26c4f1;
 }
-div.wpsso_taq .taq_button a .taq_icon:after {
+div.wpsso_taq .taq_button a .taq_icon::after {
 	display:inline-block;
-	content:"Tweet This Quote";
+	content:"Tweet this quote";
 	margin-bottom:0.1em;
-}';
-		private $taq_css_min;
+}
+div.wpsso_taq .taq_button a .taq_icon:lang(fr)::after {
+	content:"Tweeter cette citation";
+}
+';
+
+		private $taq_css_min = null;
+
 		private $taq_js = '+(function(window, $, undefined) {
 	var taq_popup_center_window = function(url, title, w, h) {
 		var dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left;
@@ -109,7 +117,7 @@ div.wpsso_taq .taq_button a .taq_icon:after {
 			$(document).on("click", ".taq_link a.taq_popup", {}, function taq_popup_click(e) {
 				var self = $(this);
 				var url = self.attr(\'href\').replace(\'/+/\', \'/\');
-				taq_popup_center_window(url, self.find(".taq_icon:after").html(), %%popup_width%%, %%popup_height%%);
+				taq_popup_center_window(url, self.find(".taq_icon::after").html(), %%popup_width%%, %%popup_height%%);
 				e.preventDefault();
 			});
 		}
