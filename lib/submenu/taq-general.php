@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 
 		public function show_metabox_taq_general() {
 			$metabox_id = 'taq';
-			$this->p->util->do_table_rows( apply_filters( $this->p->cf['lca'].'_'.$metabox_id.'_general_rows', 
+			$this->p->util->do_table_rows( apply_filters( $this->p->lca.'_'.$metabox_id.'_general_rows', 
 				$this->get_table_rows( $metabox_id, 'general' ), $this->form ), 'metabox-'.$metabox_id.'-general' );
 		}
 

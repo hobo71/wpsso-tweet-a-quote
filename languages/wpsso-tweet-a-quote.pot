@@ -108,34 +108,34 @@ msgctxt "option label"
 msgid "Tweet Window Size"
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:89
+#: wpsso-tweet-a-quote.php:95
 msgid ""
 "%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:91
+#: wpsso-tweet-a-quote.php:97
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:186
+#: wpsso-tweet-a-quote.php:198
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
 msgstr ""
 
 #. translators: %s is the short plugin name
-#: wpsso-tweet-a-quote.php:198
+#: wpsso-tweet-a-quote.php:210
 msgid "%s warning:"
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:212
+#: wpsso-tweet-a-quote.php:224
 msgid "The %1$s add-on requires the %2$s option to be enabled."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:214
+#: wpsso-tweet-a-quote.php:226
 msgctxt "option label"
 msgid "Enable Plugin Shortcode(s)"
 msgstr ""
