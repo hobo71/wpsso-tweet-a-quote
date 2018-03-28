@@ -39,9 +39,12 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 				$this->get_table_rows( $metabox_id, 'general' ), $this->form ), 'metabox-'.$metabox_id.'-general' );
 		}
 
-		protected function get_table_rows( $metabox_id, $key ) {
+		protected function get_table_rows( $metabox_id, $tab_key ) {
+
 			$table_rows = array();
-			switch ( $metabox_id.'-'.$key ) {
+
+			switch ( $metabox_id.'-'.$tab_key ) {
+
 				case 'taq-general':
 
 					$table_rows['taq_add_via'] = $this->form->get_th_html( _x( 'Add via Business @username',
@@ -75,8 +78,8 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 
 					break;
 			}
+
 			return $table_rows;
 		}
 	}
 }
-
