@@ -27,6 +27,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			}
 
 			if ( ! is_admin() ) {
+
 				if ( $this->p->avail['p_ext']['taq'] ) {
 
 					$this->check_wpautop();
@@ -40,9 +41,11 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			}
 		}
 
+		/**
+		 * Make sure wpautop() does not have a higher priority than 10, otherwise it will 
+		 * format the shortcode output (shortcode filters are run at priority 11).
+		 */
 		public function check_wpautop() {
-			// make sure wpautop() does not have a higher priority than 10, otherwise it will 
-			// format the shortcode output (shortcode filters are run at priority 11).
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
 				$default_priority = 10;
 				foreach ( array( 'get_the_excerpt', 'the_excerpt', 'the_content' ) as $filter_name ) {
@@ -116,8 +119,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				$atts = array();
 			}
 
-			$lca = $this->p->cf['lca'];
-			$atts = (array) apply_filters( $lca.'_taq_shortcode_'.WPSSOTAQ_TWEET_SHORTCODE_NAME, $atts, $content );
+			$atts = (array) apply_filters( $this->p->lca.'_taq_shortcode_'.WPSSOTAQ_TWEET_SHORTCODE_NAME, $atts, $content );
 			$class = empty( $atts['class'] ) ? WPSSOTAQ_TWEET_SHORTCODE_CLASS : $atts['class'];
 			$content = trim( $content );	// just in case
 
@@ -211,4 +213,3 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 		}
 	}
 }
-

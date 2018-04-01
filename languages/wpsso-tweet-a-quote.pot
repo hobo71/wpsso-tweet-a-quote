@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tweet a Quote package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote 1.2.2-dev.1\n"
+"Project-Id-Version: WPSSO Tweet a Quote 2.0.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-"
 "quote\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -25,51 +25,51 @@ msgid ""
 "with a convenient Tweet share link and customizable CSS."
 msgstr ""
 
-#: lib/filters.php:183
+#: lib/filters.php:44
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
 "a> in the %3$s page). The %1$s will be displayed and recommended after the "
 "webpage is shared."
 msgstr ""
 
-#: lib/filters.php:183 lib/filters.php:186
+#: lib/filters.php:44 lib/filters.php:50
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/filters.php:183
+#: lib/filters.php:44
 msgctxt "lib file description"
 msgid "General Settings"
 msgstr ""
 
-#: lib/filters.php:186
+#: lib/filters.php:50
 msgid ""
 "Recommend following the author's Twitter @username after sharing a webpage. "
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/filters.php:186 lib/submenu/taq-general.php:50
+#: lib/filters.php:50 lib/submenu/taq-general.php:50
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr ""
 
-#: lib/filters.php:189
+#: lib/filters.php:56
 msgid "Link the quoted text to click anywhere on the text to Tweet."
 msgstr ""
 
-#: lib/filters.php:192
+#: lib/filters.php:62
 msgid "Append a Tweet icon after the quoted text."
 msgstr ""
 
-#: lib/filters.php:195
+#: lib/filters.php:68
 msgid "Add the Tweet a Quote stylesheet to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:198
+#: lib/filters.php:74
 msgid "Add the Tweet a Quote javascript to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:201
+#: lib/filters.php:80
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr ""
 
@@ -120,22 +120,22 @@ msgid ""
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:198
+#: wpsso-tweet-a-quote.php:200
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
 msgstr ""
 
 #. translators: %s is the short plugin name
-#: wpsso-tweet-a-quote.php:210
+#: wpsso-tweet-a-quote.php:212
 msgid "%s warning:"
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:224
+#: wpsso-tweet-a-quote.php:226
 msgid "The %1$s add-on requires the %2$s option to be enabled."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:226
+#: wpsso-tweet-a-quote.php:228
 msgctxt "option label"
 msgid "Enable Plugin Shortcode(s)"
 msgstr ""

@@ -14,7 +14,7 @@
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.4
- * Version: 1.2.2-dev.1
+ * Version: 2.0.0-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -171,6 +171,8 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 			}
 
 			$this->filters = new WpssoTaqFilters( $this->p );
+			$this->script = new WpssoTaqScript( $this->p );
+			$this->style = new WpssoTaqStyle( $this->p );
 			$this->tweet = new WpssoTaqTweet( $this->p );
 		}
 

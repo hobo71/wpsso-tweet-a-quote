@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotaq' => array(			// Plugin acronym.
-					'version' => '1.2.2-dev.1',		// Plugin version.
+					'version' => '2.0.0-dev.1',		// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short' => 'WPSSO TAQ',		// Short plugin name.
 					'name' => 'WPSSO Tweet a Quote',
@@ -51,6 +51,18 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					),
 				),
 			),
+			'opt' => array(				// options
+				'defaults' => array(
+					'taq_add_via' => 1,
+					'taq_rec_author' => 1,
+					'taq_link_text' => 0,
+					'taq_add_button' => 1,
+					'taq_use_style' => 1,
+					'taq_use_script' => 1,
+					'taq_popup_width' => 580,
+					'taq_popup_height' => 290,
+				),
+			),
 		);
 
 		public static function get_version( $add_slug = false ) {
@@ -60,9 +72,11 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+
 			if ( defined( 'WPSSOTAQ_VERSION' ) ) {			// execute and define constants only once
 				return;
 			}
+
 			define( 'WPSSOTAQ_VERSION', self::$cf['plugin']['wpssotaq']['version'] );						
 			define( 'WPSSOTAQ_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOTAQ_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
@@ -73,27 +87,42 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 			self::set_variable_constants();
 		}
 
-		public static function set_variable_constants() { 
-			foreach ( self::get_variable_constants() as $name => $value )
-				if ( ! defined( $name ) )
+		public static function set_variable_constants( $var_const = null ) {
+
+			if ( null === $var_const ) {
+				$var_const = self::get_variable_constants();
+			}
+
+			foreach ( $var_const as $name => $value ) {
+				if ( ! defined( $name ) ) {
 					define( $name, $value );
+				}
+			}
 		}
 
 		public static function get_variable_constants() { 
+
 			$var_const = array();
+
 			$var_const['WPSSOTAQ_TWEET_SHORTCODE_NAME'] = 'taq';
 			$var_const['WPSSOTAQ_TWEET_SHORTCODE_CLASS'] = 'wpsso_taq';
 
-			foreach ( $var_const as $name => $value )
-				if ( defined( $name ) )
+			foreach ( $var_const as $name => $value ) {
+				if ( defined( $name ) ) {
 					$var_const[$name] = constant( $name );	// inherit existing values
+				}
+			}
+
 			return $var_const;
 		}
 
 		public static function require_libs( $plugin_filepath ) {
-			require_once WPSSOTAQ_PLUGINDIR.'lib/register.php';
+
 			require_once WPSSOTAQ_PLUGINDIR.'lib/filters.php';
-			require_once WPSSOTAQ_PLUGINDIR.'lib/tweet.php';	// static methods
+			require_once WPSSOTAQ_PLUGINDIR.'lib/register.php';
+			require_once WPSSOTAQ_PLUGINDIR.'lib/script.php';
+			require_once WPSSOTAQ_PLUGINDIR.'lib/style.php';
+			require_once WPSSOTAQ_PLUGINDIR.'lib/tweet.php';
 
 			add_filter( 'wpssotaq_load_lib', array( 'WpssoTaqConfig', 'load_lib' ), 10, 3 );
 		}
@@ -114,4 +143,3 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		}
 	}
 }
-
