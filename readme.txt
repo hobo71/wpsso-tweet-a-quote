@@ -74,15 +74,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.2.2-dev.1 (2018/04/01)**
+**Version 2.0.0-dev.1 (2018/04/01)**
 
 * *New Features*
-	* None
+	* Added a "Tweet a Quote" block for the Gutenberg editor.
 * *Improvements*
 	* None
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Removed TinyMCE support and the SweetAlert2 javascript library.
 	* Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
 
 **Version 1.2.1 (2018/03/24)**
@@ -109,9 +110,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.2.2-dev.1 =
+= 2.0.0-dev.1 =
 
-(2018/04/01) Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
+(2018/04/01) Added a "Tweet a Quote" block for the Gutenberg editor and removed TinyMCE support.
 
 = 1.2.1 =
 
