@@ -23,8 +23,28 @@ if ( ! class_exists( 'WpssoTaqScript' ) ) {
 			}
 
 			if ( ! SucomUtil::get_const( 'DOING_AJAX' ) ) {
+				if ( is_admin() ) {
+					if ( SucomUtil::get_const( 'WPSSO_DEV' ) ) {
+						add_action( 'enqueue_block_editor_assets', array( &$this, 'enqueue_block_editor_assets' ), -1000 );
+					}
+				}
 				add_action( 'wp_enqueue_scripts', array( &$this, 'wp_enqueue_scripts' ) );
 			}
+		}
+
+		public function enqueue_block_editor_assets() {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			$js_file_ext = SucomUtil::get_const( 'WPSSO_DEV' ) ? 'js' : 'min.js';
+			$plugin_version = WpssoTaqConfig::get_version();
+
+			wp_enqueue_script( 'taq-gutenberg-admin', 
+				WPSSO_URLPATH . 'js/gutenberg-admin.' . $js_file_ext, 
+					array( 'wp-data' ), $plugin_version, true );
+
 		}
 
 		public function wp_enqueue_scripts() {

@@ -26,18 +26,15 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! is_admin() ) {
+			if ( $this->p->avail['p_ext']['taq'] ) {
 
-				if ( $this->p->avail['p_ext']['taq'] ) {
+				$this->check_wpautop();
+				$this->add_shortcode();
 
-					$this->check_wpautop();
-					$this->add_shortcode();
-
-					$this->p->util->add_plugin_actions( $this, array( 
-						'text_filter_before' => 1,
-						'text_filter_after' => 1,
-					) );
-				}
+				$this->p->util->add_plugin_actions( $this, array( 
+					'text_filter_before' => 1,
+					'text_filter_after' => 1,
+				) );
 			}
 		}
 
