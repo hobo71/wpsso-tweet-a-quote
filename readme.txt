@@ -10,7 +10,7 @@ Tags: twitter, tweet, re-tweet, social, share, sharing, button, link, quote, tex
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
-Tested Up To: 4.9.4
+Tested Up To: 4.9.5
 Stable Tag: 1.2.1
 
 WPSSO Core add-on to provide Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.
