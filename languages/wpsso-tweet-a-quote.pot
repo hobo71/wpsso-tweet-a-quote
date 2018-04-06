@@ -126,16 +126,11 @@ msgid ""
 "%5$s is currently installed)."
 msgstr ""
 
-#. translators: %s is the short plugin name
-#: wpsso-tweet-a-quote.php:212
-msgid "%s warning:"
-msgstr ""
-
-#: wpsso-tweet-a-quote.php:226
+#: wpsso-tweet-a-quote.php:220
 msgid "The %1$s add-on requires the %2$s option to be enabled."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:228
+#: wpsso-tweet-a-quote.php:222
 msgctxt "option label"
 msgid "Enable Plugin Shortcode(s)"
 msgstr ""
