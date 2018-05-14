@@ -27,6 +27,12 @@ Uses your existing WPSSO Core settings to shorten URLs, add a Twitter business @
 
 Developers and advanced users will also appreciate the ability to easily re-style the default CSS that WPSSO Tweet a Quote (aka WPSSO TAQ) uses. ;-)
 
+<div style="clear:both"></div>
+
+<h3>WPSSO Core Plugin Prerequisite</h3>
+
+WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro versions of WPSSO Core.
+
 == Installation ==
 
 <h3>Install and Uninstall</h3>
