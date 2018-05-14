@@ -19,17 +19,13 @@ WPSSO Core add-on to provide Twitter-style quoted text for your content, with a 
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png">
 
-**A WPSSO Core add-on to provide Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.**
+**Add Twitter-style quoted text to your content, with a convenient Tweet share link.**
 
-Features an easy "Tweet a Quote" toolbar button in the Visual Editor &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.
+Features an easy "Tweet a Quote" toolbar button in the Visual Editor (aka TinyMCE) &mdash; along with a simple shortcode for the Text Editor &mdash; to create Tweetable quotes quickly and easily.
 
 Uses your existing WPSSO Core settings to shorten URLs, add a Twitter business @username, and recommend the author's @username after tweeting the quote.
 
-Developers and advanced users will appreciate the ability to easily re-style the CSS that WPSSO Tweet a Quote (aka WPSSO TAQ) uses for the quote and Tweet link.
-
-<h3>WPSSO Core Plugin Prerequisite</h3>
-
-WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
+Developers and advanced users will also appreciate the ability to easily re-style the default CSS that WPSSO Tweet a Quote (aka WPSSO TAQ) uses. ;-)
 
 == Installation ==
 
