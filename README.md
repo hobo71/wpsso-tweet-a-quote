@@ -23,8 +23,6 @@
 
 <p>Developers and advanced users will also appreciate the ability to easily re-style the default CSS that WPSSO Tweet a Quote uses. ;-)</p>
 
-<div style="clear:both"></div>
-
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
 <p>WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the WPSSO Core plugin.</p>

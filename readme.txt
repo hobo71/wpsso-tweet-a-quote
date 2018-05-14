@@ -27,8 +27,6 @@ Uses your existing WPSSO Core settings to shorten URLs, add a Twitter business @
 
 Developers and advanced users will also appreciate the ability to easily re-style the default CSS that WPSSO Tweet a Quote uses. ;-)
 
-<div style="clear:both"></div>
-
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
 WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the WPSSO Core plugin.
@@ -84,7 +82,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Removed TinyMCE support and the SweetAlert2 javascript library.
-	* Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
+	* Renamed some WpssoUtil methods for Gutenberg related changes in WPSSO v3.57.0.
 
 **Version 1.2.1 (2018/03/24)**
 
@@ -96,17 +94,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* None
-
-**Version 1.2.0 (2018/02/24)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the WpssoTaq `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
 == Upgrade Notice ==
 
