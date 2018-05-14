@@ -25,7 +25,7 @@ Features an easy "Tweet a Quote" toolbar button in the Visual Editor (aka TinyMC
 
 Uses your existing WPSSO Core settings to shorten URLs, add a Twitter business @username, and recommend the author's @username after tweeting the quote.
 
-Developers and advanced users will also appreciate the ability to easily re-style the default CSS that WPSSO Tweet a Quote (aka WPSSO TAQ) uses. ;-)
+Developers and advanced users will also appreciate the ability to easily re-style the default CSS that WPSSO Tweet a Quote uses. ;-)
 
 <div style="clear:both"></div>
 
