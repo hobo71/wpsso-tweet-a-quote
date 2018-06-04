@@ -72,7 +72,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-dev.1 (2018/04/01)**
+**Version 2.0.0-dev.0 (TBD)**
 
 * *New Features*
 	* Added a "Tweet a Quote" block for the Gutenberg editor.
@@ -82,7 +82,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Removed TinyMCE support and the SweetAlert2 javascript library.
-	* Renamed some WpssoUtil methods for Gutenberg related changes in WPSSO v3.57.0.
 
 **Version 1.2.1 (2018/03/24)**
 
@@ -97,9 +96,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.0-dev.1 =
+= 2.0.0-dev.0 =
 
-(2018/04/01) Added a "Tweet a Quote" block for the Gutenberg editor and removed TinyMCE support.
+(TBD) Added a "Tweet a Quote" block for the Gutenberg editor. Removed TinyMCE support and the SweetAlert2 javascript library.
 
 = 1.2.1 =
 
