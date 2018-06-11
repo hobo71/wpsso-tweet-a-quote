@@ -17,7 +17,7 @@ WPSSO Core add-on to provide Twitter-style quoted text for your content, with a 
 
 == Description ==
 
-<img class="readme-icon" src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png">
+<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tweet-a-quote/assets/icon-256x256.png"></p>
 
 **Add Twitter-style quoted text to your content, with a convenient Tweet share link.**
 
