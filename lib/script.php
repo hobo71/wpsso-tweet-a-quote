@@ -25,10 +25,10 @@ if ( ! class_exists( 'WpssoTaqScript' ) ) {
 			if ( ! SucomUtil::get_const( 'DOING_AJAX' ) ) {
 				if ( is_admin() ) {
 					if ( SucomUtil::get_const( 'WPSSO_DEV' ) ) {
-						add_action( 'enqueue_block_editor_assets', array( &$this, 'enqueue_block_editor_assets' ), -1000 );
+						add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_block_editor_assets' ), -1000 );
 					}
 				}
-				add_action( 'wp_enqueue_scripts', array( &$this, 'wp_enqueue_scripts' ) );
+				add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
 			}
 		}
 

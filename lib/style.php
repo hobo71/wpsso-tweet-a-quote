@@ -23,7 +23,7 @@ if ( ! class_exists( 'WpssoTaqStyle' ) ) {
 			}
 
 			if ( ! SucomUtil::get_const( 'DOING_AJAX' ) ) {
-				add_action( 'wp_enqueue_scripts', array( &$this, 'wp_enqueue_styles' ) );
+				add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_styles' ) );
 			}
 		}
 

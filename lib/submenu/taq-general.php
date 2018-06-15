@@ -30,7 +30,7 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 		protected function add_meta_boxes() {
 			add_meta_box( $this->pagehook.'_taq_general', 
 				_x( 'Tweet a Quote Settings', 'metabox title', 'wpsso-tweet-a-quote' ),
-					array( &$this, 'show_metabox_taq_general' ), $this->pagehook, 'normal' );
+					array( $this, 'show_metabox_taq_general' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_taq_general() {

@@ -79,7 +79,7 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 		public function add_shortcode() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
 				if ( ! shortcode_exists( WPSSOTAQ_TWEET_SHORTCODE_NAME ) ) {
-        				add_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME, array( &$this, 'do_shortcode' ) );
+        				add_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME, array( $this, 'do_shortcode' ) );
 					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode added' );
 					}
