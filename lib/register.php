@@ -76,7 +76,9 @@ if ( ! class_exists( 'WpssoTaqRegister' ) ) {
 		}
 
 		private function activate_plugin() {
+
 			$version = WpssoTaqConfig::$cf['plugin']['wpssotaq']['version'];	// only our config
+
 			if ( class_exists( 'WpssoUtil' ) ) {
 				WpssoUtil::save_all_times( 'wpssotaq', $version );
 			} else {

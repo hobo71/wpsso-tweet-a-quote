@@ -73,7 +73,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 
 		public static function set_constants( $plugin_filepath ) { 
 
-			if ( defined( 'WPSSOTAQ_VERSION' ) ) {			// execute and define constants only once
+			if ( defined( 'WPSSOTAQ_VERSION' ) ) {	// Define constants only once.
 				return;
 			}
 
