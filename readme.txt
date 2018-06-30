@@ -29,7 +29,7 @@ Developers and advanced users will also appreciate the ability to easily re-styl
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the WPSSO Core plugin.
+WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the [WPSSO Core Plugin](https://wordpress.org/plugins/wpsso/) (Free or Pro version).
 
 == Installation ==
 
