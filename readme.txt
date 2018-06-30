@@ -72,7 +72,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.3.0-dev.1 (TBD)**
+**Version 1.3.0-dev.1 (2018/06/29)**
 
 * *New Features*
 	* None
@@ -99,7 +99,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.3.0-dev.1 =
 
-(TBD) Removed TinyMCE support and the SweetAlert2 javascript library.
+(2018/06/29) Removed TinyMCE support and the SweetAlert2 javascript library.
 
 = 1.2.1 =
 
