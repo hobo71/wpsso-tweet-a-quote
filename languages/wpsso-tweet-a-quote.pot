@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tweet a Quote package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tweet a Quote 2.0.0-dev.0\n"
+"Project-Id-Version: WPSSO Tweet a Quote 1.3.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tweet-a-"
 "quote\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -120,19 +120,10 @@ msgid ""
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-tweet-a-quote.php:202
+#: wpsso-tweet-a-quote.php:197
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
-msgstr ""
-
-#: wpsso-tweet-a-quote.php:222
-msgid "The %1$s add-on requires the %2$s option to be enabled."
-msgstr ""
-
-#: wpsso-tweet-a-quote.php:224
-msgctxt "option label"
-msgid "Enable Plugin Shortcode(s)"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

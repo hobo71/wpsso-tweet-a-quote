@@ -14,10 +14,11 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 	class WpssoTaqShortcodeTaq {
 
 		private $p;
-		private $taq_tweet_url = 'https://twitter.com/intent/tweet?original_referer=%%sharing_url%%&amp;url=%%short_url%%&amp;text=%%twitter_text%%&amp;hashtags=%%twitter_hashtags%%&amp;via=%%twitter_via%%&amp;related=%%twitter_related%%';
-		private $taq_row_open_html = '<span class="taq_row"><span class="taq_open"></span><span class="taq_text">';
+
+		private $taq_tweet_url      = 'https://twitter.com/intent/tweet?original_referer=%%sharing_url%%&amp;url=%%short_url%%&amp;text=%%twitter_text%%&amp;hashtags=%%twitter_hashtags%%&amp;via=%%twitter_via%%&amp;related=%%twitter_related%%';
+		private $taq_row_open_html  = '<span class="taq_row"><span class="taq_open"></span><span class="taq_text">';
 		private $taq_row_close_html = '</span><span class="taq_close"></span></span>';
-		private $taq_icon_html = '<span class="taq_icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z" /></svg></span>';
+		private $taq_icon_html      = '<span class="taq_icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z" /></svg></span>';
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
@@ -29,11 +30,12 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			if ( $this->p->avail['p_ext']['taq'] ) {
 
 				$this->check_wpautop();
+
 				$this->add_shortcode();
 
 				$this->p->util->add_plugin_actions( $this, array( 
 					'text_filter_before' => 1,
-					'text_filter_after' => 1,
+					'text_filter_after'  => 1,
 				) );
 			}
 		}
@@ -43,66 +45,87 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 		 * format the shortcode output (shortcode filters are run at priority 11).
 		 */
 		public function check_wpautop() {
-			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-				$default_priority = 10;
-				foreach ( array( 'get_the_excerpt', 'the_excerpt', 'the_content' ) as $filter_name ) {
-					$filter_priority = has_filter( $filter_name, 'wpautop' );
-					if ( $filter_priority !== false && $filter_priority > $default_priority ) {
-						remove_filter( $filter_name, 'wpautop' );
-						add_filter( $filter_name, 'wpautop' , $default_priority );
-						if ( $this->p->debug->enabled ) {
-							$this->p->debug->log( 'wpautop() priority changed from '.$filter_priority.' to '.$default_priority );
-						}
+
+			$default_priority = 10;
+
+			foreach ( array( 'get_the_excerpt', 'the_excerpt', 'the_content' ) as $filter_name ) {
+
+				$filter_priority = has_filter( $filter_name, 'wpautop' );
+
+				if ( $filter_priority !== false && $filter_priority > $default_priority ) {
+
+					remove_filter( $filter_name, 'wpautop' );
+
+					add_filter( $filter_name, 'wpautop' , $default_priority );
+
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'wpautop() priority changed from '.$filter_priority.' to '.$default_priority );
 					}
 				}
 			}
 		}
 
 		public function action_pre_apply_filters_text( $filter_name ) {
+
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log_args( array( 
 					'filter_name' => $filter_name,
 				) );
 			}
+
 			$this->add_shortcode();
 		}
 
 		public function action_after_apply_filters_text( $filter_name ) {
+
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log_args( array( 
 					'filter_name' => $filter_name,
 				) );
 			}
+
 			$this->remove_shortcode();
 		}
 
 		public function add_shortcode() {
-			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-				if ( ! shortcode_exists( WPSSOTAQ_TWEET_SHORTCODE_NAME ) ) {
-        				add_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME, array( $this, 'do_shortcode' ) );
-					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode added' );
-					}
-					return true;
-				} elseif ( $this->p->debug->enabled ) {
+
+			if ( shortcode_exists( WPSSOTAQ_TWEET_SHORTCODE_NAME ) ) {
+
+				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'cannot add ['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode - shortcode already exists' );
 				}
+	
+				return false;
 			}
-			return false;
+
+        		add_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME, array( $this, 'do_shortcode' ) );
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode added' );
+			}
+
+			return true;
+			
 		}
 
 		public function remove_shortcode() {
-			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-				if ( shortcode_exists( WPSSOTAQ_TWEET_SHORTCODE_NAME ) ) {
-					remove_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME );
-					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode removed' );
-					}
-					return true;
-				} elseif ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'cannot remove ['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode - shortcode does not exist' );
+
+			if ( shortcode_exists( WPSSOTAQ_TWEET_SHORTCODE_NAME ) ) {
+
+				remove_shortcode( WPSSOTAQ_TWEET_SHORTCODE_NAME );
+
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( '['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode removed' );
 				}
+
+				return true;
+
 			}
+			
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( 'cannot remove ['.WPSSOTAQ_TWEET_SHORTCODE_NAME.'] sharing shortcode - shortcode does not exist' );
+			}
+
 			return false;
 		}
 

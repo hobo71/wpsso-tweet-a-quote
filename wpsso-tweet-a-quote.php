@@ -14,7 +14,7 @@
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.6
- * Version: 2.0.0-dev.0
+ * Version: 1.3.0-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -111,11 +111,11 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 			} else {
 
 				$deactivate_url = html_entity_decode( wp_nonce_url( add_query_arg( array(
-					'action' => 'deactivate',
-					'plugin' => $info['base'],
+					'action'        => 'deactivate',
+					'plugin'        => $info['base'],
 					'plugin_status' => 'all',
-					'paged' => 1,
-					's' => '',
+					'paged'         => 1,
+					's'             => '',
 				), admin_url( 'plugins.php' ) ), 'deactivate-plugin_' . $info['base'] ) );
 
 				echo '<div class="notice notice-error error"><p>';
@@ -173,9 +173,9 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 			}
 
 			$this->filters = new WpssoTaqFilters( $this->p );
-			$this->script = new WpssoTaqScript( $this->p );
-			$this->style = new WpssoTaqStyle( $this->p );
-			$this->tweet = new WpssoTaqTweet( $this->p );
+			$this->script  = new WpssoTaqScript( $this->p );
+			$this->style   = new WpssoTaqStyle( $this->p );
+			$this->tweet   = new WpssoTaqTweet( $this->p );
 		}
 
 		public function wpsso_init_plugin() {
@@ -188,40 +188,22 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 				$this->min_version_notice();
 				return;	// stop here
 			}
-
-			if ( empty( $this->p->options['plugin_shortcodes'] ) ) {
-				$this->sc_disabled_notice();
-				return;	// stop here
-			}
 		}
 
 		private function min_version_notice() {
 
-			$info = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
+			$info         = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
 			$have_version = $this->p->cf['plugin']['wpsso']['version'];
-			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
+			$error_msg    = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
 				'wpsso-tweet-a-quote' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
 
 			if ( is_admin() ) {
+
 				$this->p->notice->err( $error_msg );
+
 				if ( method_exists( $this->p->admin, 'get_check_for_updates_link' ) ) {
 					$this->p->notice->inf( $this->p->admin->get_check_for_updates_link() );
 				}
-			}
-		}
-
-		private function sc_disabled_notice() {
-
-			$info = WpssoTaqConfig::$cf['plugin']['wpssotaq'];
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( $info['name'] . ' requires the shortcodes option to be enabled' );
-			}
-
-			if ( is_admin() ) {
-				$this->p->notice->err( sprintf( __( 'The %1$s add-on requires the %2$s option to be enabled.',
-					'wpsso-tweet-a-quote' ), $info['name'], $this->p->util->get_admin_url( 'advanced#sucom-tabset_plugin-tab_settings', 
-						_x( 'Enable Plugin Shortcode(s)', 'option label', 'wpsso-tweet-a-quote' ) ) ) );
 			}
 		}
 	}
