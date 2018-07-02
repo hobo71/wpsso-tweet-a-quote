@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotaq' => array(			// Plugin acronym.
-					'version' => '1.3.0-rc.1',		// Plugin version.
+					'version' => '1.3.0',		// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short' => 'WPSSO TAQ',		// Short plugin name.
 					'name' => 'WPSSO Tweet a Quote',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
-						'min_version' => '4.7.0-rc.1',
+						'min_version' => '4.7.0',
 					),
 					'img' => array(
 						'icons' => array(
