@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.6
-Stable Tag: 1.2.1
+Stable Tag: 1.3.0
 
 WPSSO Core add-on to provide Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.
 
@@ -72,7 +72,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.3.0 (2018/07/01)**
+**Version 1.3.0 (2018/07/02)**
 
 * *New Features*
 	* None
@@ -99,7 +99,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.3.0 =
 
-(2018/07/01) Removed TinyMCE support and the SweetAlert2 javascript library.
+(2018/07/02) Removed TinyMCE support and the SweetAlert2 javascript library.
 
 = 1.2.1 =
 
