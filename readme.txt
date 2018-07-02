@@ -42,9 +42,9 @@ WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the [WPSSO Core Plugin](htt
 
 <h3 class="top">Frequently Asked Questions</h3>
 
-== Other Notes ==
+* None
 
-<h3 class="top">Additional Documentation</h3>
+<h3>Documentation and Notes</h3>
 
 * [TAQ Shortcode](https://wpsso.com/docs/plugins/wpsso-tweet-a-quote/notes/taq-shortcode/)
 
