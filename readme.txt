@@ -42,7 +42,7 @@ WPSSO Tweet a Quote (aka WPSSO TAQ) is an add-on for the [WPSSO Core Plugin](htt
 
 <h3 class="top">Frequently Asked Questions</h3>
 
-* None
+* None.
 
 <h3>Documentation and Notes</h3>
 
@@ -75,11 +75,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.3.0 (2018/07/02)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
-	* None
+	* None.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
 	* Removed TinyMCE support and the SweetAlert2 javascript library.
 	* Removed a check for the deprecated "Enable Plugin Shortcode(s)" option.
@@ -87,13 +87,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.2.1 (2018/03/24)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
-	* None
+	* None.
 
 == Upgrade Notice ==
 
