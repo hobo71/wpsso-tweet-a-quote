@@ -72,6 +72,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.4.0-rc.1 (2018/07/21)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Maintenance release.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.3.0 (2018/07/02)**
 
 * *New Features*
@@ -97,11 +108,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
+= 1.4.0-rc.1 =
+
+(2018/07/21) Maintenance release.
+
 = 1.3.0 =
 
 (2018/07/02) Removed TinyMCE support and the SweetAlert2 javascript library.
-
-= 1.2.1 =
-
-(2018/03/24) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 
