@@ -16,24 +16,24 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotaq' => array(			// Plugin acronym.
-					'version' => '1.3.0',		// Plugin version.
+					'version'     => '1.4.0-rc.1',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
-					'short' => 'WPSSO TAQ',		// Short plugin name.
-					'name' => 'WPSSO Tweet a Quote',
-					'desc' => 'WPSSO Core add-on to provide Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.',
-					'slug' => 'wpsso-tweet-a-quote',
-					'base' => 'wpsso-tweet-a-quote/wpsso-tweet-a-quote.php',
+					'short'       => 'WPSSO TAQ',	// Short plugin name.
+					'name'        => 'WPSSO Tweet a Quote',
+					'desc'        => 'WPSSO Core add-on to provide Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.',
+					'slug'        => 'wpsso-tweet-a-quote',
+					'base'        => 'wpsso-tweet-a-quote/wpsso-tweet-a-quote.php',
 					'update_auth' => '',
 					'text_domain' => 'wpsso-tweet-a-quote',
 					'domain_path' => '/languages',
 					'req' => array(
-						'short' => 'WPSSO Core',
-						'name' => 'WPSSO Core',
-						'min_version' => '4.7.0',
+						'short'       => 'WPSSO Core',
+						'name'        => 'WPSSO Core',
+						'min_version' => '4.9.0-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
-							'low' => 'images/icon-128x128.png',
+							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
@@ -53,13 +53,13 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 			),
 			'opt' => array(				// options
 				'defaults' => array(
-					'taq_add_via' => 1,
-					'taq_rec_author' => 1,
-					'taq_link_text' => 0,
-					'taq_add_button' => 1,
-					'taq_use_style' => 1,
-					'taq_use_script' => 1,
-					'taq_popup_width' => 580,
+					'taq_add_via'      => 1,
+					'taq_rec_author'   => 1,
+					'taq_link_text'    => 0,
+					'taq_add_button'   => 1,
+					'taq_use_style'    => 1,
+					'taq_use_script'   => 1,
+					'taq_popup_width'  => 580,
 					'taq_popup_height' => 290,
 				),
 			),
