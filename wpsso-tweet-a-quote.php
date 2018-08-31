@@ -209,5 +209,6 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 	}
 
         global $wpssotaq;
+
 	$wpssotaq =& WpssoTaq::get_instance();
 }
