@@ -14,6 +14,7 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 	class WpssoTaqSubmenuTaqGeneral extends WpssoAdmin {
 
 		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {

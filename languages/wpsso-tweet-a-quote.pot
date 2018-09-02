@@ -25,85 +25,85 @@ msgid ""
 "with a convenient Tweet share link and customizable CSS."
 msgstr ""
 
-#: lib/filters.php:44
+#: lib/filters.php:45
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
 "a> in the %3$s settings page). The %1$s will be displayed and recommended "
 "after the webpage is shared."
 msgstr ""
 
-#: lib/filters.php:44 lib/filters.php:50
+#: lib/filters.php:45 lib/filters.php:51
 msgctxt "option label"
 msgid "Twitter Business @username"
 msgstr ""
 
-#: lib/filters.php:44
+#: lib/filters.php:45
 msgctxt "lib file description"
 msgid "General"
 msgstr ""
 
-#: lib/filters.php:50
+#: lib/filters.php:51
 msgid ""
 "Recommend following the author's Twitter @username after sharing a webpage. "
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/filters.php:50 lib/submenu/taq-general.php:50
+#: lib/filters.php:51 lib/submenu/taq-general.php:51
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr ""
 
-#: lib/filters.php:56
+#: lib/filters.php:57
 msgid "Link the quoted text to click anywhere on the text to Tweet."
 msgstr ""
 
-#: lib/filters.php:62
+#: lib/filters.php:63
 msgid "Append a Tweet icon after the quoted text."
 msgstr ""
 
-#: lib/filters.php:68
+#: lib/filters.php:69
 msgid "Add the Tweet a Quote stylesheet to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:74
+#: lib/filters.php:75
 msgid "Add the Tweet a Quote javascript to front-end webpages."
 msgstr ""
 
-#: lib/filters.php:80
+#: lib/filters.php:81
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr ""
 
-#: lib/submenu/taq-general.php:32
+#: lib/submenu/taq-general.php:33
 msgctxt "metabox title"
 msgid "Tweet a Quote Settings"
 msgstr ""
 
-#: lib/submenu/taq-general.php:54
+#: lib/submenu/taq-general.php:55
 msgctxt "option label"
 msgid "Recommend Author @username"
 msgstr ""
 
-#: lib/submenu/taq-general.php:58
+#: lib/submenu/taq-general.php:59
 msgctxt "option label"
 msgid "Link the Quote Text"
 msgstr ""
 
-#: lib/submenu/taq-general.php:62
+#: lib/submenu/taq-general.php:63
 msgctxt "option label"
 msgid "Append a Tweet Icon"
 msgstr ""
 
-#: lib/submenu/taq-general.php:66
+#: lib/submenu/taq-general.php:67
 msgctxt "option label"
 msgid "Use TAQ Stylesheet"
 msgstr ""
 
-#: lib/submenu/taq-general.php:70
+#: lib/submenu/taq-general.php:71
 msgctxt "option label"
 msgid "Use TAQ Javascript"
 msgstr ""
 
-#: lib/submenu/taq-general.php:74
+#: lib/submenu/taq-general.php:75
 msgctxt "option label"
 msgid "Tweet Window Size"
 msgstr ""
