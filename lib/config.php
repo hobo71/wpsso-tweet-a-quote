@@ -77,12 +77,12 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 				return;
 			}
 
-			define( 'WPSSOTAQ_VERSION', self::$cf['plugin']['wpssotaq']['version'] );						
 			define( 'WPSSOTAQ_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOTAQ_PLUGINBASE', self::$cf['plugin']['wpssotaq']['base'] );	// wpsso-tweet-a-quote/wpsso-tweet-a-quote.php
 			define( 'WPSSOTAQ_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'WPSSOTAQ_PLUGINSLUG', self::$cf['plugin']['wpssotaq']['slug'] );	// wpsso-tweet-a-quote
-			define( 'WPSSOTAQ_PLUGINBASE', self::$cf['plugin']['wpssotaq']['base'] );	// wpsso-tweet-a-quote/wpsso-tweet-a-quote.php
 			define( 'WPSSOTAQ_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOTAQ_VERSION', self::$cf['plugin']['wpssotaq']['version'] );						
 
 			self::set_variable_constants();
 		}
