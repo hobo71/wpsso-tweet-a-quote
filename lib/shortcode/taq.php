@@ -35,8 +35,8 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				$this->add_shortcode();
 
 				$this->p->util->add_plugin_actions( $this, array( 
-					'text_filter_before' => 1,
-					'text_filter_after'  => 1,
+					'pre_apply_filters_text'   => 1,
+					'after_apply_filters_text' => 1,
 				) );
 			}
 		}
@@ -204,10 +204,10 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			}
 
 			foreach ( array( 
-				'text' => 'tweet',	// tweet text
+				'text'     => 'tweet',	// tweet text
 				'hashtags' => 'hashtags',
-				'via' => 'via',
-				'related' => 'related',
+				'via'      => 'via',
+				'related'  => 'related',
 			) as $query_key => $atts_key  ) {
 				if ( ! empty( $atts[$atts_key] ) ) {
 					$extra_inline_vars['twitter_'.$query_key] = rawurlencode( html_entity_decode( $atts[$atts_key] ) );
