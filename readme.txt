@@ -72,7 +72,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.4.1-dev.5 (2018/09/13)**
+**Version 1.4.1-dev.6 (2018/09/14)**
 
 * *New Features*
 	* None.
@@ -108,9 +108,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.4.1-dev.5 =
+= 1.4.1-dev.6 =
 
-(2018/09/13) Corrected the pre/after text filter action hook names.
+(2018/09/14) Corrected the pre/after text filter action hook names.
 
 = 1.4.0 =
 
