@@ -72,7 +72,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.4.1-rc.1 (2018/09/15)**
+**Version 1.4.1 (2018/09/16)**
 
 * *New Features*
 	* None.
@@ -83,36 +83,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 1.4.0 (2018/07/22)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Maintenance release.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
-**Version 1.3.0 (2018/07/02)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Removed TinyMCE support and the SweetAlert2 javascript library.
-	* Removed a check for the deprecated "Enable Plugin Shortcode(s)" option.
-
 == Upgrade Notice ==
 
-= 1.4.1-rc.1 =
+= 1.4.1 =
 
-(2018/09/15) Fixed the pre/after text filter action hook names.
-
-= 1.4.0 =
-
-(2018/07/22) Maintenance release.
+(2018/09/16) Fixed the pre/after text filter action hook names.
 
