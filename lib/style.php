@@ -41,7 +41,11 @@ if ( ! class_exists( 'WpssoTaqStyle' ) ) {
 				return;
 			}
 
-			$css_file_ext = SucomUtil::get_const( 'WPSSO_DEV' ) ? 'css' : 'min.css';
+			/**
+			 * Do not use minified CSS if the DEV constant is defined.
+			 */
+			$doing_dev      = SucomUtil::get_const( 'WPSSO_DEV' );
+			$css_file_ext   = $doing_dev ? 'css' : 'min.css';
 			$plugin_version = WpssoTaqConfig::get_version();
 
 			wp_enqueue_style( 'taq', 

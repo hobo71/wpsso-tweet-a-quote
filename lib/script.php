@@ -41,7 +41,11 @@ if ( ! class_exists( 'WpssoTaqScript' ) ) {
 				return;
 			}
 
-			$js_file_ext    = SucomUtil::get_const( 'WPSSO_DEV' ) ? 'js' : 'min.js';
+			/**
+			 * Do not use minified JS if the DEV constant is defined.
+			 */
+			$doing_dev      = SucomUtil::get_const( 'WPSSO_DEV' );
+			$js_file_ext    = $doing_dev ? 'js' : 'min.js';
 			$plugin_version = WpssoTaqConfig::get_version();
 
 			wp_enqueue_script( 'jquery' );
