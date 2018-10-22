@@ -177,16 +177,13 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 			}
 
 			if ( empty( $atts['tweet'] ) ) {
-				$atts['tweet'] = $this->p->util->limit_text_length( $content, 
-					WpssoTaqTweet::get_max_len( $atts ), '...' );	// $cleanup_html = true
+				$atts['tweet'] = $this->p->util->limit_text_length( $content, WpssoTaqTweet::get_max_len( $atts ), '...' );
 			}
 
 			if ( SucomUtil::is_amp() ) {
-				return '<div class="'.$class.' is_amp">'.$this->taq_row_open_html.
-					$content.$this->taq_row_close_html.'</div>';
+				return '<div class="'.$class.' is_amp">'.$this->taq_row_open_html.$content.$this->taq_row_close_html.'</div>';
 			} elseif ( is_feed() ) {
-				return '<div class="'.$class.' is_feed">'.$this->taq_row_open_html.
-					$content.$this->taq_row_close_html.'</div>';
+				return '<div class="'.$class.' is_feed">'.$this->taq_row_open_html.$content.$this->taq_row_close_html.'</div>';
 			}
 
 			if ( empty( $atts['url'] ) ) {

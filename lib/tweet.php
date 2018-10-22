@@ -25,6 +25,7 @@ if ( ! class_exists( 'WpssoTaqTweet' ) ) {
 		}
 
 		public static function get_max_len( $atts = array() ) { 
+
 			$wpsso =& Wpsso::get_instance();
 
 			if ( ! isset( $atts['via'] ) ) {
