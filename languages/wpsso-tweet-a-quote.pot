@@ -48,7 +48,7 @@ msgid ""
 "If the %1$s option (above) is also checked, the %2$s is suggested first."
 msgstr ""
 
-#: lib/filters.php:51 lib/submenu/taq-general.php:51
+#: lib/filters.php:51 lib/submenu/taq-general.php:54
 msgctxt "option label"
 msgid "Add via Business @username"
 msgstr ""
@@ -73,37 +73,37 @@ msgstr ""
 msgid "The width and height (in pixels) of the Tweet popup window."
 msgstr ""
 
-#: lib/submenu/taq-general.php:33
+#: lib/submenu/taq-general.php:36
 msgctxt "metabox title"
 msgid "Tweet a Quote Settings"
 msgstr ""
 
-#: lib/submenu/taq-general.php:55
+#: lib/submenu/taq-general.php:58
 msgctxt "option label"
 msgid "Recommend Author @username"
 msgstr ""
 
-#: lib/submenu/taq-general.php:59
+#: lib/submenu/taq-general.php:62
 msgctxt "option label"
 msgid "Link the Quote Text"
 msgstr ""
 
-#: lib/submenu/taq-general.php:63
+#: lib/submenu/taq-general.php:66
 msgctxt "option label"
 msgid "Append a Tweet Icon"
 msgstr ""
 
-#: lib/submenu/taq-general.php:67
+#: lib/submenu/taq-general.php:70
 msgctxt "option label"
 msgid "Use TAQ Stylesheet"
 msgstr ""
 
-#: lib/submenu/taq-general.php:71
+#: lib/submenu/taq-general.php:74
 msgctxt "option label"
 msgid "Use TAQ Javascript"
 msgstr ""
 
-#: lib/submenu/taq-general.php:75
+#: lib/submenu/taq-general.php:78
 msgctxt "option label"
 msgid "Tweet Window Size"
 msgstr ""

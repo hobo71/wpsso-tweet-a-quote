@@ -27,9 +27,12 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 			$this->menu_ext = $ext;
 		}
 
-		// called by the extended WpssoAdmin class
+		/**
+		 * Called by the extended WpssoAdmin class.
+		 */
 		protected function add_meta_boxes() {
-			add_meta_box( $this->pagehook.'_taq_general', 
+
+			add_meta_box( $this->pagehook . '_taq_general', 
 				_x( 'Tweet a Quote Settings', 'metabox title', 'wpsso-tweet-a-quote' ),
 					array( $this, 'show_metabox_taq_general' ), $this->pagehook, 'normal' );
 		}
