@@ -32,13 +32,23 @@ if ( ! class_exists( 'WpssoTaqSubmenuTaqGeneral' ) && class_exists( 'WpssoAdmin'
 		 */
 		protected function add_meta_boxes() {
 
-			add_meta_box( $this->pagehook . '_taq_general', 
-				_x( 'Tweet a Quote Settings', 'metabox title', 'wpsso-tweet-a-quote' ),
-					array( $this, 'show_metabox_taq_general' ), $this->pagehook, 'normal' );
+			$metabox_id      = 'taq_general';
+			$metabox_title   = _x( 'Tweet a Quote Settings', 'metabox title', 'wpsso-tweet-a-quote' );
+			$metabox_screen  = $this->pagehook;
+			$metabox_context = 'normal';
+			$metabox_prio    = 'default';
+			$callback_args   = array(	// Second argument passed to the callback function / method.
+			);
+
+			add_meta_box( $this->pagehook . '_' . $metabox_id, $metabox_title,
+				array( $this, 'show_metabox_taq_general' ), $metabox_screen,
+					$metabox_context, $metabox_prio, $callback_args );
 		}
 
 		public function show_metabox_taq_general() {
+
 			$metabox_id = 'taq';
+
 			$this->p->util->do_metabox_table( apply_filters( $this->p->lca.'_'.$metabox_id.'_general_rows', 
 				$this->get_table_rows( $metabox_id, 'general' ), $this->form ), 'metabox-'.$metabox_id.'-general' );
 		}
