@@ -32,13 +32,13 @@ if ( ! class_exists( 'WpssoTaqFilters' ) ) {
 			}
 		}
 
-		public function filter_messages_tooltip( $text, $idx ) {
+		public function filter_messages_tooltip( $text, $msg_key ) {
 
-			if ( strpos( $idx, 'tooltip-taq_' ) !== 0 ) {
+			if ( strpos( $msg_key, 'tooltip-taq_' ) !== 0 ) {
 				return $text;
 			}
 
-			switch ( $idx ) {
+			switch ( $msg_key ) {
 
 				case 'tooltip-taq_add_via':
 
