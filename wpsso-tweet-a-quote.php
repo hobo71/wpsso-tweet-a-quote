@@ -35,12 +35,18 @@ if ( ! class_exists( 'WpssoTaq' ) ) {
 	class WpssoTaq {
 
 		/**
-		 * Class Object Variables
+		 * Wpsso plugin class object variable.
 		 */
-		public $p;			// Wpsso
-		public $reg;			// WpssoTaqRegister
-		public $filters;		// WpssoTaqFilters
-		public $tweet;			// WpssoTaqTweet
+		public $p;		// Wpsso
+
+		/**
+		 * Library class object variables.
+		 */
+		public $filters;	// WpssoTaqFilters
+		public $reg;		// WpssoTaqRegister
+		public $script;		// WpssoTaqScript
+		public $style;		// WpssoTaqStyle
+		public $tweet;		// WpssoTaqTweet
 
 		/**
 		 * Reference Variables (config, options, modules, etc.).
