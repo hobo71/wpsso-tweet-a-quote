@@ -28,18 +28,28 @@ if ( ! class_exists( 'WpssoTaqTweet' ) ) {
 
 			$wpsso =& Wpsso::get_instance();
 
-			if ( ! isset( $atts['via'] ) ) {
-				if ( ! empty( $wpsso->options['taq_add_via'] ) ) {
-					$atts['via'] = preg_replace( '/^@/', '', 
-						SucomUtil::get_key_value( 'tc_site', $wpsso->options ) );
+			if ( ! isset( $atts[ 'via' ] ) ) {
+				if ( ! empty( $wpsso->options[ 'taq_add_via' ] ) ) {
+					$atts[ 'via' ] = preg_replace( '/^@/', '', SucomUtil::get_key_value( 'tc_site', $wpsso->options ) );
 				}
 			}
 
-			$short_len = 23;			// defined by twitter as being the shortest url length
-			$site_len = empty( $atts['via'] ) ? 
-				0 : strlen( $atts['via'] ) + 6;	// "via" word, 2 spaces, and the "@", makes 6 characters
+			/**
+			 * Defined by twitter as being the shortest URL length.
+			 */
+			$short_url_len = 23;
 
-			return ( 280 - $short_len - $site_len );	// changed from 140 to 280 on 2017/11/17
+			/**
+			 * "via" word, plus 2 spaces, and the "@" character, makes 6.
+			 */
+			$site_via_len = empty( $atts[ 'via' ] ) ? 0 : strlen( $atts[ 'via' ] ) + 6;
+
+			/**
+			 * Changed from 140 to 280 on 2017/11/17.
+			 */
+			$tweet_max_len = 280;
+
+			return ( $tweet_max_len - $short_url_len - $site_via_len );
 		}
 	}
 }
