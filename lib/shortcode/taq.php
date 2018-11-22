@@ -148,13 +148,13 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				$atts['tweet'] = trim( $atts['tweet'] );	// just in case
 			}
 
-			$atts['use_post'] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
+			$atts[ 'use_post' ] = SucomUtil::sanitize_use_post( $atts, true );	// $default = true
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'required call to get_page_mod()' );
 			}
 
-			$mod = $this->p->util->get_page_mod( $atts['use_post'] );
+			$mod = $this->p->util->get_page_mod( $atts[ 'use_post' ] );
 
 			if ( empty( $atts['tweet'] ) && empty( $content ) ) {
 				return $content;
@@ -168,10 +168,10 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 
 			if ( ! isset( $atts['related'] ) ) {
 				if ( ! empty( $this->p->options['taq_rec_author'] ) ) {
-					if ( ! empty( $mod['post_author'] ) && $atts['use_post'] ) {
+					if ( ! empty( $mod[ 'post_author' ] ) && $atts[ 'use_post' ] ) {
 						$atts['related'] = preg_replace( '/^@/', '', 
 							get_the_author_meta( $this->p->options['plugin_cm_twitter_name'], 
-								$mod['post_author'] ) );
+								$mod[ 'post_author' ] ) );
 					}
 				}
 			}
@@ -186,8 +186,8 @@ if ( ! class_exists( 'WpssoTaqShortcodeTaq' ) ) {
 				return '<div class="'.$class.' is_feed">'.$this->taq_row_open_html.$content.$this->taq_row_close_html.'</div>';
 			}
 
-			if ( empty( $atts['url'] ) ) {
-				$atts['url'] = $this->p->util->get_sharing_url( $mod );
+			if ( empty( $atts[ 'url' ] ) ) {
+				$atts[ 'url' ] = $this->p->util->get_sharing_url( $mod );
 			}
 
 			$extra_inline_vars = array();
