@@ -13,18 +13,6 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/config-gettext-extract.php:3
-msgctxt "lib file description"
-msgid "Tweet a Quote"
-msgstr ""
-
-#: lib/config-gettext-extract.php:4
-msgctxt "plugin description"
-msgid ""
-"WPSSO Core add-on to provide Twitter-style quoted text for your content, "
-"with a convenient Tweet share link and customizable CSS."
-msgstr ""
-
 #: lib/filters.php:45
 msgid ""
 "Append the %1$s to the tweet (see <a href=\"%2$s\">the Twitter options tab</"
@@ -71,6 +59,18 @@ msgstr ""
 
 #: lib/filters.php:81
 msgid "The width and height (in pixels) of the Tweet popup window."
+msgstr ""
+
+#: lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "Tweet a Quote"
+msgstr ""
+
+#: lib/gettext-config.php:7
+msgctxt "plugin description"
+msgid ""
+"WPSSO Core add-on to provide Twitter-style quoted text for your content, "
+"with a convenient Tweet share link and customizable CSS."
 msgstr ""
 
 #: lib/submenu/taq-general.php:36
