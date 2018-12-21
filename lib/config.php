@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO TAQ',	// Short plugin name.
 					'name'        => 'WPSSO Tweet a Quote',
-					'desc'        => 'WPSSO Core add-on to provide Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.',
+					'desc'        => 'WPSSO Core add-on offers Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.',
 					'slug'        => 'wpsso-tweet-a-quote',
 					'base'        => 'wpsso-tweet-a-quote/wpsso-tweet-a-quote.php',
 					'update_auth' => '',

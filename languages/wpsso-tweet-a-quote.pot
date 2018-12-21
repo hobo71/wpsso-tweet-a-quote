@@ -69,8 +69,8 @@ msgstr ""
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on to provide Twitter-style quoted text for your content, "
-"with a convenient Tweet share link and customizable CSS."
+"WPSSO Core add-on offers Twitter-style quoted text for your content, with a "
+"convenient Tweet share link and customizable CSS."
 msgstr ""
 
 #: lib/submenu/taq-general.php:36
@@ -136,8 +136,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on to provide Twitter-style quoted text for your content, "
-"with a convenient Tweet share link and customizable CSS."
+"WPSSO Core add-on offers Twitter-style quoted text for your content, with a "
+"convenient Tweet share link and customizable CSS."
 msgstr ""
 
 #. Author of the plugin/theme
