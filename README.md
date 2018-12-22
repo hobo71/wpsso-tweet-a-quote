@@ -1,4 +1,4 @@
-<h1>WPSSO Tweet a Quote</h1>
+<h1>WPSSO Tweet a Quote for Twitter-style Quoted Text</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tweet a Quote</td></tr>

@@ -1,4 +1,4 @@
-=== WPSSO Tweet a Quote ===
+=== WPSSO Tweet a Quote for Twitter-style Quoted Text ===
 Plugin Name: WPSSO Tweet a Quote
 Plugin Slug: wpsso-tweet-a-quote
 Text Domain: wpsso-tweet-a-quote
