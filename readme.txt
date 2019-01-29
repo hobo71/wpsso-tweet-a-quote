@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-tweet-a-quote/assets/
 Tags: twitter, tweet, re-tweet, social, share, sharing, button, link, quote, text, highlight, shortcode, widget
 Contributors: jsmoriss
-Requires PHP: 5.4
+Requires PHP: 5.5
 Requires At Least: 3.8
 Tested Up To: 5.0
 Stable Tag: 1.4.1
