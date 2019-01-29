@@ -11,7 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO Core add-on offers Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.
- * Requires PHP: 5.4
+ * Requires PHP: 5.5
  * Requires At Least: 3.8
  * Tested Up To: 5.0
  * Version: 1.4.1
