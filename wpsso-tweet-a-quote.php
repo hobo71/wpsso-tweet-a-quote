@@ -13,7 +13,7 @@
  * Description: WPSSO Core add-on offers Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.
  * Requires At Least: 3.8
  * Tested Up To: 5.1.1
- * Version: 1.4.2
+ * Version: 1.4.3
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
