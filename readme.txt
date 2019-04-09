@@ -10,7 +10,7 @@ Tags: twitter, tweet, re-tweet, social, share, sharing, button, link, quote, tex
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.1.1
-Stable Tag: 1.4.2
+Stable Tag: 1.4.3
 
 WPSSO Core add-on offers Twitter-style quoted text for your content, with a convenient Tweet share link and customizable CSS.
 
@@ -71,31 +71,20 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.4.2 (2019/01/31)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Maintenance release for WPSSO Core v4.22.0.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Updated the required minimum PHP version from 5.4 to 5.5.
-
-**Version 1.4.1 (2018/09/16)**
+**Version 1.4.3 (2019/04/09)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* Fixed the pre/after text filter action hook names.
-* *Developer Notes*
 	* None.
+* *Developer Notes*
+	* Maintenance release for WPSSO Core v4.27.2 config array updates.
 
 == Upgrade Notice ==
 
-= 1.4.2 =
+= 1.4.3 =
 
-(2019/01/31) Maintenance release for WPSSO Core v4.22.0.
+(2019/04/09) Maintenance release for WPSSO Core v4.27.2 config array updates.
 
