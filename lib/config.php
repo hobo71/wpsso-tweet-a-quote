@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						'shortcode' => array(
 							'taq' => 'Tweet a Quote Shortcode',
 						),
-						'submenu' => array(	// Note that submenu elements must have unique keys.
+						'submenu' => array(
 							'taq-general' => 'Tweet a Quote',
 						),
 					),
