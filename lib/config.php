@@ -38,15 +38,15 @@ if ( ! class_exists( 'WpssoTaqConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						'submenu' => array(	// Note that submenu elements must have unique keys.
-							'taq-general' => 'Tweet a Quote',
+						'gpl' => array(
+						),
+						'pro' => array(
 						),
 						'shortcode' => array(
 							'taq' => 'Tweet a Quote Shortcode',
 						),
-						'gpl' => array(
-						),
-						'pro' => array(
+						'submenu' => array(	// Note that submenu elements must have unique keys.
+							'taq-general' => 'Tweet a Quote',
 						),
 					),
 				),
